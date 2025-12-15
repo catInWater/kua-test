@@ -1,0 +1,40 @@
+1765271081.426712  INFO: [kua.nodewatcher] Constructing NodeWatcher
+1765271081.432436  INFO: [kua.bidder] Constructing Bidder
+1765271081.433467  INFO: [kua.master] Constructing Master
+1765271084.433723 DEBUG: [kua.master] Initializing Master
+1765271084.433774  INFO: [kua.master] Starting auction for #0 AID 2952935156
+1765271084.440096 DEBUG: [kua.master] RECV_BID from /three for #0 AID 2952935156 $10017
+1765271084.440140 DEBUG: [kua.master] RECV_BID from /one for #0 AID 2952935156 $10062
+1765271084.440591 DEBUG: [kua.master] RECV_BID from /four for #0 AID 2952935156 $10098
+1765271114.044013 DEBUG: [kua.master] RECV_BID from /two for #0 AID 2952935156 $10098
+1765271114.044124  INFO: [kua.master] /two won #0 for 10098
+1765271114.044402  INFO: [kua.master] /four won #0 for 10098
+1765271114.044648  INFO: [kua.master] /one won #0 for 10062
+1765271143.805729  INFO: [kua.master] win end
+1765271143.805799  INFO: [kua.master] Starting auction for #1 AID 3634776375
+1765271143.814549 DEBUG: [kua.master] RECV_BID from /one for #1 AID 3634776375 $5031
+1765271173.421423 DEBUG: [kua.master] RECV_BID from /two for #1 AID 3634776375 $5007
+1765271173.421746 DEBUG: [kua.master] RECV_BID from /four for #1 AID 3634776375 $5092
+1765271173.421892 DEBUG: [kua.master] RECV_BID from /three for #1 AID 3634776375 $10008
+1765271173.421902  INFO: [kua.master] /three won #1 for 10008
+1765271173.422184  INFO: [kua.master] /four won #1 for 5092
+1765271173.422320  INFO: [kua.master] /one won #1 for 5031
+1765271202.730654  INFO: [kua.master] win end
+1765271202.730697  INFO: [kua.master] Starting auction for #2 AID 1631308571
+1765271202.735639 DEBUG: [kua.master] RECV_BID from /two for #2 AID 1631308571 $5024
+1765271230.758298 DEBUG: [kua.master] RECV_BID from /four for #2 AID 1631308571 $3394
+1765271231.195749 DEBUG: [kua.master] RECV_BID from /three for #2 AID 1631308571 $5012
+1765271231.258657 DEBUG: [kua.master] RECV_BID from /one for #2 AID 1631308571 $3371
+1765271231.258680  INFO: [kua.master] /two won #2 for 5024
+1765271231.258942  INFO: [kua.master] /three won #2 for 5012
+1765271231.259131  INFO: [kua.master] /four won #2 for 3394
+1765271258.330915  INFO: [kua.master] win end
+1765271258.331026  INFO: [kua.master] Starting auction for #3 AID 3559885819
+1765271258.352237 DEBUG: [kua.master] RECV_BID from /three for #3 AID 3559885819 $3355
+1765271258.352279 DEBUG: [kua.master] RECV_BID from /one for #3 AID 3559885819 $3405
+1765271287.492886 DEBUG: [kua.master] RECV_BID from /four for #3 AID 3559885819 $2593
+1765271287.493197 DEBUG: [kua.master] RECV_BID from /two for #3 AID 3559885819 $3412
+1765271287.493207  INFO: [kua.master] /two won #3 for 3412
+1765271287.493364  INFO: [kua.master] /one won #3 for 3405
+1765271287.493425  INFO: [kua.master] /three won #3 for 3355
+1765271316.296185  INFO: [kua.master] win end

@@ -13,7 +13,7 @@ Worker::Worker(ConfigBundle& configBundle, const Bucket& bucket)
   : m_configBundle(configBundle)
   , m_bucket(bucket)
   , m_nodePrefix(configBundle.nodePrefix)
-  , m_scheduler(m_face.getIoService())
+  , m_scheduler(m_face.getIoContext())
   , m_keyChain(configBundle.keyChain)
   , m_bucketPrefix(ndn::Name(configBundle.kuaPrefix).appendNumber(bucket.id))
   , m_bucketNodePrefix(ndn::Name(m_nodePrefix).appendNumber(bucket.id))
@@ -106,8 +106,8 @@ Worker::onInterest(const ndn::InterestFilter&, const ndn::Interest& interest)
 
   // FETCH command
   for (const auto& delegation : interest.getForwardingHint())
-    if (delegation.name.size() > 1 && delegation.name[-1].isNumber() &&
-        delegation.name[-1].toNumber() == CommandCodes::FETCH)
+    if (delegation.size() > 1 && delegation[-1].isNumber() &&
+        delegation[-1].toNumber() == CommandCodes::FETCH)
       return this->fetch(interest);
 }
 

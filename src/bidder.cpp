@@ -12,7 +12,7 @@ Bidder::Bidder(ConfigBundle& configBundle, NodeWatcher& nodeWatcher)
   , m_syncPrefix(ndn::Name(configBundle.kuaPrefix).append("sync").append("auction"))
   , m_nodePrefix(configBundle.nodePrefix)
   , m_face(configBundle.face)
-  , m_scheduler(m_face.getIoService())
+  , m_scheduler(m_face.getIoContext())
   , m_keyChain(configBundle.keyChain)
   , m_nodeWatcher(nodeWatcher)
   , m_rndBid(1, 100)
@@ -43,6 +43,7 @@ void
 Bidder::updateCallback(const std::vector<ndn::svs::MissingDataInfo>& missingInfo)
 {
   for (const auto m : missingInfo) {
+    NDN_LOG_DEBUG("SVS missing data: node=" << m.nodeId << ", low=" << m.low << ", high=" << m.high);
     if (m.nodeId != ndn::Name(MASTER_PREFIX)) {
       continue;
     }
@@ -91,6 +92,8 @@ Bidder::processMasterMessage(const ndn::Data& data)
 
     case AuctionMessage::Type::AuctionEnd:
     {
+      NDN_LOG_DEBUG("Entering AuctionEnd handler for bucket #" << msg.bucketId);
+
       if (!m_buckets.count(msg.bucketId))
         return;
 
@@ -124,7 +127,7 @@ Bidder::placeBid(bucket_id_t bucketId, auction_id_t auctionId)
   msg.bidAmount = bidAmount;
 
   NDN_LOG_DEBUG("PLACE_BID for #" << bucketId << " AID " << auctionId << " $" << bidAmount);
-  m_svs->publishData(msg.wireEncode(), ndn::time::milliseconds(1000));
+  m_svs->publishData(msg.wireEncode(), ndn::time::milliseconds(3000));
 }
 
 } // namespace kua

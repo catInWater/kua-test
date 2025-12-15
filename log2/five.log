@@ -1,0 +1,229 @@
+1764663718.628914  INFO: [kua.nodewatcher] Constructing NodeWatcher
+1764663718.635958  INFO: [kua.bidder] Constructing Bidder
+1764663718.636188 DEBUG: [kua.bidder] Initializing Bidder
+1764663722.054284 DEBUG: [kua.bidder] SVS missing data: node=/master, low=1, high=1
+1764663722.059501 DEBUG: [kua.bidder] RECV_AUCTION for #0 AID 823657218
+1764663722.059524 DEBUG: [kua.bidder] PLACE_BID for #0 AID 823657218 $10001
+1764663722.064157 DEBUG: [kua.bidder] SVS missing data: node=/one, low=1, high=1
+1764663749.723543 DEBUG: [kua.bidder] SVS missing data: node=/four, low=1, high=1
+1764663749.851847 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=1, high=1
+1764663749.894783 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=1, high=1
+1764663749.975622 DEBUG: [kua.bidder] SVS missing data: node=/two, low=1, high=1
+1764663749.977451 DEBUG: [kua.bidder] SVS missing data: node=/three, low=1, high=1
+1764663749.977660 DEBUG: [kua.bidder] SVS missing data: node=/six, low=1, high=1
+1764663749.984312 DEBUG: [kua.bidder] SVS missing data: node=/master, low=2, high=4
+1764663749.990526 DEBUG: [kua.bidder] SVS missing data: node=/three, low=2, high=2
+1764663775.067220 DEBUG: [kua.bidder] SVS missing data: node=/master, low=5, high=5
+1764663775.069784 DEBUG: [kua.bidder] RECV_AUCTION for #1 AID 3167459125
+1764663775.069804 DEBUG: [kua.bidder] PLACE_BID for #1 AID 3167459125 $10046
+1764663775.075808 DEBUG: [kua.bidder] SVS missing data: node=/one, low=2, high=2
+1764663775.075876 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=2, high=2
+1764663802.148033 DEBUG: [kua.bidder] SVS missing data: node=/six, low=2, high=3
+1764663802.461868 DEBUG: [kua.bidder] SVS missing data: node=/two, low=2, high=2
+1764663802.575204 DEBUG: [kua.bidder] SVS missing data: node=/four, low=2, high=2
+1764663802.650227 DEBUG: [kua.bidder] SVS missing data: node=/three, low=3, high=3
+1764663802.650294 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=2, high=3
+1764663802.657308 DEBUG: [kua.bidder] SVS missing data: node=/master, low=6, high=8
+1764663802.658197  INFO: [kua.bidder] Won auction for #1
+1764663802.658412  INFO: [kua.bidder] Should have workers for #1
+1764663828.099247 DEBUG: [kua.bidder] SVS missing data: node=/master, low=9, high=9
+1764663828.101784 DEBUG: [kua.bidder] RECV_AUCTION for #2 AID 1992707374
+1764663828.101829 DEBUG: [kua.bidder] PLACE_BID for #2 AID 1992707374 $5006
+1764663828.108773 DEBUG: [kua.bidder] SVS missing data: node=/three, low=4, high=4
+1764663828.108831 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=3, high=3
+1764663856.226656 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=4, high=4
+1764663856.357400 DEBUG: [kua.bidder] SVS missing data: node=/one, low=3, high=4
+1764663856.381916 DEBUG: [kua.bidder] SVS missing data: node=/six, low=4, high=4
+1764663856.382008 DEBUG: [kua.bidder] SVS missing data: node=/four, low=3, high=3
+1764663856.385654 DEBUG: [kua.bidder] SVS missing data: node=/two, low=3, high=4
+1764663856.394324 DEBUG: [kua.bidder] SVS missing data: node=/master, low=10, high=12
+1764663856.397146 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=4, high=4
+1764663881.146721 DEBUG: [kua.bidder] SVS missing data: node=/master, low=13, high=13
+1764663881.149586 DEBUG: [kua.bidder] RECV_AUCTION for #3 AID 3800242845
+1764663881.149604 DEBUG: [kua.bidder] PLACE_BID for #3 AID 3800242845 $5096
+1764663881.151973 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=5, high=5
+1764663881.152049 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=5, high=5
+1764663881.152091 DEBUG: [kua.bidder] SVS missing data: node=/six, low=5, high=5
+1764663909.666313 DEBUG: [kua.bidder] SVS missing data: node=/three, low=5, high=5
+1764663910.163529 DEBUG: [kua.bidder] SVS missing data: node=/two, low=5, high=5
+1764663910.164571 DEBUG: [kua.bidder] SVS missing data: node=/one, low=5, high=6
+1764663910.165825 DEBUG: [kua.bidder] SVS missing data: node=/four, low=4, high=5
+1764663910.170037 DEBUG: [kua.bidder] SVS missing data: node=/master, low=14, high=16
+1764663910.171080  INFO: [kua.bidder] Won auction for #3
+1764663910.172089  INFO: [kua.bidder] Should have workers for #1 #3
+1764663910.176193 DEBUG: [kua.bidder] SVS missing data: node=/three, low=6, high=6
+1764663910.176547 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=6, high=6
+1764663910.183833 DEBUG: [kua.bidder] SVS missing data: node=/master, low=17, high=18
+1764663910.188672 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #3
+1764663910.188685 DEBUG: [kua.bidder] Confirmed node for #3 /five
+1764663910.188689 DEBUG: [kua.bidder] Confirmed node for #3 /seven
+1764663910.188690 DEBUG: [kua.bidder] Confirmed node for #3 /three
+1764663910.189868  INFO: [kua.worker] Constructing worker for #3 /five
+1764663910.192574 DEBUG: [kua.bidder] RECV_AUCTION for #4 AID 4033206031
+1764663910.192580 DEBUG: [kua.bidder] PLACE_BID for #4 AID 4033206031 $3383
+1764663910.192683 DEBUG: [kua.bidder] SVS missing data: node=/one, low=7, high=7
+1764663910.192697 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=7, high=7
+1764663910.192707 DEBUG: [kua.bidder] SVS missing data: node=/four, low=6, high=6
+1764663910.196756 ERROR: [kua.worker] ERROR: Failed to register prefix '/five/%03' with the local forwarder (authorization rejected)
+1764663938.154558 DEBUG: [kua.bidder] SVS missing data: node=/two, low=6, high=6
+1764663938.179018 DEBUG: [kua.bidder] SVS missing data: node=/three, low=7, high=7
+1764663938.632820 DEBUG: [kua.bidder] SVS missing data: node=/six, low=6, high=6
+1764663938.660807 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=6, high=6
+1764663938.665561 DEBUG: [kua.bidder] SVS missing data: node=/master, low=19, high=21
+1764663938.668777 DEBUG: [kua.bidder] SVS missing data: node=/six, low=7, high=7
+1764663938.668812 DEBUG: [kua.bidder] SVS missing data: node=/two, low=7, high=7
+1764663963.223351 DEBUG: [kua.bidder] SVS missing data: node=/master, low=22, high=22
+1764663963.227312 DEBUG: [kua.bidder] RECV_AUCTION for #5 AID 3129298505
+1764663963.227399 DEBUG: [kua.bidder] PLACE_BID for #5 AID 3129298505 $3334
+1764663963.227696 DEBUG: [kua.bidder] SVS missing data: node=/two, low=8, high=8
+1764663990.898547 DEBUG: [kua.bidder] SVS missing data: node=/three, low=8, high=8
+1764663990.902009 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=8, high=8
+1764663990.915066 DEBUG: [kua.bidder] SVS missing data: node=/one, low=8, high=8
+1764663990.929557 DEBUG: [kua.bidder] SVS missing data: node=/six, low=8, high=8
+1764663990.961319 DEBUG: [kua.bidder] SVS missing data: node=/four, low=7, high=7
+1764663990.967533 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=7, high=8
+1764663990.974827 DEBUG: [kua.bidder] SVS missing data: node=/master, low=23, high=25
+1764663990.984513 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=9, high=9
+1764663990.984548 DEBUG: [kua.bidder] SVS missing data: node=/one, low=9, high=9
+1764663990.984564 DEBUG: [kua.bidder] SVS missing data: node=/four, low=8, high=8
+1764663990.996877 DEBUG: [kua.bidder] SVS missing data: node=/master, low=26, high=27
+1764663990.998206 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #5
+1764663990.998232 DEBUG: [kua.bidder] RECV_AUCTION for #6 AID 110583855
+1764663990.998235 DEBUG: [kua.bidder] PLACE_BID for #6 AID 110583855 $3361
+1764663991.009464 DEBUG: [kua.bidder] SVS missing data: node=/three, low=9, high=9
+1764663991.015793 DEBUG: [kua.bidder] SVS missing data: node=/one, low=10, high=10
+1764663991.015827 DEBUG: [kua.bidder] SVS missing data: node=/six, low=9, high=9
+1764663991.016003 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=9, high=9
+1764664018.343273 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=10, high=10
+1764664018.742828 DEBUG: [kua.bidder] SVS missing data: node=/two, low=9, high=9
+1764664018.745761 DEBUG: [kua.bidder] SVS missing data: node=/four, low=9, high=9
+1764664018.750300 DEBUG: [kua.bidder] SVS missing data: node=/master, low=28, high=30
+1764664018.752608  INFO: [kua.bidder] Won auction for #6
+1764664018.752883  INFO: [kua.bidder] Should have workers for #1 #3 #6
+1764664018.759878 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=10, high=10
+1764664018.760036 DEBUG: [kua.bidder] SVS missing data: node=/three, low=10, high=10
+1764664044.018265 DEBUG: [kua.bidder] SVS missing data: node=/master, low=31, high=31
+1764664044.019907 DEBUG: [kua.bidder] RECV_AUCTION for #7 AID 3468833590
+1764664044.019918 DEBUG: [kua.bidder] PLACE_BID for #7 AID 3468833590 $2565
+1764664044.022458 DEBUG: [kua.bidder] SVS missing data: node=/one, low=11, high=11
+1764664044.022530 DEBUG: [kua.bidder] SVS missing data: node=/three, low=11, high=11
+1764664071.246153 DEBUG: [kua.bidder] SVS missing data: node=/six, low=10, high=10
+1764664071.312416 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=11, high=11
+1764664071.613524 DEBUG: [kua.bidder] SVS missing data: node=/four, low=10, high=10
+1764664071.615530 DEBUG: [kua.bidder] SVS missing data: node=/two, low=10, high=10
+1764664071.615592 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=11, high=11
+1764664071.625047 DEBUG: [kua.bidder] SVS missing data: node=/master, low=32, high=34
+1764664071.632012 DEBUG: [kua.bidder] SVS missing data: node=/six, low=11, high=11
+1764664071.632036 DEBUG: [kua.bidder] SVS missing data: node=/four, low=11, high=11
+1764664099.328259 DEBUG: [kua.bidder] SVS missing data: node=/two, low=11, high=11
+1764664252.150862  INFO: [kua.nodewatcher] Constructing NodeWatcher
+1764664252.158241  INFO: [kua.bidder] Constructing Bidder
+1764664252.158391 DEBUG: [kua.bidder] Initializing Bidder
+1764664255.579436 DEBUG: [kua.bidder] SVS missing data: node=/master, low=1, high=1
+1764664255.581695 DEBUG: [kua.bidder] RECV_AUCTION for #0 AID 1893667100
+1764664255.581731 DEBUG: [kua.bidder] PLACE_BID for #0 AID 1893667100 $10045
+1764664255.582893 DEBUG: [kua.bidder] SVS missing data: node=/six, low=1, high=1
+1764664255.582916 DEBUG: [kua.bidder] SVS missing data: node=/three, low=1, high=1
+1764664283.066057 DEBUG: [kua.bidder] SVS missing data: node=/one, low=1, high=1
+1764664283.154939 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=1, high=1
+1764664283.159132 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=1, high=1
+1764664283.159211 DEBUG: [kua.bidder] SVS missing data: node=/four, low=1, high=1
+1764664283.159265 DEBUG: [kua.bidder] SVS missing data: node=/two, low=1, high=1
+1764664283.164232 DEBUG: [kua.bidder] SVS missing data: node=/master, low=2, high=2
+1764664283.167108 DEBUG: [kua.bidder] SVS missing data: node=/three, low=2, high=2
+1764664283.171390 DEBUG: [kua.bidder] SVS missing data: node=/master, low=3, high=4
+1764664283.174406 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #0
+1764664283.174445 DEBUG: [kua.bidder] RECV_AUCTION for #1 AID 876315638
+1764664283.174466 DEBUG: [kua.bidder] PLACE_BID for #1 AID 876315638 $10089
+1764664283.174661 DEBUG: [kua.bidder] SVS missing data: node=/one, low=2, high=2
+1764664311.066184 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=2, high=2
+1764664311.489301 DEBUG: [kua.bidder] SVS missing data: node=/three, low=3, high=3
+1764664311.559799 DEBUG: [kua.bidder] SVS missing data: node=/six, low=2, high=2
+1764664311.565465 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=2, high=2
+1764664311.565512 DEBUG: [kua.bidder] SVS missing data: node=/two, low=2, high=2
+1764664311.567583 DEBUG: [kua.bidder] SVS missing data: node=/four, low=2, high=2
+1764664311.575704 DEBUG: [kua.bidder] SVS missing data: node=/master, low=5, high=5
+1764664311.578650  INFO: [kua.bidder] Won auction for #1
+1764664311.579151  INFO: [kua.bidder] Should have workers for #1
+1764664311.583214 DEBUG: [kua.bidder] SVS missing data: node=/master, low=6, high=7
+1764664311.584230 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #1
+1764664311.584236 DEBUG: [kua.bidder] Confirmed node for #1 /five
+1764664311.584712  INFO: [kua.worker] Constructing worker for #1 /five
+1764664311.589538 DEBUG: [kua.bidder] RECV_AUCTION for #2 AID 1390137465
+1764664311.589562 DEBUG: [kua.bidder] PLACE_BID for #2 AID 1390137465 $5077
+1764664311.589675 DEBUG: [kua.bidder] SVS missing data: node=/six, low=3, high=3
+1764664311.589691 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=3, high=3
+1764664339.239179 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=3, high=3
+1764664339.345024 DEBUG: [kua.bidder] SVS missing data: node=/four, low=3, high=3
+1764664339.349520 DEBUG: [kua.bidder] SVS missing data: node=/three, low=4, high=4
+1764664339.362504 DEBUG: [kua.bidder] SVS missing data: node=/two, low=3, high=3
+1764664339.396175 DEBUG: [kua.bidder] SVS missing data: node=/one, low=3, high=3
+1764664339.410169 DEBUG: [kua.bidder] SVS missing data: node=/master, low=8, high=8
+1764664339.412808 DEBUG: [kua.bidder] SVS missing data: node=/four, low=4, high=4
+1764664339.414764 DEBUG: [kua.bidder] SVS missing data: node=/master, low=9, high=10
+1764664339.416481 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #2
+1764664339.416527 DEBUG: [kua.bidder] RECV_AUCTION for #3 AID 2721496436
+1764664339.416532 DEBUG: [kua.bidder] PLACE_BID for #3 AID 2721496436 $5085
+1764664339.417891 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=4, high=4
+1764664339.417915 DEBUG: [kua.bidder] SVS missing data: node=/two, low=4, high=4
+1764664366.614382 DEBUG: [kua.bidder] SVS missing data: node=/six, low=4, high=4
+1764664367.025596 DEBUG: [kua.bidder] SVS missing data: node=/four, low=5, high=5
+1764664367.038923 DEBUG: [kua.bidder] SVS missing data: node=/three, low=5, high=5
+1764664367.110253 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=4, high=4
+1764664367.112152 DEBUG: [kua.bidder] SVS missing data: node=/one, low=4, high=4
+1764664367.115105 DEBUG: [kua.bidder] SVS missing data: node=/master, low=11, high=11
+1764664367.120830 DEBUG: [kua.bidder] SVS missing data: node=/six, low=5, high=5
+1764664367.122895 DEBUG: [kua.bidder] SVS missing data: node=/master, low=12, high=13
+1764664367.123563 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #3
+1764664367.124656 DEBUG: [kua.bidder] RECV_AUCTION for #4 AID 2443452002
+1764664367.124663 DEBUG: [kua.bidder] PLACE_BID for #4 AID 2443452002 $5005
+1764664367.125594 DEBUG: [kua.bidder] SVS missing data: node=/two, low=5, high=5
+1764664367.125623 DEBUG: [kua.bidder] SVS missing data: node=/four, low=6, high=6
+1764664367.125640 DEBUG: [kua.bidder] SVS missing data: node=/three, low=6, high=6
+1764664367.125657 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=5, high=5
+1764664395.345237 DEBUG: [kua.bidder] SVS missing data: node=/six, low=6, high=6
+1764664395.728809 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=5, high=5
+1764664395.737468 DEBUG: [kua.bidder] SVS missing data: node=/one, low=5, high=5
+1764664395.748518 DEBUG: [kua.bidder] SVS missing data: node=/master, low=14, high=14
+1764664395.760015 DEBUG: [kua.bidder] SVS missing data: node=/two, low=6, high=6
+1764664395.764119 DEBUG: [kua.bidder] SVS missing data: node=/master, low=15, high=16
+1764664395.766055 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #4
+1764664395.766072 DEBUG: [kua.bidder] RECV_AUCTION for #5 AID 3472416572
+1764664395.766074 DEBUG: [kua.bidder] PLACE_BID for #5 AID 3472416572 $5037
+1764664395.766197 DEBUG: [kua.bidder] SVS missing data: node=/three, low=7, high=7
+1764664423.078181 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=6, high=6
+1764664423.115898 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=6, high=6
+1764664423.381408 DEBUG: [kua.bidder] SVS missing data: node=/six, low=7, high=7
+1764664423.549321 DEBUG: [kua.bidder] SVS missing data: node=/two, low=7, high=7
+1764664423.553841 DEBUG: [kua.bidder] SVS missing data: node=/four, low=7, high=7
+1764664423.574448 DEBUG: [kua.bidder] SVS missing data: node=/one, low=6, high=6
+1764664423.580939 DEBUG: [kua.bidder] SVS missing data: node=/master, low=17, high=17
+1764664423.584256 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=7, high=7
+1764664423.588791 DEBUG: [kua.bidder] SVS missing data: node=/master, low=18, high=19
+1764664423.591780 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #5
+1764664423.591820 DEBUG: [kua.bidder] RECV_AUCTION for #6 AID 3151575490
+1764664423.591830 DEBUG: [kua.bidder] PLACE_BID for #6 AID 3151575490 $5024
+1764664423.592471 DEBUG: [kua.bidder] SVS missing data: node=/three, low=8, high=8
+1764664450.839389 DEBUG: [kua.bidder] SVS missing data: node=/one, low=7, high=7
+1764664451.141409 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=8, high=8
+1764664451.324925 DEBUG: [kua.bidder] SVS missing data: node=/six, low=8, high=8
+1764664451.331139 DEBUG: [kua.bidder] SVS missing data: node=/four, low=8, high=8
+1764664451.336615 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=7, high=7
+1764664451.345945 DEBUG: [kua.bidder] SVS missing data: node=/two, low=8, high=8
+1764664451.354673 DEBUG: [kua.bidder] SVS missing data: node=/master, low=20, high=20
+1764664451.356857 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=8, high=8
+1764664451.358914 DEBUG: [kua.bidder] SVS missing data: node=/master, low=21, high=22
+1764664451.359847 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #6
+1764664451.359877 DEBUG: [kua.bidder] RECV_AUCTION for #7 AID 1924262068
+1764664451.359879 DEBUG: [kua.bidder] PLACE_BID for #7 AID 1924262068 $5028
+1764664451.362851 DEBUG: [kua.bidder] SVS missing data: node=/four, low=9, high=9
+1764664451.362891 DEBUG: [kua.bidder] SVS missing data: node=/one, low=8, high=8
+1764664478.496385 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=9, high=9
+1764664478.673827 DEBUG: [kua.bidder] SVS missing data: node=/two, low=9, high=9
+1764664478.980575 DEBUG: [kua.bidder] SVS missing data: node=/six, low=9, high=9
+1764664478.993395 DEBUG: [kua.bidder] SVS missing data: node=/three, low=9, high=9
+1764664478.994845 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=9, high=9
+1764664478.998040 DEBUG: [kua.bidder] SVS missing data: node=/master, low=23, high=23
+1764664479.001504 DEBUG: [kua.bidder] SVS missing data: node=/one, low=9, high=9
+1764664479.004265 DEBUG: [kua.bidder] SVS missing data: node=/master, low=24, high=24
+1764664479.004830 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #7

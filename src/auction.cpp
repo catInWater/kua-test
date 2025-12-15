@@ -3,6 +3,7 @@
 #include <ndn-cxx/encoding/encoder.hpp>
 #include <ndn-svs/version-vector.hpp>
 
+
 namespace kua {
 
 AuctionMessage::AuctionMessage(Type _messageType,
@@ -27,12 +28,18 @@ AuctionMessage::wireEncode() const
     totalLength += valLength; \
   }
 
-#define K_ENCODE_BLK(VAR_V, TLV_V) {\
-    size_t valLength = enc.prependBlock(VAR_V); \
+  #define K_ENCODE_BLK(VAR_V, TLV_V) {\
+    size_t valLength = enc.prependBytes(ndn::span<const uint8_t>(VAR_V.data(), VAR_V.size())); \
     totalLength += enc.prependVarNumber(valLength); \
     totalLength += enc.prependVarNumber(TLV_V); \
     totalLength += valLength; \
   }
+// #define K_ENCODE_BLK(VAR_V, TLV_V) {\
+//     size_t valLength = enc.prependBlock(VAR_V); \
+//     totalLength += enc.prependVarNumber(valLength); \
+//     totalLength += enc.prependVarNumber(TLV_V); \
+//     totalLength += valLength; \
+//   }
 
   if (messageType == Type::Bid)
     K_ENCODE_NNI(bidAmount, tlv::AuctionBidAmount);

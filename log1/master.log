@@ -1,0 +1,100 @@
+1764655399.859927  INFO: [kua.nodewatcher] Constructing NodeWatcher
+1764655399.863938  INFO: [kua.bidder] Constructing Bidder
+1764655399.865119  INFO: [kua.master] Constructing Master
+1764655402.865392 DEBUG: [kua.master] Initializing Master
+1764655402.865444  INFO: [kua.master] Starting auction for #0 AID 3164204871
+1764655402.870804 DEBUG: [kua.master] RECV_BID from /six for #0 AID 3164204871 $10033
+1764655402.876604 DEBUG: [kua.master] RECV_BID from /five for #0 AID 3164204871 $10035
+1764655430.123552 DEBUG: [kua.master] RECV_BID from /three for #0 AID 3164204871 $10017
+1764655430.394300 DEBUG: [kua.master] RECV_BID from /one for #0 AID 3164204871 $10094
+1764655430.551293 DEBUG: [kua.master] RECV_BID from /eight for #0 AID 3164204871 $10014
+1764655430.671037 DEBUG: [kua.master] RECV_BID from /two for #0 AID 3164204871 $10017
+1764655430.671066 DEBUG: [kua.master] RECV_BID from /four for #0 AID 3164204871 $10065
+1764655430.671074 DEBUG: [kua.master] RECV_BID from /seven for #0 AID 3164204871 $10095
+1764655430.671076  INFO: [kua.master] /seven won #0 for 10095
+1764655430.671249  INFO: [kua.master] /one won #0 for 10094
+1764655430.671301  INFO: [kua.master] /four won #0 for 10065
+1764655455.872433  INFO: [kua.master] Starting auction for #1 AID 3037349827
+1764655455.880835 DEBUG: [kua.master] RECV_BID from /one for #1 AID 3037349827 $5086
+1764655455.881033 DEBUG: [kua.master] RECV_BID from /two for #1 AID 3037349827 $10071
+1764655455.885425 DEBUG: [kua.master] RECV_BID from /eight for #1 AID 3037349827 $10042
+1764655483.687503 DEBUG: [kua.master] RECV_BID from /six for #1 AID 3037349827 $10045
+1764655483.688306 DEBUG: [kua.master] RECV_BID from /seven for #1 AID 3037349827 $5039
+1764655483.688392 DEBUG: [kua.master] RECV_BID from /five for #1 AID 3037349827 $10049
+1764655483.688417 DEBUG: [kua.master] RECV_BID from /three for #1 AID 3037349827 $10099
+1764655483.689297 DEBUG: [kua.master] RECV_BID from /four for #1 AID 3037349827 $5077
+1764655483.689322  INFO: [kua.master] /three won #1 for 10099
+1764655483.689551  INFO: [kua.master] /two won #1 for 10071
+1764655483.689722  INFO: [kua.master] /five won #1 for 10049
+1764655508.880199  INFO: [kua.master] Starting auction for #2 AID 2869900054
+1764655508.892463 DEBUG: [kua.master] RECV_BID from /one for #2 AID 2869900054 $5038
+1764655508.892555 DEBUG: [kua.master] RECV_BID from /eight for #2 AID 2869900054 $10088
+1764655508.894183 DEBUG: [kua.master] RECV_BID from /four for #2 AID 2869900054 $5057
+1764655508.894245 DEBUG: [kua.master] RECV_BID from /seven for #2 AID 2869900054 $5034
+1764655536.676279 DEBUG: [kua.master] RECV_BID from /three for #2 AID 2869900054 $5017
+1764655537.105607 DEBUG: [kua.master] RECV_BID from /five for #2 AID 2869900054 $5057
+1764655537.125793 DEBUG: [kua.master] RECV_BID from /two for #2 AID 2869900054 $5017
+1764655537.140737 DEBUG: [kua.master] RECV_BID from /six for #2 AID 2869900054 $10035
+1764655537.140776  INFO: [kua.master] /eight won #2 for 10088
+1764655537.140982  INFO: [kua.master] /six won #2 for 10035
+1764655537.141129  INFO: [kua.master] /five won #2 for 5057
+1764655561.889161  INFO: [kua.master] Starting auction for #3 AID 2106383968
+1764655561.902616 DEBUG: [kua.master] RECV_BID from /seven for #3 AID 2106383968 $5057
+1764655561.902693 DEBUG: [kua.master] RECV_BID from /one for #3 AID 2106383968 $5061
+1764655561.902713 DEBUG: [kua.master] RECV_BID from /two for #3 AID 2106383968 $5014
+1764655561.902725 DEBUG: [kua.master] RECV_BID from /four for #3 AID 2106383968 $5026
+1764655561.902736 DEBUG: [kua.master] RECV_BID from /eight for #3 AID 2106383968 $5050
+1764655591.155295 DEBUG: [kua.master] RECV_BID from /three for #3 AID 2106383968 $5086
+1764655591.155399 DEBUG: [kua.master] RECV_BID from /five for #3 AID 2106383968 $3427
+1764655591.156201 DEBUG: [kua.master] RECV_BID from /six for #3 AID 2106383968 $5048
+1764655591.156244  INFO: [kua.master] /three won #3 for 5086
+1764655591.156482  INFO: [kua.master] /one won #3 for 5061
+1764655591.156606  INFO: [kua.master] /seven won #3 for 5057
+1764655614.898197  INFO: [kua.master] Starting auction for #4 AID 1509115666
+1764655614.902795 DEBUG: [kua.master] RECV_BID from /one for #4 AID 1509115666 $3401
+1764655614.902879 DEBUG: [kua.master] RECV_BID from /four for #4 AID 1509115666 $5012
+1764655614.904150 DEBUG: [kua.master] RECV_BID from /seven for #4 AID 1509115666 $3424
+1764655642.470479 DEBUG: [kua.master] RECV_BID from /three for #4 AID 1509115666 $3388
+1764655642.889592 DEBUG: [kua.master] RECV_BID from /six for #4 AID 1509115666 $5007
+1764655642.928149 DEBUG: [kua.master] RECV_BID from /two for #4 AID 1509115666 $5061
+1764655642.973895 DEBUG: [kua.master] RECV_BID from /five for #4 AID 1509115666 $3433
+1764655642.973977 DEBUG: [kua.master] RECV_BID from /eight for #4 AID 1509115666 $5063
+1764655642.973985  INFO: [kua.master] /eight won #4 for 5063
+1764655642.974254  INFO: [kua.master] /two won #4 for 5061
+1764655642.974381  INFO: [kua.master] /four won #4 for 5012
+1764655667.911363  INFO: [kua.master] Starting auction for #5 AID 2306668037
+1764655667.923445 DEBUG: [kua.master] RECV_BID from /one for #5 AID 2306668037 $3406
+1764655667.924851 DEBUG: [kua.master] RECV_BID from /six for #5 AID 2306668037 $5071
+1764655696.300387 DEBUG: [kua.master] RECV_BID from /two for #5 AID 2306668037 $3408
+1764655696.608549 DEBUG: [kua.master] RECV_BID from /seven for #5 AID 2306668037 $3373
+1764655696.795919 DEBUG: [kua.master] RECV_BID from /three for #5 AID 2306668037 $3381
+1764655696.801123 DEBUG: [kua.master] RECV_BID from /four for #5 AID 2306668037 $3355
+1764655696.801269 DEBUG: [kua.master] RECV_BID from /eight for #5 AID 2306668037 $3416
+1764655696.803104 DEBUG: [kua.master] RECV_BID from /five for #5 AID 2306668037 $3432
+1764655696.803142  INFO: [kua.master] /six won #5 for 5071
+1764655696.803391  INFO: [kua.master] /five won #5 for 3432
+1764655696.803507  INFO: [kua.master] /eight won #5 for 3416
+1764655720.927986  INFO: [kua.master] Starting auction for #6 AID 3034745946
+1764655720.933990 DEBUG: [kua.master] RECV_BID from /two for #6 AID 3034745946 $3395
+1764655720.948143 DEBUG: [kua.master] RECV_BID from /four for #6 AID 3034745946 $3394
+1764655747.986179 DEBUG: [kua.master] RECV_BID from /seven for #6 AID 3034745946 $3425
+1764655748.022235 DEBUG: [kua.master] RECV_BID from /six for #6 AID 3034745946 $3433
+1764655748.477400 DEBUG: [kua.master] RECV_BID from /one for #6 AID 3034745946 $3378
+1764655748.484466 DEBUG: [kua.master] RECV_BID from /eight for #6 AID 3034745946 $2569
+1764655748.489792 DEBUG: [kua.master] RECV_BID from /three for #6 AID 3034745946 $3356
+1764655748.491622 DEBUG: [kua.master] RECV_BID from /five for #6 AID 3034745946 $2535
+1764655748.491666  INFO: [kua.master] /six won #6 for 3433
+1764655748.491926  INFO: [kua.master] /seven won #6 for 3425
+1764655748.492466  INFO: [kua.master] /two won #6 for 3395
+1764655773.940066  INFO: [kua.master] Starting auction for #7 AID 262175431
+1764655773.954481 DEBUG: [kua.master] RECV_BID from /four for #7 AID 262175431 $3338
+1764655773.954604 DEBUG: [kua.master] RECV_BID from /three for #7 AID 262175431 $3417
+1764655773.954649 DEBUG: [kua.master] RECV_BID from /two for #7 AID 262175431 $2571
+1764655773.955615 DEBUG: [kua.master] RECV_BID from /one for #7 AID 262175431 $3340
+1764655802.215954 DEBUG: [kua.master] RECV_BID from /six for #7 AID 262175431 $2533
+1764655802.339054 DEBUG: [kua.master] RECV_BID from /seven for #7 AID 262175431 $2515
+1764655802.470583 DEBUG: [kua.master] RECV_BID from /five for #7 AID 262175431 $2568
+1764655802.494986 DEBUG: [kua.master] RECV_BID from /eight for #7 AID 262175431 $2555
+1764655802.495110  INFO: [kua.master] /three won #7 for 3417
+1764655802.495323  INFO: [kua.master] /one won #7 for 3340
+1764655802.495407  INFO: [kua.master] /four won #7 for 3338

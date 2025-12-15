@@ -19,6 +19,6 @@ struct ConfigBundle
 
 // Config options that need to go into config file
 #define MASTER_PREFIX "/master"
-#define NUM_BUCKETS 16
+#define NUM_BUCKETS 4
 #define NUM_REPLICA 3
-#define AUCTION_TIME_LIMIT 5
+#define AUCTION_TIME_LIMIT 100

@@ -1,0 +1,136 @@
+1764948031.166514  INFO: [kua.nodewatcher] Constructing NodeWatcher
+1764948031.171711  INFO: [kua.bidder] Constructing Bidder
+1764948031.171870 DEBUG: [kua.bidder] Initializing Bidder
+1764948034.273955 DEBUG: [kua.bidder] SVS missing data: node=/master, low=1, high=1
+1764948034.275338 DEBUG: [kua.bidder] RECV_AUCTION for #0 AID 3123450526
+1764948034.275356 DEBUG: [kua.bidder] PLACE_BID for #0 AID 3123450526 $10008
+1764948034.276727 DEBUG: [kua.bidder] SVS missing data: node=/two, low=1, high=1
+1764948063.103949 DEBUG: [kua.bidder] SVS missing data: node=/one, low=1, high=1
+1764948063.395285 DEBUG: [kua.bidder] SVS missing data: node=/three, low=1, high=1
+1764948063.397962 DEBUG: [kua.bidder] SVS missing data: node=/master, low=2, high=4
+1764948063.398269  INFO: [kua.bidder] Won auction for #0
+1764948063.398678  INFO: [kua.bidder] Should have workers for #0
+1764948063.399732 DEBUG: [kua.bidder] SVS missing data: node=/one, low=2, high=2
+1764948091.111346 DEBUG: [kua.bidder] SVS missing data: node=/two, low=2, high=2
+1764948091.149200 DEBUG: [kua.bidder] SVS missing data: node=/master, low=5, high=6
+1764948091.149473 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #0
+1764948091.149478 DEBUG: [kua.bidder] Confirmed node for #0 /one
+1764948091.149480 DEBUG: [kua.bidder] Confirmed node for #0 /two
+1764948091.149482 DEBUG: [kua.bidder] Confirmed node for #0 /four
+1764948091.150118  INFO: [kua.worker] Constructing worker for #0 /four
+1764948091.153179 DEBUG: [kua.bidder] RECV_AUCTION for #1 AID 4127212144
+1764948091.153184 DEBUG: [kua.bidder] PLACE_BID for #1 AID 4127212144 $5025
+1764948091.155012 DEBUG: [kua.bidder] SVS missing data: node=/two, low=3, high=3
+1764948091.155319 DEBUG: [kua.bidder] SVS missing data: node=/three, low=2, high=2
+1764948091.158209 ERROR: [kua.worker] ERROR: Failed to register prefix '/four/%00' with the local forwarder (authorization rejected)
+1764948091.158246 ERROR: [kua.worker] ERROR: Failed to register prefix '/kua/%00' with the local forwarder (authorization rejected)
+1764948120.261513 DEBUG: [kua.bidder] SVS missing data: node=/one, low=3, high=3
+1764948120.265380 DEBUG: [kua.bidder] SVS missing data: node=/master, low=7, high=9
+1764948120.267850 DEBUG: [kua.bidder] SVS missing data: node=/one, low=4, high=4
+1764948148.403843 DEBUG: [kua.bidder] SVS missing data: node=/three, low=3, high=3
+1764948148.636778 DEBUG: [kua.bidder] SVS missing data: node=/two, low=4, high=4
+1764948148.639068 DEBUG: [kua.bidder] SVS missing data: node=/master, low=10, high=11
+1764948148.641841 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #1
+1764948148.641859 DEBUG: [kua.bidder] RECV_AUCTION for #2 AID 3379319517
+1764948148.641861 DEBUG: [kua.bidder] PLACE_BID for #2 AID 3379319517 $5001
+1764948148.646051 DEBUG: [kua.bidder] SVS missing data: node=/two, low=5, high=5
+1764948177.599735 DEBUG: [kua.bidder] SVS missing data: node=/one, low=5, high=5
+1764948177.599799 DEBUG: [kua.bidder] SVS missing data: node=/three, low=4, high=4
+1764948177.603630 DEBUG: [kua.bidder] SVS missing data: node=/master, low=12, high=14
+1764948177.604243  INFO: [kua.bidder] Won auction for #2
+1764948177.604461  INFO: [kua.bidder] Should have workers for #0 #2
+1764948208.405360 DEBUG: [kua.bidder] SVS missing data: node=/two, low=6, high=6
+1764948208.817209 DEBUG: [kua.bidder] SVS missing data: node=/three, low=5, high=5
+1764948208.819493 DEBUG: [kua.bidder] SVS missing data: node=/master, low=15, high=16
+1764948208.821058 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #2
+1764948208.821078 DEBUG: [kua.bidder] Confirmed node for #2 /two
+1764948208.821082 DEBUG: [kua.bidder] Confirmed node for #2 /four
+1764948208.821084 DEBUG: [kua.bidder] Confirmed node for #2 /three
+1764948208.821493  INFO: [kua.worker] Constructing worker for #2 /four
+1764948208.822695 DEBUG: [kua.bidder] RECV_AUCTION for #3 AID 2467368867
+1764948208.822711 DEBUG: [kua.bidder] PLACE_BID for #3 AID 2467368867 $3355
+1764948208.824663 DEBUG: [kua.bidder] SVS missing data: node=/two, low=7, high=7
+1764948236.971701 DEBUG: [kua.bidder] SVS missing data: node=/one, low=6, high=6
+1764948236.976819 DEBUG: [kua.bidder] SVS missing data: node=/three, low=6, high=6
+1764948236.979215 DEBUG: [kua.bidder] SVS missing data: node=/master, low=17, high=19
+1764948236.980687  INFO: [kua.bidder] Won auction for #3
+1764948236.980795  INFO: [kua.bidder] Should have workers for #0 #2 #3
+1764948236.982976 DEBUG: [kua.bidder] SVS missing data: node=/one, low=7, high=7
+1764948264.771311 DEBUG: [kua.bidder] SVS missing data: node=/three, low=7, high=7
+1764948264.774662 DEBUG: [kua.bidder] SVS missing data: node=/master, low=20, high=20
+1764948264.775766 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #3
+1764948264.775781 DEBUG: [kua.bidder] Confirmed node for #3 /one
+1764948264.775785 DEBUG: [kua.bidder] Confirmed node for #3 /four
+1764948264.775788 DEBUG: [kua.bidder] Confirmed node for #3 /three
+1764948264.776365  INFO: [kua.worker] Constructing worker for #3 /four
+1764948264.783644 ERROR: [kua.worker] ERROR: Failed to register prefix '/four/%03' with the local forwarder (authorization rejected)
+1765271081.325727  INFO: [kua.nodewatcher] Constructing NodeWatcher
+1765271081.334778  INFO: [kua.bidder] Constructing Bidder
+1765271081.334999 DEBUG: [kua.bidder] Initializing Bidder
+1765271084.435847 DEBUG: [kua.bidder] SVS missing data: node=/master, low=1, high=1
+1765271084.437232 DEBUG: [kua.bidder] RECV_AUCTION for #0 AID 2952935156
+1765271084.437251 DEBUG: [kua.bidder] PLACE_BID for #0 AID 2952935156 $10098
+1765271084.439046 DEBUG: [kua.bidder] SVS missing data: node=/one, low=1, high=1
+1765271084.439117 DEBUG: [kua.bidder] SVS missing data: node=/three, low=1, high=1
+1765271114.043478 DEBUG: [kua.bidder] SVS missing data: node=/two, low=1, high=1
+1765271114.046193 DEBUG: [kua.bidder] SVS missing data: node=/master, low=2, high=4
+1765271114.046804  INFO: [kua.bidder] Won auction for #0
+1765271114.047084  INFO: [kua.bidder] Should have workers for #0
+1765271114.048765 DEBUG: [kua.bidder] SVS missing data: node=/two, low=2, high=2
+1765271143.800286 DEBUG: [kua.bidder] SVS missing data: node=/one, low=2, high=2
+1765271143.807524 DEBUG: [kua.bidder] SVS missing data: node=/master, low=5, high=6
+1765271143.808353 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #0
+1765271143.808387 DEBUG: [kua.bidder] Confirmed node for #0 /one
+1765271143.808395 DEBUG: [kua.bidder] Confirmed node for #0 /two
+1765271143.808397 DEBUG: [kua.bidder] Confirmed node for #0 /four
+1765271143.809659  INFO: [kua.worker] Constructing worker for #0 /four
+1765271143.816110 DEBUG: [kua.bidder] RECV_AUCTION for #1 AID 3634776375
+1765271143.816120 DEBUG: [kua.bidder] PLACE_BID for #1 AID 3634776375 $5092
+1765271143.816397 DEBUG: [kua.bidder] SVS missing data: node=/one, low=3, high=3
+1765271143.827857 ERROR: [kua.worker] ERROR: Failed to register prefix '/four/%00' with the local forwarder (authorization rejected)
+1765271143.827886 ERROR: [kua.worker] ERROR: Failed to register prefix '/kua/%00' with the local forwarder (authorization rejected)
+1765271173.420567 DEBUG: [kua.bidder] SVS missing data: node=/two, low=3, high=3
+1765271173.421196 DEBUG: [kua.bidder] SVS missing data: node=/three, low=2, high=2
+1765271173.424049 DEBUG: [kua.bidder] SVS missing data: node=/master, low=7, high=9
+1765271173.427699  INFO: [kua.bidder] Won auction for #1
+1765271173.427950  INFO: [kua.bidder] Should have workers for #0 #1
+1765271173.430152 DEBUG: [kua.bidder] SVS missing data: node=/three, low=3, high=3
+1765271202.729200 DEBUG: [kua.bidder] SVS missing data: node=/one, low=4, high=4
+1765271202.732525 DEBUG: [kua.bidder] SVS missing data: node=/master, low=10, high=11
+1765271202.733157 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #1
+1765271202.733168 DEBUG: [kua.bidder] Confirmed node for #1 /one
+1765271202.733172 DEBUG: [kua.bidder] Confirmed node for #1 /four
+1765271202.733175 DEBUG: [kua.bidder] Confirmed node for #1 /three
+1765271202.734522  INFO: [kua.worker] Constructing worker for #1 /four
+1765271202.741849 DEBUG: [kua.bidder] RECV_AUCTION for #2 AID 1631308571
+1765271202.741860 DEBUG: [kua.bidder] PLACE_BID for #2 AID 1631308571 $3394
+1765271202.742111 DEBUG: [kua.bidder] SVS missing data: node=/two, low=4, high=4
+1765271202.749851 ERROR: [kua.worker] ERROR: Failed to register prefix '/four/%01' with the local forwarder (authorization rejected)
+1765271231.195002 DEBUG: [kua.bidder] SVS missing data: node=/three, low=4, high=4
+1765271231.257800 DEBUG: [kua.bidder] SVS missing data: node=/one, low=5, high=5
+1765271231.261067 DEBUG: [kua.bidder] SVS missing data: node=/master, low=12, high=14
+1765271231.261652  INFO: [kua.bidder] Won auction for #2
+1765271231.261873  INFO: [kua.bidder] Should have workers for #0 #1 #2
+1765271231.263451 DEBUG: [kua.bidder] SVS missing data: node=/two, low=5, high=5
+1765271258.329870 DEBUG: [kua.bidder] SVS missing data: node=/three, low=5, high=5
+1765271258.333250 DEBUG: [kua.bidder] SVS missing data: node=/master, low=15, high=16
+1765271258.342175 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #2
+1765271258.342203 DEBUG: [kua.bidder] Confirmed node for #2 /two
+1765271258.342210 DEBUG: [kua.bidder] Confirmed node for #2 /four
+1765271258.342213 DEBUG: [kua.bidder] Confirmed node for #2 /three
+1765271258.343645  INFO: [kua.worker] Constructing worker for #2 /four
+1765271258.348143 DEBUG: [kua.bidder] RECV_AUCTION for #3 AID 3559885819
+1765271258.348158 DEBUG: [kua.bidder] PLACE_BID for #3 AID 3559885819 $2593
+1765271258.348444 DEBUG: [kua.bidder] SVS missing data: node=/three, low=6, high=6
+1765271258.348479 DEBUG: [kua.bidder] SVS missing data: node=/one, low=6, high=6
+1765271258.352810 ERROR: [kua.worker] ERROR: Failed to register prefix '/four/%02' with the local forwarder (authorization rejected)
+1765271287.492708 DEBUG: [kua.bidder] SVS missing data: node=/two, low=6, high=6
+1765271287.494847 DEBUG: [kua.bidder] SVS missing data: node=/master, low=17, high=19
+1765271287.496843 DEBUG: [kua.bidder] SVS missing data: node=/two, low=7, high=7
+1765271287.496895 DEBUG: [kua.bidder] SVS missing data: node=/one, low=7, high=7
+1765271316.294355 DEBUG: [kua.bidder] SVS missing data: node=/three, low=7, high=7
+1765271316.298655 DEBUG: [kua.bidder] SVS missing data: node=/master, low=20, high=20
+1765271316.303736 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #3
+1765271507.739638 DEBUG: [kua.worker] NEW_REQ : #2 : /four/%02/%07%17%08%05alice%08%05hello%08%0112%01%002%01%00/%07
+1765271507.739713 DEBUG: [kua.worker] NEW_REQ : #2 : /alice/hello/1/seg=0
+1765271507.739960 DEBUG: [kua.worker] FETCH0 1

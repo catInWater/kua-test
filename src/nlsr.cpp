@@ -20,7 +20,7 @@ NLSR::NLSR(ndn::security::KeyChain& keyChain, ndn::Face& face)
   : m_rng(ndn::random::getRandomNumberEngine())
   , m_face(face)
   , m_keyChain(keyChain)
-  , m_scheduler(face.getIoService())
+  , m_scheduler(face.getIoContext())
   , m_jitter(1, 100)
 {}
 

@@ -91,14 +91,17 @@ private:
     // Get bucket ID
     const auto bucketId = Bucket::idFromName(interestName);
 
-    ndn::Name hint("/kua");
+    // ndn::Name hint("/kua");
+    ndn::Name hint("/kua/15893");
     hint.appendNumber(bucketId);
     hint.appendNumber(CommandCodes::FETCH);
 
     ndn::Interest interest(interestName);
     interest.setMustBeFresh(false);
     interest.setCanBePrefix(false);
-    interest.setForwardingHint(ndn::DelegationList({{15893, hint }}));
+    
+    //* interest.setForwardingHint(ndn::DelegationList({{15893, hint }}));
+    interest.setForwardingHint(std::vector<ndn::Name>{hint});
 
     m_face.expressInterest(interest,
                           [this, interestName] (const ndn::Interest&, const ndn::Data& data) {
@@ -248,7 +251,8 @@ private:
       if (nCharsRead > 0) {
         auto data = std::make_shared<ndn::Data>(ndn::Name(name).appendSegment(m_store.size()));
         data->setFreshnessPeriod(ndn::time::seconds(10));
-        data->setContent(buffer.data(), static_cast<size_t>(nCharsRead));
+        //*data->setContent(buffer.data(), static_cast<size_t>(nCharsRead));
+        data->setContent({buffer.data(), static_cast<size_t>(nCharsRead)});
         m_store.push_back(data);
       }
     }
