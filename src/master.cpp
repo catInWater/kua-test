@@ -16,7 +16,7 @@ Master::Master(ConfigBundle& configBundle, NodeWatcher& nodeWatcher)
   , m_nodeWatcher(nodeWatcher)
   , m_rng(ndn::random::getRandomNumberEngine())
 {
-  NDN_LOG_INFO("Constructing Master");
+  NDN_LOG_INFO("构造 Master");
 
   // Initialize bucket list
   for (unsigned int i = 0; i < NUM_BUCKETS; i++)
@@ -37,12 +37,12 @@ Master::initialize()
 
   if (nodeList.size() < NUM_REPLICA)
   {
-    NDN_LOG_TRACE("Will not initialize Master without " << NUM_REPLICA << " nodes known");
+    NDN_LOG_TRACE("节点数量不足，Master 不会初始化，需至少 " << NUM_REPLICA << " 个节点");
     m_scheduler.schedule(ndn::time::milliseconds(1000), [this] { initialize(); });
     return;
   }
 
-  NDN_LOG_DEBUG("Initializing Master");
+  NDN_LOG_DEBUG("初始化 Master");
 
   m_initialized = true;
 
@@ -83,7 +83,7 @@ Master::auction(unsigned int id)
   m_currentAuctionTime = 0;
   m_currentAuctionId = m_rng();
   m_currentAuctionBucketId = id;
-  NDN_LOG_INFO("Starting auction for #" << m_currentAuctionBucketId << " AID " << m_currentAuctionId);
+  NDN_LOG_INFO("开始拍卖 bucket #" << m_currentAuctionBucketId << "，AID " << m_currentAuctionId);
 
   m_currentAuctionBids.clear();
   m_currentAuctionNumBidsExpected = m_nodeWatcher.getNodeList().size();
@@ -127,8 +127,8 @@ Master::processMessage(const ndn::Name& sender, const ndn::Data& data)
       // Count current bid
       m_currentAuctionBids.push_back(Bid { sender, msg.bidAmount });
 
-      NDN_LOG_DEBUG("RECV_BID from " << sender << " for #" << msg.bucketId <<
-                    " AID " << msg.auctionId << " $" << msg.bidAmount);
+      NDN_LOG_DEBUG("接收竞标来自 " << sender << "，bucket #" << msg.bucketId <<
+                    "，AID " << msg.auctionId << "，出价 $" << msg.bidAmount);
 
       // Check if we got all bids
       if (m_currentAuctionBids.size() == m_currentAuctionNumBidsExpected)
@@ -139,8 +139,8 @@ Master::processMessage(const ndn::Name& sender, const ndn::Data& data)
 
     case AuctionMessage::Type::WinAck:
     {
-      NDN_LOG_TRACE("RECV_WIN_ACK from " << sender << " for #" << msg.bucketId <<
-                    " AID " << msg.auctionId << " $" << msg.bidAmount);
+      NDN_LOG_TRACE("接收胜利确认来自 " << sender << "，bucket #" << msg.bucketId <<
+                    "，AID " << msg.auctionId << "，出价 $" << msg.bidAmount);
 
       // Add to confirmed hosts if pending
       auto& m = m_buckets[m_currentAuctionBucketId].pendingHosts;
@@ -171,7 +171,7 @@ Master::declareAuctionWinners()
   {
     const Bid& bid = m_currentAuctionBids[i];
 
-    NDN_LOG_INFO(bid.bidder << " won #" << m_currentAuctionBucketId << " for " << bid.amount);
+    NDN_LOG_INFO(bid.bidder << " 赢得 bucket #" << m_currentAuctionBucketId << "，出价 " << bid.amount);
 
     m_buckets[m_currentAuctionBucketId].pendingHosts[bid.bidder] = 1;
 
@@ -197,7 +197,7 @@ Master::endAuction()
   for (const auto& n : m_buckets[m_currentAuctionBucketId].confirmedHosts)
     msg.winnerList.push_back(n.first);
   m_svs->publishData(msg.wireEncode(), ndn::time::milliseconds(1000));
-  NDN_LOG_INFO("win end");
+  NDN_LOG_INFO("拍卖结束");
   m_currentAuctionId = 0;
   auction();
 }

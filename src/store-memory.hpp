@@ -2,6 +2,7 @@
 
 #include "store.hpp"
 #include <map>
+#include <vector>
 
 namespace kua {
 
@@ -29,6 +30,16 @@ public:
     {
       return nullptr;
     }
+  }
+
+  inline std::vector<ndn::Name>
+  getAllNames()
+  {
+    std::vector<ndn::Name> names;
+    names.reserve(m_map.size());
+    for (const auto& item : m_map)
+      names.push_back(item.first);
+    return names;
   }
 
 private:

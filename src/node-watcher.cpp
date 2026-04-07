@@ -15,7 +15,7 @@ NodeWatcher::NodeWatcher(ConfigBundle& configBundle)
   , m_rng(ndn::random::getRandomNumberEngine())
   , m_retxDist(3000 * 0.9, 3000 * 1.1)
 {
-  NDN_LOG_INFO("Constructing NodeWatcher");
+  NDN_LOG_INFO("构造 NodeWatcher");
 
   // Add ourselves to the node map
   m_nodeMap[m_nodePrefix] = std::chrono::system_clock::now();
@@ -29,7 +29,7 @@ NodeWatcher::NodeWatcher(ConfigBundle& configBundle)
 void
 NodeWatcher::retxHeartbeat()
 {
-  NDN_LOG_TRACE("retxHeartbeat");
+  NDN_LOG_TRACE("重传心跳");
 
   // Send heartbeat
   ndn::Name dataName(m_nodePrefix);
@@ -50,7 +50,7 @@ NodeWatcher::updateCallback(const std::vector<ndn::svs::MissingDataInfo>& missin
   auto now = std::chrono::system_clock::now();
   for (auto m : missingInfo)
   {
-    NDN_LOG_TRACE("update " << m.nodeId);
+    NDN_LOG_TRACE("更新节点 " << m.nodeId);
     m_nodeMap[m.nodeId] = now;
   }
 }

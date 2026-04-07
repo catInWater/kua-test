@@ -4,6 +4,7 @@
 
 #include <ndn-cxx/util/logger.hpp>
 #include <thread>
+#include <vector>
 
 namespace kua {
 
@@ -18,7 +19,7 @@ Worker::Worker(ConfigBundle& configBundle, const Bucket& bucket)
   , m_bucketPrefix(ndn::Name(configBundle.kuaPrefix).appendNumber(bucket.id))
   , m_bucketNodePrefix(ndn::Name(m_nodePrefix).appendNumber(bucket.id))
 {
-  NDN_LOG_INFO("Constructing worker for #" << bucket.id << " " << m_nodePrefix);
+  NDN_LOG_INFO("构造 worker #" << bucket.id << " " << m_nodePrefix);
 
   // Make NLSR controller
   nlsr = std::make_shared<NLSR>(m_keyChain, m_face);
@@ -61,12 +62,12 @@ Worker::run()
 void
 Worker::onRegisterFailed(const ndn::Name& prefix, const std::string& reason)
 {
-  NDN_LOG_ERROR("ERROR: Failed to register prefix '" << prefix
-             << "' with the local forwarder (" << reason << ")");
+  NDN_LOG_ERROR("错误：注册前缀 '" << prefix
+             << "' 到本地转发器失败（" << reason << "）");
 
   if (m_failedRegistrations >= 50) {
-    NDN_LOG_ERROR("FATAL: Too many failures to register prefix '" << prefix
-             << "' with the local forwarder (" << reason << ")");
+    NDN_LOG_ERROR("严重错误：注册前缀 '" << prefix
+             << "' 到本地转发器失败次数过多（" << reason << "）");
     m_face.shutdown();
     return;
   }
@@ -88,7 +89,7 @@ Worker::onInterest(const ndn::InterestFilter&, const ndn::Interest& interest)
   // Ignore interests from localhost
   if (ndn::Name("localhost").isPrefixOf(reqName)) return;
 
-  NDN_LOG_DEBUG("NEW_REQ : #" << m_bucket.id << " : " << reqName);
+  NDN_LOG_DEBUG("收到请求 : #" << m_bucket.id << " : " << reqName);
 
   // Command Code
   if (reqName.size() > 1 && reqName[-1].isNumber() &&
@@ -141,13 +142,13 @@ Worker::insert(const ndn::Name& dataName, const ndn::Interest& request, const ui
     // Replicate at all replicas
     m_face.expressInterest(interest, [this, request, replicaCount, dataName] (const auto&, const auto& data) {
       (*replicaCount)++;
-      NDN_LOG_TRACE("#" << m_bucket.id << " : INSERT_SUCCESS_REPLICATOR : "
-                  << data.getName() << " : REPLICA " << *replicaCount);
+      NDN_LOG_TRACE("#" << m_bucket.id << " : 插入成功副本 : "
+                  << data.getName() << " : 副本 " << *replicaCount);
 
-      // All replicas done
+      // 所有副本完成
       if ((*replicaCount) >= NUM_REPLICA)
       {
-        NDN_LOG_DEBUG("#" << m_bucket.id << " : ALL_REPLICAS : " << dataName);
+        NDN_LOG_DEBUG("#" << m_bucket.id << " : 所有副本已完成 : " << dataName);
         replyInsert(request);
       }
     }, nullptr, nullptr);
@@ -161,18 +162,31 @@ Worker::insertNoReplicate(const ndn::Name& dataName, const ndn::Interest& reques
   if (commandCode & CommandCodes::IS_RANGE)
     return insertNoReplicateRange(dataName, request, commandCode);
 
-  // Request data
+  bool isMigration = (commandCode & CommandCodes::MIGRATE) != 0;
+
+  if (isMigration) {
+    NDN_LOG_INFO("接收数据: " << dataName << " 到 bucket #" << m_bucket.id);
+  }
+
+  // 请求原始数据
   ndn::Interest interest(dataName);
 
   interest.setCanBePrefix(false);
   interest.setMustBeFresh(false);
   interest.setInterestLifetime(request.getInterestLifetime());
 
-  m_face.expressInterest(interest, [this, request] (const auto&, const auto& data) {
-    if (store->put(data))
+  m_face.expressInterest(interest, [this, request, dataName, isMigration] (const auto&, const auto& data) {
+    if (store->put(data)) {
+      if (isMigration) {
+        NDN_LOG_INFO("接收数据并存储成功: " << dataName << " 到 bucket #" << m_bucket.id);
+      }
       replyInsert(request);
-    else
-      NDN_LOG_TRACE("#" << m_bucket.id << " : FAILED_STORE_PUT : " << data.getName());
+    } else {
+      if (isMigration) {
+        NDN_LOG_ERROR("接收数据存储失败: " << dataName << " 到 bucket #" << m_bucket.id << " 失败");
+      }
+      NDN_LOG_TRACE("#" << m_bucket.id << " : 存储失败 : " << data.getName());
+    }
   }, nullptr, nullptr);
 }
 
@@ -204,12 +218,12 @@ Worker::insertNoReplicateRange(const ndn::Name& dataName, const ndn::Interest& r
     m_face.expressInterest(interest,
       [this, fetchedCount, endSeg, startSeg, request] (const auto&, const auto& data)
     {
-      NDN_LOG_DEBUG("FETCH" << *fetchedCount << " " << endSeg - startSeg + 1);
+      NDN_LOG_DEBUG("FETCH " << *fetchedCount << " / " << endSeg - startSeg + 1);
 
       if (store->put(data))
         (*fetchedCount)++;
       else
-        NDN_LOG_TRACE("#" << m_bucket.id << " : FAILED_STORE_PUT : " << data.getName());
+        NDN_LOG_TRACE("#" << m_bucket.id << " : 存储失败 : " << data.getName());
 
       if (*fetchedCount == endSeg - startSeg + 1)
         replyInsert(request);
@@ -220,13 +234,91 @@ Worker::insertNoReplicateRange(const ndn::Name& dataName, const ndn::Interest& r
 void
 Worker::replyInsert(const ndn::Interest& request)
 {
-  NDN_LOG_TRACE("#" << m_bucket.id << " : INSERT_SUCCESS_REPLY : " << request);
+  NDN_LOG_TRACE("#" << m_bucket.id << " : 插入成功回复 : " << request);
   ndn::Data response(request.getName());
   response.setFreshnessPeriod(ndn::time::seconds(10));
   ndn::security::SigningInfo info;
   info.setSha256Signing();
   m_keyChain.sign(response, info);
   m_face.put(response);
+}
+
+void
+Worker::migrateToOwners(const std::vector<ndn::Name>& owners)
+{
+  auto names = store->getAllNames();
+  if (names.empty() || owners.empty())
+  {
+    NDN_LOG_INFO("bucket #" << m_bucket.id << " 无需迁移数据（names: " << names.size() 
+                << ", owners: " << owners.size() << "）");
+    return;
+  }
+
+  const auto migrationDelay = ndn::time::seconds(5);
+  NDN_LOG_INFO("等待 " << migrationDelay.count() << " 秒后开始迁移 bucket #" << m_bucket.id << " 的 " << names.size() << " 条数据到 " 
+               << owners.size() << " 个新所有者");
+
+  m_scheduler.schedule(migrationDelay, [this, owners, names] {
+    NDN_LOG_INFO("开始迁移 bucket #" << m_bucket.id << " 的 " << names.size() << " 条数据到 " 
+                 << owners.size() << " 个新所有者");
+
+    size_t totalMigrations = 0;
+    for (const auto& owner : owners)
+    {
+      if (owner == m_nodePrefix)
+      {
+        NDN_LOG_DEBUG("跳过自己作为所有者: " << owner);
+        continue;
+      }
+
+      NDN_LOG_INFO("迁移 bucket #" << m_bucket.id << " 到所有者: " << owner << " (" << names.size() << " 条数据)");
+      
+      for (const auto& dataName : names)
+      {
+        ndn::Name interestName(owner);
+        interestName.appendNumber(m_bucket.id);
+        interestName.append(dataName.wireEncode());
+        interestName.appendNumber(CommandCodes::INSERT | CommandCodes::NO_REPLICATE | CommandCodes::MIGRATE);
+
+        ndn::Interest interest(interestName);
+        interest.setCanBePrefix(false);
+        interest.setMustBeFresh(true);
+
+        ndn::security::SigningInfo interestSigningInfo;
+        interestSigningInfo.setSha256Signing();
+        interestSigningInfo.setSignedInterestFormat(ndn::security::SignedInterestFormat::V03);
+        m_keyChain.sign(interest, interestSigningInfo);
+
+        totalMigrations++;
+        NDN_LOG_DEBUG("发送迁移请求 #" << totalMigrations << ": " << dataName << " -> " << owner);
+
+        m_face.expressInterest(interest,
+          [this, dataName, owner, totalMigrations] (const auto&, const auto& data) {
+            NDN_LOG_INFO("迁移成功 #" << totalMigrations << ": " << dataName << " 已发送到 " << owner);
+          },
+          [this, dataName, owner, totalMigrations] (const auto&, const auto&) {
+            NDN_LOG_ERROR("迁移失败 #" << totalMigrations << ": " << dataName << " 发送到 " << owner << " 失败");
+          },
+          nullptr);
+      }
+    }
+    
+    NDN_LOG_INFO("bucket #" << m_bucket.id << " 迁移完成，共发送 " << totalMigrations << " 条数据");
+  });
+}
+
+void
+Worker::stop()
+{
+  auto names = store->getAllNames();
+  NDN_LOG_INFO("停止 worker #" << m_bucket.id << " (" << m_nodePrefix << ")，包含 " << names.size() << " 条数据");
+  if (!names.empty()) {
+    NDN_LOG_INFO("worker #" << m_bucket.id << " 停止前数据列表:");
+    for (const auto& name : names) {
+      NDN_LOG_INFO("  - " << name);
+    }
+  }
+  m_face.shutdown();
 }
 
 void

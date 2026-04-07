@@ -79,7 +79,7 @@ public:
       if (data)
         dataSize += data->getContent().size();
 
-    std::cerr << "Processed " << dataSize / 1000 << "KB in " << ms_int.count() << "ms" << std::endl;
+    std::cerr << "已处理 " << dataSize / 1000 << "KB，耗时 " << ms_int.count() << "ms" << std::endl;
   }
 
 private:
@@ -106,7 +106,7 @@ private:
     m_face.expressInterest(interest,
                           [this, interestName] (const ndn::Interest&, const ndn::Data& data) {
 #ifdef VERBOSE
-                            std::cerr << "FETCH_SUCCESS=" << interestName << std::endl;
+                            std::cerr << "FETCH 成功=" << interestName << std::endl;
 #endif
                             pending--;
                             done++;
@@ -136,7 +136,7 @@ private:
 
                             if (done == m_store.size())
                             {
-                              std::cerr << "FETCHED ALL SEGMENTS" << std::endl;
+                              std::cerr << "已获取全部分段" << std::endl;
                               for (const auto& dptr : m_store)
                               {
                                 const auto content = dptr->getContent();
@@ -145,12 +145,12 @@ private:
                             }
                           },
                           [this, interestName] (const ndn::Interest&, const ndn::lp::Nack& nack) {
-                            std::cerr << "FETCH_NACK=" << interestName << std::endl;
+                            std::cerr << "FETCH 拒绝=" << interestName << std::endl;
                             pending--;
                           },
                           [this, interestName] (const ndn::Interest& interest) {
                             pending--;
-                            std::cerr << "FETCH_RETRY=" << interestName << std::endl;
+                            std::cerr << "FETCH 重试=" << interestName << std::endl;
                             this->sendFETCH(interestName);
                           });
   }
@@ -231,11 +231,11 @@ private:
                              this->insertStore();
                            },
                            [this, count] (const ndn::Interest& interest, const ndn::lp::Nack& nack) {
-                              std::cerr << "INSERT_NACK CMD=" << interest.getName() << std::endl;
+                              std::cerr << "INSERT 拒绝 CMD=" << interest.getName() << std::endl;
                               pending -= count;
                            },
                            [this] (const ndn::Interest& interest) {
-                              std::cerr << "INSERT_RETRY CMD=" << interest.getName() << std::endl;
+                              std::cerr << "INSERT 重试 CMD=" << interest.getName() << std::endl;
                               this->sendRangeInsert(interest);
                            });
   }
@@ -269,25 +269,25 @@ private:
       m_keyChain.sign(*data);
     }
 
-    std::cerr << "Created " << m_store.size() << " chunks for prefix " << name << "\n";
+    std::cerr << "已为前缀 " << name << " 创建 " << m_store.size() << " 个 chunk\n";
   }
 
   void
   onData(const ndn::Interest&, const ndn::Data& data) const
   {
-    std::cerr << "Received Data " << data << std::endl;
+    std::cerr << "已接收数据 " << data << std::endl;
   }
 
   void
   onNack(const ndn::Interest&, const ndn::lp::Nack& nack) const
   {
-    std::cerr << "Received Nack with reason " << nack.getReason() << std::endl;
+    std::cerr << "已接收 Nack，原因 " << nack.getReason() << std::endl;
   }
 
   void
   onTimeout(const ndn::Interest& interest) const
   {
-    std::cerr << "Timeout for " << interest << std::endl;
+    std::cerr << "Interest 超时：" << interest << std::endl;
   }
 
 public:
@@ -322,7 +322,7 @@ main(int argc, char** argv)
     return 0;
   }
   catch (const std::exception& e) {
-    std::cerr << "ERROR: " << e.what() << std::endl;
+    std::cerr << "错误：" << e.what() << std::endl;
     return 1;
   }
 }

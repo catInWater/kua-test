@@ -1471,3 +1471,313 @@
 1775227114.962733 DEBUG: [kua.worker] #0 : ALL_REPLICAS : /ndn/rand1m/seg=0/seg=49
 1775227114.962793 DEBUG: [kua.worker] #0 : ALL_REPLICAS : /ndn/rand1m/seg=50/seg=99
 1775227114.962845 DEBUG: [kua.worker] #0 : ALL_REPLICAS : /ndn/rand1m/seg=100/seg=131
+1775547521.966456  INFO: [kua.nodewatcher] Constructing NodeWatcher
+1775547521.971021  INFO: [kua.bidder] Constructing Bidder
+1775547526.971191 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547526.971360  INFO: [kua.bidder] Local node became owner of bucket 0
+1775547526.972369  INFO: [kua.worker] Constructing worker for #0 /one
+1775547526.976513  INFO: [kua.bidder] Local node became owner of bucket 1
+1775547526.977450  INFO: [kua.worker] Constructing worker for #1 /one
+1775547526.980951  INFO: [kua.bidder] Local node became owner of bucket 2
+1775547526.981784  INFO: [kua.worker] Constructing worker for #2 /one
+1775547526.985112  INFO: [kua.bidder] Local node became owner of bucket 3
+1775547526.986262  INFO: [kua.worker] Constructing worker for #3 /one
+1775547529.994642 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547530.000370 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547530.000502 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547530.000533 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547530.000549 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547530.005813 DEBUG: [kua.worker] FETCH0 1
+1775547532.994859 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547534.000349 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547534.000552 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547534.000611 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547534.000641 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547534.001033 DEBUG: [kua.worker] FETCH0 1
+1775547535.995119 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547538.001347 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547538.001544 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547538.001609 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547538.001638 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547538.001963 DEBUG: [kua.worker] FETCH0 1
+1775547538.995473 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547541.995753 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547542.001896 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547542.002076 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547542.002137 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547542.002164 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547542.002618 DEBUG: [kua.worker] FETCH0 1
+1775547544.996045 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547546.026071 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547546.026157 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547546.026174 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547546.026194 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547546.026266 DEBUG: [kua.worker] FETCH0 1
+1775547547.996319 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547550.026662 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547550.026751 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547550.026765 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547550.026773 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547550.027438 DEBUG: [kua.worker] FETCH0 1
+1775547550.996583 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547553.996929 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547554.027090 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547554.027331 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547554.027399 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547554.027427 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547554.027703 DEBUG: [kua.worker] FETCH0 1
+1775547556.997214 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547558.027650 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547558.027851 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547558.027916 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547558.027941 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547558.028343 DEBUG: [kua.worker] FETCH0 1
+1775547559.997545 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547562.028671 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547562.028895 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547562.028947 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547562.029036 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547562.029556 DEBUG: [kua.worker] FETCH0 1
+1775547562.997823 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547565.998090 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547566.029957 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547566.030818 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547566.030892 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547566.030918 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547566.032431 DEBUG: [kua.worker] FETCH0 1
+1775547568.998401 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547570.029495 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547570.029653 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547570.029709 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547570.029734 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547570.029910 DEBUG: [kua.worker] FETCH0 1
+1775547571.999437 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547574.030450 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547574.030649 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547574.030721 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547574.030782 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547574.031114 DEBUG: [kua.worker] FETCH0 1
+1775547574.999755 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547578.000061 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547578.030800 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547578.031010 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547578.031219 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547578.031324 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547578.031750 DEBUG: [kua.worker] FETCH0 1
+1775547581.000365 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547582.031478 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547582.031694 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547582.031760 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547582.031787 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547582.032047 DEBUG: [kua.worker] FETCH0 1
+1775547584.000679 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547586.032192 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547586.032471 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547586.032542 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547586.032569 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547586.032808 DEBUG: [kua.worker] FETCH0 1
+1775547587.011060 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547590.011315 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547590.032595 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547590.032780 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547590.032850 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547590.032879 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547590.033159 DEBUG: [kua.worker] FETCH0 1
+1775547593.011701 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547594.033748 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547594.033897 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547594.033915 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547594.033926 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547594.034028 DEBUG: [kua.worker] FETCH0 1
+1775547596.012045 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547598.034581 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547598.034766 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547598.034831 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547598.034856 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547598.035316 DEBUG: [kua.worker] FETCH0 1
+1775547599.012339 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547602.012577 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547602.035480 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547602.035714 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547602.035756 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547602.035783 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547602.036255 DEBUG: [kua.worker] FETCH0 1
+1775547605.012796 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547606.036114 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547606.036363 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547606.036429 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547606.036453 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547606.036811 DEBUG: [kua.worker] FETCH0 1
+1775547608.013029 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547610.037319 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547610.037539 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547610.037577 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547610.037599 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547610.038471 DEBUG: [kua.worker] FETCH0 1
+1775547611.013272 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547614.013570 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547614.037298 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547614.037538 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547614.037597 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547614.037628 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547614.037902 DEBUG: [kua.worker] FETCH0 1
+1775547617.013821 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547618.039191 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547618.039544 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547618.039603 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547618.039673 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547618.040357 DEBUG: [kua.worker] FETCH0 1
+1775547620.014129 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547622.040492 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547622.040671 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547622.040733 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547622.040758 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547622.041158 DEBUG: [kua.worker] FETCH0 1
+1775547623.014525 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547626.014768 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547626.040417 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547626.040614 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547626.040660 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547626.040693 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547626.041384 DEBUG: [kua.worker] FETCH0 1
+1775547629.015565 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547630.040869 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547630.041080 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547630.041142 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547630.041167 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547630.041402 DEBUG: [kua.worker] FETCH0 1
+1775547632.015795 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547634.042133 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547634.042370 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547634.042407 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547634.042431 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547634.043573 DEBUG: [kua.worker] FETCH0 1
+1775547635.016166 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547638.017397 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547638.043498 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547638.043655 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547638.043686 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547638.043705 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547638.044294 DEBUG: [kua.worker] FETCH0 1
+1775547641.018471 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547642.044112 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547642.044362 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547642.044427 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547642.044451 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547642.044638 DEBUG: [kua.worker] FETCH0 1
+1775547644.018746 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547646.044892 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547646.045092 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547646.045155 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547646.045180 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547646.045484 DEBUG: [kua.worker] FETCH0 1
+1775547647.019032 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547650.019302 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547650.045429 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547650.045609 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547650.045674 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547650.045699 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547650.045969 DEBUG: [kua.worker] FETCH0 1
+1775547653.019539 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547654.045942 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547654.046114 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547654.046172 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547654.046195 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547654.046472 DEBUG: [kua.worker] FETCH0 1
+1775547656.019854 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547658.046744 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547658.046947 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547658.047014 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547658.047037 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547658.047403 DEBUG: [kua.worker] FETCH0 1
+1775547659.020149 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547662.020458 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547662.047251 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547662.047498 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547662.047542 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547662.047571 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547662.048049 DEBUG: [kua.worker] FETCH0 1
+1775547665.020699 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547666.047739 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547666.047931 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547666.047999 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547666.048024 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547666.048309 DEBUG: [kua.worker] FETCH0 1
+1775547668.020992 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547670.048387 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547670.048570 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547670.048632 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547670.048656 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547670.049008 DEBUG: [kua.worker] FETCH0 1
+1775547671.021384 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547674.021885 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547674.048718 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547674.048827 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547674.048847 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547674.048860 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547674.049082 DEBUG: [kua.worker] FETCH0 1
+1775547677.022239 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547678.049237 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547678.049434 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547678.049487 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547678.049508 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547678.049825 DEBUG: [kua.worker] FETCH0 1
+1775547680.022571 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547682.050478 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547682.050666 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547682.050733 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547682.050787 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547682.050908 DEBUG: [kua.worker] FETCH0 1
+1775547683.022861 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547686.023143 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547686.051888 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547686.052084 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547686.052154 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547686.052181 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547686.052556 DEBUG: [kua.worker] FETCH0 1
+1775547689.026802 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547690.052321 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547690.052510 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547690.052575 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547690.052601 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547690.052731 DEBUG: [kua.worker] FETCH0 1
+1775547692.027096 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547694.053128 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547694.053429 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547694.053501 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547694.053529 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547694.053955 DEBUG: [kua.worker] FETCH0 1
+1775547695.027384 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547698.027718 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547698.053851 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547698.054094 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547698.054146 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547698.054176 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547698.054648 DEBUG: [kua.worker] FETCH0 1
+1775547701.027993 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547702.054136 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547702.054342 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547702.054368 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547702.054383 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547702.055244 DEBUG: [kua.worker] FETCH0 1
+1775547704.028277 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547706.054682 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547706.054889 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547706.054960 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547706.054990 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547706.055080 DEBUG: [kua.worker] FETCH0 1
+1775547707.028544 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547710.028799 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547710.055076 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547710.055302 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547710.055369 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547710.055396 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547710.055673 DEBUG: [kua.worker] FETCH0 1
+1775547713.029116 DEBUG: [kua.bidder] Recomputing bucket assignments with 2 nodes
+1775547714.058448 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%0C%08%04test2%01%002%01%00/%05
+1775547714.058650 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547714.058722 DEBUG: [kua.worker] NEW_REQ : #0 : /two/%00/%07%0C%08%04test2%01%002%01%00/%07
+1775547714.058750 DEBUG: [kua.worker] NEW_REQ : #0 : /test/seg=0
+1775547714.060208 DEBUG: [kua.worker] FETCH0 1
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<ndn::Transport::Error> >'
+  what():  socket read error (End of file)

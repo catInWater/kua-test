@@ -15,6 +15,9 @@ public:
   virtual std::shared_ptr<const ndn::Data>
   get(const ndn::Name& dataName) = 0;
 
+  virtual std::vector<ndn::Name>
+  getAllNames() = 0;
+
   virtual ~Store() = default;
 };
 

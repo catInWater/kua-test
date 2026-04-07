@@ -31,7 +31,7 @@ NLSR::advertise(const ndn::Name& prefix)
       (const auto&, const auto& data)
     {
       if (data.getMetaInfo().getType() == ndn::tlv::ContentType_Nack) {
-        NDN_LOG_DEBUG("ERROR: Run-time advertise/withdraw disabled");
+        NDN_LOG_DEBUG("错误：运行时公告/撤销已禁用");
         return;
       }
 
@@ -41,7 +41,7 @@ NLSR::advertise(const ndn::Name& prefix)
         response.wireDecode(data.getContent().blockFromValue());
       }
       catch (const std::exception& e) {
-        NDN_LOG_DEBUG("ERROR: Control response decoding error");
+        NDN_LOG_DEBUG("错误：控制响应解码失败");
         return;
       }
 
@@ -50,7 +50,7 @@ NLSR::advertise(const ndn::Name& prefix)
       if (code != RESPONSE_CODE_SUCCESS && code != RESPONSE_CODE_SAVE_OR_DELETE && code != RESPONSE_CODE_EXISTS) {
 
         NDN_LOG_DEBUG(response.getText());
-        NDN_LOG_DEBUG("Name prefix update error (code: " << code << ")");
+        NDN_LOG_DEBUG("前缀更新错误（代码: " << code << "）");
 
         m_scheduler.schedule(ndn::time::milliseconds(500 + m_jitter(m_rng)), [this, prefix] () {
           advertise(prefix);
@@ -58,7 +58,7 @@ NLSR::advertise(const ndn::Name& prefix)
         return;
       }
 
-      NDN_LOG_DEBUG("Announced " << prefix << " to NLSR!");
+      NDN_LOG_DEBUG("已向 NLSR 公告前缀 " << prefix << "！");
   }, nullptr, nullptr);
 }
 

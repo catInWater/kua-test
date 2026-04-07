@@ -32,6 +32,7 @@ private:
   NodeWatcher& m_nodeWatcher;
 
   std::map<bucket_id_t, std::shared_ptr<Bucket>> m_buckets;
+  std::map<bucket_id_t, std::vector<ndn::Name>> m_bucketOwners;
   ndn::scheduler::ScopedEventId m_recomputeEvent;
 };
 

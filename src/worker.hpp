@@ -42,6 +42,12 @@ private:
   fetch(const ndn::Interest& request);
 
 public:
+  void
+  migrateToOwners(const std::vector<ndn::Name>& owners);
+
+  void
+  stop();
+
   std::shared_ptr<Store> store;
 
 private:

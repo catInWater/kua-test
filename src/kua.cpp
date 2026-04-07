@@ -14,7 +14,7 @@ main(int argc, char *argv[])
 {
   if (argc < 3)
   {
-    std::cerr << "Usage: kua <kua-prefix> <node-prefix>" << std::endl;
+    std::cerr << "用法: kua <kua-prefix> <node-prefix>" << std::endl;
     exit(1);
   }
 

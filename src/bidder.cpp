@@ -29,7 +29,7 @@ Bidder::Bidder(ConfigBundle& configBundle, NodeWatcher& nodeWatcher)
   , m_keyChain(configBundle.keyChain)
   , m_nodeWatcher(nodeWatcher)
 {
-  NDN_LOG_INFO("Constructing Bidder");
+  NDN_LOG_INFO("构造 Bidder");
   initialize();
 }
 
@@ -45,30 +45,79 @@ Bidder::recomputeBucketAssignments()
 {
   auto nodeList = m_nodeWatcher.getNodeList();
   if (nodeList.empty()) {
-    NDN_LOG_DEBUG("No nodes discovered yet, skipping bucket assignment");
+    NDN_LOG_DEBUG("未发现节点，跳过 bucket 分配");
     m_recomputeEvent = m_scheduler.schedule(ndn::time::seconds(3),
                                           [this] { recomputeBucketAssignments(); });
     return;
   }
 
-  NDN_LOG_DEBUG("Recomputing bucket assignments with " << nodeList.size() << " nodes");
+  NDN_LOG_DEBUG("重新计算 bucket 分配，当前节点数: " << nodeList.size());
   for (bucket_id_t bucketId = 0; bucketId < NUM_BUCKETS; ++bucketId)
   {
     auto owners = computeBucketOwners(nodeList, bucketId);
-    if (!isLocalOwner(owners))
+    std::set<ndn::Name> prevOwners(m_bucketOwners[bucketId].begin(), m_bucketOwners[bucketId].end());
+    std::set<ndn::Name> newOwners(owners.begin(), owners.end());
+    const bool wasLocalOwner = prevOwners.count(m_nodePrefix) > 0;
+    const bool isLocalOwnerNow = newOwners.count(m_nodePrefix) > 0;
+
+    if (wasLocalOwner && !isLocalOwnerNow)
+    {
+      auto bucketPtr = m_buckets[bucketId];
+      if (bucketPtr && bucketPtr->worker)
+      {
+        bucketPtr->worker->migrateToOwners(owners);
+        auto workerPtr = bucketPtr->worker;
+        m_buckets.erase(bucketId);
+        m_scheduler.schedule(ndn::time::seconds(10), [workerPtr] {
+          workerPtr->stop();
+        });
+      }
+      m_bucketOwners[bucketId] = owners;
       continue;
+    }
 
-    NDN_LOG_INFO("Local node is owner of bucket " << bucketId);
-    if (!m_buckets.count(bucketId))
+    if (!wasLocalOwner && isLocalOwnerNow)
+    {
+      NDN_LOG_INFO("本地节点成为 bucket " << bucketId << " 的所有者");
       m_buckets[bucketId] = std::make_shared<Bucket>(bucketId);
-
-    auto& bucket = *m_buckets[bucketId];
-    bucket.confirmedHosts.clear();
-    for (const auto& owner : owners)
-      bucket.confirmedHosts[owner] = 1;
-
-    if (!bucket.worker)
+      auto& bucket = *m_buckets[bucketId];
+      bucket.confirmedHosts.clear();
+      for (const auto& owner : owners)
+        bucket.confirmedHosts[owner] = 1;
       bucket.worker = std::make_shared<Worker>(m_configBundle, bucket);
+      m_bucketOwners[bucketId] = owners;
+      continue;
+    }
+
+    if (isLocalOwnerNow)
+    {
+      if (!m_buckets.count(bucketId))
+        m_buckets[bucketId] = std::make_shared<Bucket>(bucketId);
+
+      auto& bucket = *m_buckets[bucketId];
+
+      std::vector<ndn::Name> addedOwners;
+      for (const auto& owner : owners)
+      {
+        if (!prevOwners.count(owner) && owner != m_nodePrefix)
+          addedOwners.push_back(owner);
+      }
+
+      if (!addedOwners.empty() && bucket.worker)
+        bucket.worker->migrateToOwners(addedOwners);
+
+      bucket.confirmedHosts.clear();
+      for (const auto& owner : owners)
+        bucket.confirmedHosts[owner] = 1;
+
+      if (!bucket.worker)
+        bucket.worker = std::make_shared<Worker>(m_configBundle, bucket);
+
+      m_bucketOwners[bucketId] = owners;
+      continue;
+    }
+
+    m_bucketOwners[bucketId] = owners;
   }
 
   m_recomputeEvent = m_scheduler.schedule(ndn::time::seconds(3),
