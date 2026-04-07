@@ -1,0 +1,1473 @@
+./build/bin/kua: error while loading shared libraries: libndn-svs.so.0.1.0: cannot open shared object file: No such file or directory
+1775225936.096323  INFO: [kua.nodewatcher] Constructing NodeWatcher
+1775225936.107171  INFO: [kua.bidder] Constructing Bidder
+1775225936.107470 DEBUG: [kua.bidder] Initializing Bidder
+1775225939.947323 DEBUG: [kua.bidder] SVS missing data: node=/master, low=1, high=1
+1775225939.950026 DEBUG: [kua.bidder] RECV_AUCTION for #0 AID 743403633
+1775225939.950058 DEBUG: [kua.bidder] PLACE_BID for #0 AID 743403633 $10077
+1775225939.954827 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=1, high=1
+1775225939.954919 DEBUG: [kua.bidder] SVS missing data: node=/four, low=1, high=1
+1775225939.954974 DEBUG: [kua.bidder] SVS missing data: node=/six, low=1, high=1
+1775225939.954997 DEBUG: [kua.bidder] SVS missing data: node=/two, low=1, high=1
+1775225939.955016 DEBUG: [kua.bidder] SVS missing data: node=/five, low=1, high=1
+1775225968.717188 DEBUG: [kua.bidder] SVS missing data: node=/three, low=1, high=1
+1775225968.755743 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=1, high=1
+1775225968.758892 DEBUG: [kua.bidder] SVS missing data: node=/master, low=2, high=4
+1775225968.765122  INFO: [kua.bidder] Won auction for #0
+1775225968.765304  INFO: [kua.bidder] Should have workers for #0
+1775225996.478863 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=2, high=2
+1775225996.480903 DEBUG: [kua.bidder] SVS missing data: node=/three, low=2, high=2
+1775225996.484638 DEBUG: [kua.bidder] SVS missing data: node=/master, low=5, high=6
+1775225996.486968 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #0
+1775225996.487012 DEBUG: [kua.bidder] Confirmed node for #0 /one
+1775225996.487020 DEBUG: [kua.bidder] Confirmed node for #0 /eight
+1775225996.487022 DEBUG: [kua.bidder] Confirmed node for #0 /three
+1775225996.488282  INFO: [kua.worker] Constructing worker for #0 /one
+1775225996.493886 DEBUG: [kua.bidder] RECV_AUCTION for #1 AID 361149828
+1775225996.493896 DEBUG: [kua.bidder] PLACE_BID for #1 AID 361149828 $5042
+1775225996.494120 DEBUG: [kua.bidder] SVS missing data: node=/two, low=2, high=2
+1775225996.494151 DEBUG: [kua.bidder] SVS missing data: node=/four, low=2, high=2
+1775226023.502201 DEBUG: [kua.bidder] SVS missing data: node=/five, low=2, high=2
+1775226023.956797 DEBUG: [kua.bidder] SVS missing data: node=/six, low=2, high=2
+1775226023.995394 DEBUG: [kua.bidder] SVS missing data: node=/three, low=3, high=3
+1775226024.002344 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=2, high=2
+1775226024.003626 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=3, high=3
+1775226024.007110 DEBUG: [kua.bidder] SVS missing data: node=/master, low=7, high=9
+1775226024.012122 DEBUG: [kua.bidder] SVS missing data: node=/four, low=3, high=3
+1775226024.012157 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=3, high=3
+1775226024.013007 DEBUG: [kua.bidder] SVS missing data: node=/six, low=3, high=3
+1775226024.015402 DEBUG: [kua.bidder] SVS missing data: node=/master, low=10, high=11
+1775226024.016176 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #1
+1775226024.016218 DEBUG: [kua.bidder] RECV_AUCTION for #2 AID 1445345719
+1775226024.016221 DEBUG: [kua.bidder] PLACE_BID for #2 AID 1445345719 $5058
+1775226024.020956 DEBUG: [kua.bidder] SVS missing data: node=/three, low=4, high=4
+1775226024.020995 DEBUG: [kua.bidder] SVS missing data: node=/five, low=3, high=3
+1775226024.021008 DEBUG: [kua.bidder] SVS missing data: node=/four, low=4, high=4
+1775226024.021019 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=4, high=4
+1775226051.613322 DEBUG: [kua.bidder] SVS missing data: node=/two, low=3, high=3
+1775226051.804998 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=4, high=4
+1775226051.813139 DEBUG: [kua.bidder] SVS missing data: node=/six, low=4, high=4
+1775226051.828042 DEBUG: [kua.bidder] SVS missing data: node=/master, low=12, high=14
+1775226051.835106  INFO: [kua.bidder] Won auction for #2
+1775226051.835372  INFO: [kua.bidder] Should have workers for #0 #2
+1775226051.837549 DEBUG: [kua.bidder] SVS missing data: node=/two, low=4, high=4
+1775226080.246692 DEBUG: [kua.bidder] SVS missing data: node=/five, low=4, high=4
+1775226080.250352 DEBUG: [kua.bidder] SVS missing data: node=/master, low=15, high=16
+1775226080.252285 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #2
+1775226080.252353 DEBUG: [kua.bidder] Confirmed node for #2 /one
+1775226080.252363 DEBUG: [kua.bidder] Confirmed node for #2 /two
+1775226080.252365 DEBUG: [kua.bidder] Confirmed node for #2 /five
+1775226080.253542  INFO: [kua.worker] Constructing worker for #2 /one
+1775226080.257785 DEBUG: [kua.bidder] RECV_AUCTION for #3 AID 615025599
+1775226080.257797 DEBUG: [kua.bidder] PLACE_BID for #3 AID 615025599 $3362
+1775226108.244526 DEBUG: [kua.bidder] SVS missing data: node=/four, low=5, high=5
+1775226108.524524 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=5, high=5
+1775226108.620170 DEBUG: [kua.bidder] SVS missing data: node=/three, low=5, high=5
+1775226108.737192 DEBUG: [kua.bidder] SVS missing data: node=/six, low=5, high=5
+1775226108.744291 DEBUG: [kua.bidder] SVS missing data: node=/five, low=5, high=5
+1775226108.744846 DEBUG: [kua.bidder] SVS missing data: node=/eight, low=5, high=5
+1775226108.744900 DEBUG: [kua.bidder] SVS missing data: node=/two, low=5, high=5
+1775226108.750484 DEBUG: [kua.bidder] SVS missing data: node=/master, low=17, high=19
+1775226108.753301 DEBUG: [kua.bidder] SVS missing data: node=/three, low=6, high=6
+1775226136.523463 DEBUG: [kua.bidder] SVS missing data: node=/five, low=6, high=6
+1775226136.678312 DEBUG: [kua.bidder] SVS missing data: node=/seven, low=6, high=6
+1775226136.684376 DEBUG: [kua.bidder] SVS missing data: node=/master, low=20, high=20
+1775226136.691559 DEBUG: [kua.bidder] Entering AuctionEnd handler for bucket #3
+1775226859.457990 DEBUG: [kua.worker] NEW_REQ : #2 : /kua/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%002%011/%05
+1775226859.458107 DEBUG: [kua.worker] NEW_REQ : #2 : /one/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%002%011/%07
+1775226859.458293 DEBUG: [kua.worker] NEW_REQ : #2 : /two/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%002%011/%07
+1775226859.458320 DEBUG: [kua.worker] NEW_REQ : #2 : /five/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%002%011/%07
+1775226859.458332 DEBUG: [kua.worker] NEW_REQ : #2 : /kua/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%0122%01c/%05
+1775226859.458382 DEBUG: [kua.worker] NEW_REQ : #2 : /kua/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01d2%01%95/%05
+1775226859.458446 DEBUG: [kua.worker] NEW_REQ : #2 : /kua/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%962%01%C7/%05
+1775226859.458505 DEBUG: [kua.worker] NEW_REQ : #2 : /kua/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%C82%01%F9/%05
+1775226859.458597 DEBUG: [kua.worker] NEW_REQ : #2 : /kua/%02/%07%20%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%FA2%02%01%2B/%05
+1775226859.458668 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=0
+1775226859.458679 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=1
+1775226859.458703 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=2
+1775226859.458709 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=3
+1775226859.458716 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=4
+1775226859.458722 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=5
+1775226859.458726 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=6
+1775226859.458734 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=7
+1775226859.458738 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=8
+1775226859.458746 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=9
+1775226859.458751 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=10
+1775226859.458760 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=11
+1775226859.458766 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=12
+1775226859.458772 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=13
+1775226859.458777 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=14
+1775226859.458781 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=15
+1775226859.458790 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=16
+1775226859.458794 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=17
+1775226859.458802 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=18
+1775226859.458806 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=19
+1775226859.458814 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=20
+1775226859.458819 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=21
+1775226859.458822 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=22
+1775226859.458830 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=23
+1775226859.458839 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=24
+1775226859.458846 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=25
+1775226859.458855 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=26
+1775226859.458861 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=27
+1775226859.458867 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=28
+1775226859.458875 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=29
+1775226859.458880 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=30
+1775226859.458885 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=31
+1775226859.458905 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=32
+1775226859.458913 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=33
+1775226859.458924 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=34
+1775226859.458930 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=35
+1775226859.458938 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=36
+1775226859.458942 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=37
+1775226859.458951 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=38
+1775226859.458956 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=39
+1775226859.458963 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=40
+1775226859.458968 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=41
+1775226859.458975 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=42
+1775226859.458981 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=43
+1775226859.458985 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=44
+1775226859.458993 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=45
+1775226859.458997 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=46
+1775226859.459006 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=47
+1775226859.459013 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=48
+1775226859.459019 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=49
+1775226859.459037 DEBUG: [kua.worker] NEW_REQ : #2 : /one/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%0122%01c/%07
+1775226859.459249 DEBUG: [kua.worker] NEW_REQ : #2 : /two/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%0122%01c/%07
+1775226859.459275 DEBUG: [kua.worker] NEW_REQ : #2 : /five/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%0122%01c/%07
+1775226859.459293 DEBUG: [kua.worker] NEW_REQ : #2 : /one/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01d2%01%95/%07
+1775226859.459481 DEBUG: [kua.worker] NEW_REQ : #2 : /two/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01d2%01%95/%07
+1775226859.459508 DEBUG: [kua.worker] NEW_REQ : #2 : /five/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01d2%01%95/%07
+1775226859.459522 DEBUG: [kua.worker] NEW_REQ : #2 : /one/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%962%01%C7/%07
+1775226859.459749 DEBUG: [kua.worker] NEW_REQ : #2 : /two/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%962%01%C7/%07
+1775226859.459776 DEBUG: [kua.worker] NEW_REQ : #2 : /five/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%962%01%C7/%07
+1775226859.459785 DEBUG: [kua.worker] NEW_REQ : #2 : /one/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%C82%01%F9/%07
+1775226859.459965 DEBUG: [kua.worker] NEW_REQ : #2 : /two/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%C82%01%F9/%07
+1775226859.459992 DEBUG: [kua.worker] NEW_REQ : #2 : /five/%02/%07%1F%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%C82%01%F9/%07
+1775226859.460008 DEBUG: [kua.worker] NEW_REQ : #2 : /one/%02/%07%20%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%FA2%02%01%2B/%07
+1775226859.460195 DEBUG: [kua.worker] NEW_REQ : #2 : /two/%02/%07%20%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%FA2%02%01%2B/%07
+1775226859.460221 DEBUG: [kua.worker] NEW_REQ : #2 : /five/%02/%07%20%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%01%FA2%02%01%2B/%07
+1775226859.460271 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=50
+1775226859.460290 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=51
+1775226859.460295 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=52
+1775226859.460304 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=53
+1775226859.460308 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=54
+1775226859.460316 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=55
+1775226859.460324 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=56
+1775226859.460330 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=57
+1775226859.460336 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=58
+1775226859.460342 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=59
+1775226859.460347 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=60
+1775226859.460354 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=61
+1775226859.460361 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=62
+1775226859.460365 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=63
+1775226859.460373 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=64
+1775226859.460379 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=65
+1775226859.460384 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=66
+1775226859.460392 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=67
+1775226859.460398 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=68
+1775226859.460403 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=69
+1775226859.460410 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=70
+1775226859.460418 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=71
+1775226859.460423 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=72
+1775226859.460432 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=73
+1775226859.460439 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=74
+1775226859.460444 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=75
+1775226859.460454 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=76
+1775226859.460460 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=77
+1775226859.460463 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=78
+1775226859.460473 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=79
+1775226859.460477 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=80
+1775226859.460481 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=81
+1775226859.460490 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=82
+1775226859.460495 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=83
+1775226859.460498 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=84
+1775226859.460508 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=85
+1775226859.460513 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=86
+1775226859.460524 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=87
+1775226859.460530 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=88
+1775226859.460538 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=89
+1775226859.460546 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=90
+1775226859.460555 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=91
+1775226859.460561 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=92
+1775226859.460585 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=93
+1775226859.460596 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=94
+1775226859.460606 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=95
+1775226859.460613 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=96
+1775226859.460619 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=97
+1775226859.460629 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=98
+1775226859.460634 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=99
+1775226859.460643 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=100
+1775226859.460650 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=101
+1775226859.460669 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=102
+1775226859.460679 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=103
+1775226859.460750 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=104
+1775226859.460760 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=105
+1775226859.460769 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=106
+1775226859.460774 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=107
+1775226859.460781 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=108
+1775226859.460804 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=109
+1775226859.460813 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=110
+1775226859.460820 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=111
+1775226859.460825 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=112
+1775226859.460834 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=113
+1775226859.460839 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=114
+1775226859.460848 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=115
+1775226859.460854 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=116
+1775226859.460860 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=117
+1775226859.460868 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=118
+1775226859.460873 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=119
+1775226859.460880 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=120
+1775226859.460888 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=121
+1775226859.460893 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=122
+1775226859.460901 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=123
+1775226859.460905 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=124
+1775226859.460919 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=125
+1775226859.460926 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=126
+1775226859.460932 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=127
+1775226859.460938 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=128
+1775226859.460944 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=129
+1775226859.460948 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=130
+1775226859.460957 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=131
+1775226859.460961 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=132
+1775226859.460969 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=133
+1775226859.460974 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=134
+1775226859.460981 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=135
+1775226859.460990 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=136
+1775226859.460997 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=137
+1775226859.461004 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=138
+1775226859.461014 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=139
+1775226859.461021 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=140
+1775226859.461029 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=141
+1775226859.461035 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=142
+1775226859.461044 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=143
+1775226859.461051 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=144
+1775226859.461056 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=145
+1775226859.461064 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=146
+1775226859.461069 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=147
+1775226859.461076 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=148
+1775226859.461081 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=149
+1775226859.461089 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=150
+1775226859.461095 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=151
+1775226859.461099 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=152
+1775226859.461108 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=153
+1775226859.461112 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=154
+1775226859.461120 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=155
+1775226859.461128 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=156
+1775226859.461137 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=157
+1775226859.461143 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=158
+1775226859.461149 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=159
+1775226859.461157 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=160
+1775226859.461163 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=161
+1775226859.461170 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=162
+1775226859.461177 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=163
+1775226859.461180 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=164
+1775226859.461190 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=165
+1775226859.461199 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=166
+1775226859.461207 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=167
+1775226859.461213 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=168
+1775226859.461225 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=169
+1775226859.461232 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=170
+1775226859.461242 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=171
+1775226859.461246 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=172
+1775226859.461254 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=173
+1775226859.461259 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=174
+1775226859.461269 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=175
+1775226859.461276 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=176
+1775226859.461282 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=177
+1775226859.461286 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=178
+1775226859.461295 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=179
+1775226859.461302 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=180
+1775226859.461314 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=181
+1775226859.461319 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=182
+1775226859.461329 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=183
+1775226859.461333 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=184
+1775226859.461343 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=185
+1775226859.461349 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=186
+1775226859.461355 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=187
+1775226859.461366 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=188
+1775226859.461371 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=189
+1775226859.461380 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=190
+1775226859.461384 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=191
+1775226859.461393 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=192
+1775226859.461398 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=193
+1775226859.461408 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=194
+1775226859.461413 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=195
+1775226859.461422 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=196
+1775226859.461427 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=197
+1775226859.461435 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=198
+1775226859.461439 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=199
+1775226859.461445 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=200
+1775226859.461468 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=201
+1775226859.461478 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=202
+1775226859.461485 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=203
+1775226859.461493 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=204
+1775226859.461499 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=205
+1775226859.461508 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=206
+1775226859.461517 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=207
+1775226859.461521 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=208
+1775226859.461529 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=209
+1775226859.461534 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=210
+1775226859.461541 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=211
+1775226859.461548 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=212
+1775226859.461555 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=213
+1775226859.461563 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=214
+1775226859.461591 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=215
+1775226859.461599 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=216
+1775226859.461607 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=217
+1775226859.461613 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=218
+1775226859.461621 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=219
+1775226859.461625 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=220
+1775226859.461633 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=221
+1775226859.461654 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=222
+1775226859.461664 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=223
+1775226859.461670 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=224
+1775226859.461680 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=225
+1775226859.461687 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=226
+1775226859.461694 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=227
+1775226859.461703 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=228
+1775226859.461708 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=229
+1775226859.461716 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=230
+1775226859.461721 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=231
+1775226859.461727 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=232
+1775226859.461736 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=233
+1775226859.461740 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=234
+1775226859.461750 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=235
+1775226859.461754 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=236
+1775226859.461762 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=237
+1775226859.461768 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=238
+1775226859.461774 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=239
+1775226859.461783 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=240
+1775226859.461787 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=241
+1775226859.461796 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=242
+1775226859.461802 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=243
+1775226859.461807 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=244
+1775226859.461815 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=245
+1775226859.461820 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=246
+1775226859.461829 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=247
+1775226859.461838 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=248
+1775226859.461843 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=249
+1775226859.461851 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=250
+1775226859.461857 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=251
+1775226859.461865 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=252
+1775226859.461870 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=253
+1775226859.461879 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=254
+1775226859.461886 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=255
+1775226859.461894 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=256
+1775226859.461900 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=257
+1775226859.461909 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=258
+1775226859.461918 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=259
+1775226859.461928 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=260
+1775226859.461933 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=261
+1775226859.461942 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=262
+1775226859.461949 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=263
+1775226859.461955 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=264
+1775226859.461961 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=265
+1775226859.461966 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=266
+1775226859.461976 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=267
+1775226859.461980 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=268
+1775226859.461990 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=269
+1775226859.461995 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=270
+1775226859.462004 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=271
+1775226859.462009 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=272
+1775226859.462016 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=273
+1775226859.462021 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=274
+1775226859.462028 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=275
+1775226859.462038 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=276
+1775226859.462044 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=277
+1775226859.462053 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=278
+1775226859.462058 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=279
+1775226859.462067 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=280
+1775226859.462076 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=281
+1775226859.462084 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=282
+1775226859.462091 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=283
+1775226859.462100 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=284
+1775226859.462105 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=285
+1775226859.462115 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=286
+1775226859.462120 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=287
+1775226859.462125 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=288
+1775226859.462133 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=289
+1775226859.462139 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=290
+1775226859.462149 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=291
+1775226859.462154 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=292
+1775226859.462164 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=293
+1775226859.462170 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=294
+1775226859.462179 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=295
+1775226859.462183 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=296
+1775226859.462189 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=297
+1775226859.462199 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=298
+1775226859.462206 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=299
+1775226859.463307 DEBUG: [kua.worker] FETCH0 50
+1775226859.466482 DEBUG: [kua.worker] FETCH1 50
+1775226859.467799 DEBUG: [kua.worker] FETCH2 50
+1775226859.470142 DEBUG: [kua.worker] FETCH3 50
+1775226859.470276 DEBUG: [kua.worker] FETCH4 50
+1775226859.470386 DEBUG: [kua.worker] FETCH5 50
+1775226859.470485 DEBUG: [kua.worker] FETCH6 50
+1775226859.470601 DEBUG: [kua.worker] FETCH7 50
+1775226859.470673 DEBUG: [kua.worker] FETCH8 50
+1775226859.470768 DEBUG: [kua.worker] FETCH9 50
+1775226859.470867 DEBUG: [kua.worker] FETCH10 50
+1775226859.470961 DEBUG: [kua.worker] FETCH11 50
+1775226859.471055 DEBUG: [kua.worker] FETCH12 50
+1775226859.471152 DEBUG: [kua.worker] FETCH13 50
+1775226859.471246 DEBUG: [kua.worker] FETCH14 50
+1775226859.471342 DEBUG: [kua.worker] FETCH15 50
+1775226859.471441 DEBUG: [kua.worker] FETCH16 50
+1775226859.471536 DEBUG: [kua.worker] FETCH17 50
+1775226859.471617 DEBUG: [kua.worker] FETCH18 50
+1775226859.471720 DEBUG: [kua.worker] FETCH19 50
+1775226859.472063 DEBUG: [kua.worker] FETCH20 50
+1775226859.472155 DEBUG: [kua.worker] FETCH21 50
+1775226859.472218 DEBUG: [kua.worker] FETCH22 50
+1775226859.472273 DEBUG: [kua.worker] FETCH23 50
+1775226859.472330 DEBUG: [kua.worker] FETCH24 50
+1775226859.472395 DEBUG: [kua.worker] FETCH25 50
+1775226859.472482 DEBUG: [kua.worker] FETCH26 50
+1775226859.472587 DEBUG: [kua.worker] FETCH27 50
+1775226859.472682 DEBUG: [kua.worker] FETCH28 50
+1775226859.472777 DEBUG: [kua.worker] FETCH29 50
+1775226859.472872 DEBUG: [kua.worker] FETCH30 50
+1775226859.472975 DEBUG: [kua.worker] FETCH31 50
+1775226859.473072 DEBUG: [kua.worker] FETCH32 50
+1775226859.473162 DEBUG: [kua.worker] FETCH33 50
+1775226859.473234 DEBUG: [kua.worker] FETCH34 50
+1775226859.473296 DEBUG: [kua.worker] FETCH35 50
+1775226859.473391 DEBUG: [kua.worker] FETCH36 50
+1775226859.473479 DEBUG: [kua.worker] FETCH37 50
+1775226859.473540 DEBUG: [kua.worker] FETCH38 50
+1775226859.473653 DEBUG: [kua.worker] FETCH39 50
+1775226859.473753 DEBUG: [kua.worker] FETCH40 50
+1775226859.473844 DEBUG: [kua.worker] FETCH41 50
+1775226859.473991 DEBUG: [kua.worker] FETCH42 50
+1775226859.474115 DEBUG: [kua.worker] FETCH43 50
+1775226859.474221 DEBUG: [kua.worker] FETCH44 50
+1775226859.474318 DEBUG: [kua.worker] FETCH45 50
+1775226859.474415 DEBUG: [kua.worker] FETCH46 50
+1775226859.474515 DEBUG: [kua.worker] FETCH47 50
+1775226859.474620 DEBUG: [kua.worker] FETCH48 50
+1775226859.474723 DEBUG: [kua.worker] FETCH49 50
+1775226859.474886 DEBUG: [kua.worker] FETCH0 50
+1775226859.474990 DEBUG: [kua.worker] FETCH1 50
+1775226859.475088 DEBUG: [kua.worker] FETCH2 50
+1775226859.475148 DEBUG: [kua.worker] FETCH3 50
+1775226859.475213 DEBUG: [kua.worker] FETCH4 50
+1775226859.475292 DEBUG: [kua.worker] FETCH5 50
+1775226859.475352 DEBUG: [kua.worker] FETCH6 50
+1775226859.475466 DEBUG: [kua.worker] FETCH7 50
+1775226859.475579 DEBUG: [kua.worker] FETCH8 50
+1775226859.475690 DEBUG: [kua.worker] FETCH9 50
+1775226859.475792 DEBUG: [kua.worker] FETCH10 50
+1775226859.475884 DEBUG: [kua.worker] FETCH11 50
+1775226859.475954 DEBUG: [kua.worker] FETCH12 50
+1775226859.476043 DEBUG: [kua.worker] FETCH13 50
+1775226859.476134 DEBUG: [kua.worker] FETCH14 50
+1775226859.476226 DEBUG: [kua.worker] FETCH15 50
+1775226859.476316 DEBUG: [kua.worker] FETCH16 50
+1775226859.476377 DEBUG: [kua.worker] FETCH17 50
+1775226859.476472 DEBUG: [kua.worker] FETCH18 50
+1775226859.476595 DEBUG: [kua.worker] FETCH19 50
+1775226859.476697 DEBUG: [kua.worker] FETCH20 50
+1775226859.476786 DEBUG: [kua.worker] FETCH21 50
+1775226859.476875 DEBUG: [kua.worker] FETCH22 50
+1775226859.477004 DEBUG: [kua.worker] FETCH23 50
+1775226859.477092 DEBUG: [kua.worker] FETCH24 50
+1775226859.477184 DEBUG: [kua.worker] FETCH25 50
+1775226859.477309 DEBUG: [kua.worker] FETCH26 50
+1775226859.477400 DEBUG: [kua.worker] FETCH27 50
+1775226859.477489 DEBUG: [kua.worker] FETCH28 50
+1775226859.477602 DEBUG: [kua.worker] FETCH29 50
+1775226859.477703 DEBUG: [kua.worker] FETCH30 50
+1775226859.477784 DEBUG: [kua.worker] FETCH31 50
+1775226859.477872 DEBUG: [kua.worker] FETCH32 50
+1775226859.477931 DEBUG: [kua.worker] FETCH33 50
+1775226859.478006 DEBUG: [kua.worker] FETCH34 50
+1775226859.478063 DEBUG: [kua.worker] FETCH35 50
+1775226859.478115 DEBUG: [kua.worker] FETCH36 50
+1775226859.478199 DEBUG: [kua.worker] FETCH37 50
+1775226859.478281 DEBUG: [kua.worker] FETCH38 50
+1775226859.478368 DEBUG: [kua.worker] FETCH39 50
+1775226859.478452 DEBUG: [kua.worker] FETCH40 50
+1775226859.478541 DEBUG: [kua.worker] FETCH41 50
+1775226859.478635 DEBUG: [kua.worker] FETCH42 50
+1775226859.478699 DEBUG: [kua.worker] #2 : ALL_REPLICAS : /ndn/cli1-site/cli1/b/seg=0/seg=49
+1775226859.478832 DEBUG: [kua.worker] FETCH43 50
+1775226859.478910 DEBUG: [kua.worker] FETCH44 50
+1775226859.479706 DEBUG: [kua.worker] FETCH45 50
+1775226859.481862 DEBUG: [kua.worker] FETCH46 50
+1775226859.484743 DEBUG: [kua.worker] FETCH47 50
+1775226859.484865 DEBUG: [kua.worker] FETCH48 50
+1775226859.484926 DEBUG: [kua.worker] FETCH49 50
+1775226859.485068 DEBUG: [kua.worker] FETCH0 50
+1775226859.485150 DEBUG: [kua.worker] FETCH1 50
+1775226859.485234 DEBUG: [kua.worker] FETCH2 50
+1775226859.485310 DEBUG: [kua.worker] FETCH3 50
+1775226859.485394 DEBUG: [kua.worker] FETCH4 50
+1775226859.485449 DEBUG: [kua.worker] FETCH5 50
+1775226859.485535 DEBUG: [kua.worker] FETCH6 50
+1775226859.485658 DEBUG: [kua.worker] FETCH7 50
+1775226859.485699 DEBUG: [kua.worker] #2 : ALL_REPLICAS : /ndn/cli1-site/cli1/b/seg=50/seg=99
+1775226859.485939 DEBUG: [kua.worker] FETCH8 50
+1775226859.486077 DEBUG: [kua.worker] FETCH9 50
+1775226859.486177 DEBUG: [kua.worker] FETCH10 50
+1775226859.486242 DEBUG: [kua.worker] FETCH11 50
+1775226859.486550 DEBUG: [kua.worker] FETCH12 50
+1775226859.486697 DEBUG: [kua.worker] FETCH13 50
+1775226859.486728 DEBUG: [kua.worker] FETCH14 50
+1775226859.486771 DEBUG: [kua.worker] FETCH15 50
+1775226859.486797 DEBUG: [kua.worker] FETCH16 50
+1775226859.486824 DEBUG: [kua.worker] FETCH17 50
+1775226859.486847 DEBUG: [kua.worker] FETCH18 50
+1775226859.486873 DEBUG: [kua.worker] FETCH19 50
+1775226859.486916 DEBUG: [kua.worker] FETCH20 50
+1775226859.486948 DEBUG: [kua.worker] FETCH21 50
+1775226859.486976 DEBUG: [kua.worker] FETCH22 50
+1775226859.487001 DEBUG: [kua.worker] FETCH23 50
+1775226859.487027 DEBUG: [kua.worker] FETCH24 50
+1775226859.487054 DEBUG: [kua.worker] FETCH25 50
+1775226859.487102 DEBUG: [kua.worker] FETCH26 50
+1775226859.487159 DEBUG: [kua.worker] FETCH27 50
+1775226859.487201 DEBUG: [kua.worker] FETCH28 50
+1775226859.487245 DEBUG: [kua.worker] FETCH29 50
+1775226859.487290 DEBUG: [kua.worker] FETCH30 50
+1775226859.487332 DEBUG: [kua.worker] FETCH31 50
+1775226859.487373 DEBUG: [kua.worker] FETCH32 50
+1775226859.487419 DEBUG: [kua.worker] FETCH33 50
+1775226859.487461 DEBUG: [kua.worker] FETCH34 50
+1775226859.487492 DEBUG: [kua.worker] FETCH35 50
+1775226859.487527 DEBUG: [kua.worker] FETCH36 50
+1775226859.487555 DEBUG: [kua.worker] FETCH37 50
+1775226859.487606 DEBUG: [kua.worker] FETCH38 50
+1775226859.487654 DEBUG: [kua.worker] FETCH39 50
+1775226859.487699 DEBUG: [kua.worker] FETCH40 50
+1775226859.487726 DEBUG: [kua.worker] FETCH41 50
+1775226859.487755 DEBUG: [kua.worker] FETCH42 50
+1775226859.487782 DEBUG: [kua.worker] FETCH43 50
+1775226859.487829 DEBUG: [kua.worker] FETCH44 50
+1775226859.487859 DEBUG: [kua.worker] FETCH45 50
+1775226859.487890 DEBUG: [kua.worker] FETCH46 50
+1775226859.487978 DEBUG: [kua.worker] FETCH47 50
+1775226859.488085 DEBUG: [kua.worker] FETCH48 50
+1775226859.488158 DEBUG: [kua.worker] FETCH49 50
+1775226859.488251 DEBUG: [kua.worker] FETCH0 50
+1775226859.488298 DEBUG: [kua.worker] FETCH1 50
+1775226859.488343 DEBUG: [kua.worker] FETCH2 50
+1775226859.488392 DEBUG: [kua.worker] FETCH3 50
+1775226859.488641 DEBUG: [kua.worker] #2 : ALL_REPLICAS : /ndn/cli1-site/cli1/b/seg=100/seg=149
+1775226859.488840 DEBUG: [kua.worker] FETCH4 50
+1775226859.488928 DEBUG: [kua.worker] FETCH5 50
+1775226859.488987 DEBUG: [kua.worker] FETCH6 50
+1775226859.489045 DEBUG: [kua.worker] FETCH7 50
+1775226859.489176 DEBUG: [kua.worker] FETCH8 50
+1775226859.489240 DEBUG: [kua.worker] FETCH9 50
+1775226859.489298 DEBUG: [kua.worker] FETCH10 50
+1775226859.489386 DEBUG: [kua.worker] FETCH11 50
+1775226859.489473 DEBUG: [kua.worker] FETCH12 50
+1775226859.489557 DEBUG: [kua.worker] FETCH13 50
+1775226859.489663 DEBUG: [kua.worker] FETCH14 50
+1775226859.489747 DEBUG: [kua.worker] FETCH15 50
+1775226859.489829 DEBUG: [kua.worker] FETCH16 50
+1775226859.489908 DEBUG: [kua.worker] FETCH17 50
+1775226859.489988 DEBUG: [kua.worker] FETCH18 50
+1775226859.490069 DEBUG: [kua.worker] FETCH19 50
+1775226859.490151 DEBUG: [kua.worker] FETCH20 50
+1775226859.490209 DEBUG: [kua.worker] FETCH21 50
+1775226859.490290 DEBUG: [kua.worker] FETCH22 50
+1775226859.490371 DEBUG: [kua.worker] FETCH23 50
+1775226859.490453 DEBUG: [kua.worker] FETCH24 50
+1775226859.490554 DEBUG: [kua.worker] FETCH25 50
+1775226859.490641 DEBUG: [kua.worker] FETCH26 50
+1775226859.490716 DEBUG: [kua.worker] FETCH27 50
+1775226859.490793 DEBUG: [kua.worker] FETCH28 50
+1775226859.490869 DEBUG: [kua.worker] FETCH29 50
+1775226859.490947 DEBUG: [kua.worker] FETCH30 50
+1775226859.491029 DEBUG: [kua.worker] FETCH31 50
+1775226859.491105 DEBUG: [kua.worker] FETCH32 50
+1775226859.491181 DEBUG: [kua.worker] FETCH33 50
+1775226859.491256 DEBUG: [kua.worker] FETCH34 50
+1775226859.491330 DEBUG: [kua.worker] FETCH35 50
+1775226859.491409 DEBUG: [kua.worker] FETCH36 50
+1775226859.491500 DEBUG: [kua.worker] FETCH37 50
+1775226859.491589 DEBUG: [kua.worker] FETCH38 50
+1775226859.491664 DEBUG: [kua.worker] FETCH39 50
+1775226859.491734 DEBUG: [kua.worker] FETCH40 50
+1775226859.491813 DEBUG: [kua.worker] FETCH41 50
+1775226859.491889 DEBUG: [kua.worker] FETCH42 50
+1775226859.491961 DEBUG: [kua.worker] FETCH43 50
+1775226859.492026 DEBUG: [kua.worker] FETCH44 50
+1775226859.492092 DEBUG: [kua.worker] FETCH45 50
+1775226859.492160 DEBUG: [kua.worker] FETCH46 50
+1775226859.492201 DEBUG: [kua.worker] FETCH47 50
+1775226859.492266 DEBUG: [kua.worker] FETCH48 50
+1775226859.492318 DEBUG: [kua.worker] FETCH49 50
+1775226859.492472 DEBUG: [kua.worker] FETCH0 50
+1775226859.492537 DEBUG: [kua.worker] FETCH1 50
+1775226859.492590 DEBUG: [kua.worker] FETCH2 50
+1775226859.492660 DEBUG: [kua.worker] FETCH3 50
+1775226859.492725 DEBUG: [kua.worker] FETCH4 50
+1775226859.492791 DEBUG: [kua.worker] FETCH5 50
+1775226859.492871 DEBUG: [kua.worker] FETCH6 50
+1775226859.492935 DEBUG: [kua.worker] FETCH7 50
+1775226859.492999 DEBUG: [kua.worker] FETCH8 50
+1775226859.493063 DEBUG: [kua.worker] FETCH9 50
+1775226859.493107 DEBUG: [kua.worker] FETCH10 50
+1775226859.493170 DEBUG: [kua.worker] FETCH11 50
+1775226859.493235 DEBUG: [kua.worker] FETCH12 50
+1775226859.493298 DEBUG: [kua.worker] FETCH13 50
+1775226859.493362 DEBUG: [kua.worker] FETCH14 50
+1775226859.493425 DEBUG: [kua.worker] FETCH15 50
+1775226859.493465 DEBUG: [kua.worker] FETCH16 50
+1775226859.493529 DEBUG: [kua.worker] FETCH17 50
+1775226859.493616 DEBUG: [kua.worker] FETCH18 50
+1775226859.493679 DEBUG: [kua.worker] FETCH19 50
+1775226859.493741 DEBUG: [kua.worker] FETCH20 50
+1775226859.493804 DEBUG: [kua.worker] FETCH21 50
+1775226859.493866 DEBUG: [kua.worker] FETCH22 50
+1775226859.493929 DEBUG: [kua.worker] FETCH23 50
+1775226859.493977 DEBUG: [kua.worker] #2 : ALL_REPLICAS : /ndn/cli1-site/cli1/b/seg=150/seg=199
+1775226859.494066 DEBUG: [kua.worker] FETCH24 50
+1775226859.494116 DEBUG: [kua.worker] FETCH25 50
+1775226859.494171 DEBUG: [kua.worker] FETCH26 50
+1775226859.494225 DEBUG: [kua.worker] FETCH27 50
+1775226859.494279 DEBUG: [kua.worker] FETCH28 50
+1775226859.494335 DEBUG: [kua.worker] FETCH29 50
+1775226859.494400 DEBUG: [kua.worker] FETCH30 50
+1775226859.494455 DEBUG: [kua.worker] FETCH31 50
+1775226859.494509 DEBUG: [kua.worker] FETCH32 50
+1775226859.494564 DEBUG: [kua.worker] FETCH33 50
+1775226859.494626 DEBUG: [kua.worker] FETCH34 50
+1775226859.494677 DEBUG: [kua.worker] FETCH35 50
+1775226859.494731 DEBUG: [kua.worker] FETCH36 50
+1775226859.494782 DEBUG: [kua.worker] FETCH37 50
+1775226859.494834 DEBUG: [kua.worker] FETCH38 50
+1775226859.494887 DEBUG: [kua.worker] FETCH39 50
+1775226859.494939 DEBUG: [kua.worker] FETCH40 50
+1775226859.494991 DEBUG: [kua.worker] FETCH41 50
+1775226859.495044 DEBUG: [kua.worker] FETCH42 50
+1775226859.495096 DEBUG: [kua.worker] FETCH43 50
+1775226859.495148 DEBUG: [kua.worker] FETCH44 50
+1775226859.495202 DEBUG: [kua.worker] FETCH45 50
+1775226859.495255 DEBUG: [kua.worker] FETCH46 50
+1775226859.495306 DEBUG: [kua.worker] FETCH47 50
+1775226859.495359 DEBUG: [kua.worker] FETCH48 50
+1775226859.495410 DEBUG: [kua.worker] FETCH49 50
+1775226859.495504 DEBUG: [kua.worker] FETCH0 50
+1775226859.495557 DEBUG: [kua.worker] FETCH1 50
+1775226859.495620 DEBUG: [kua.worker] FETCH2 50
+1775226859.495681 DEBUG: [kua.worker] FETCH3 50
+1775226859.495732 DEBUG: [kua.worker] FETCH4 50
+1775226859.495785 DEBUG: [kua.worker] FETCH5 50
+1775226859.495837 DEBUG: [kua.worker] FETCH6 50
+1775226859.495888 DEBUG: [kua.worker] FETCH7 50
+1775226859.495938 DEBUG: [kua.worker] FETCH8 50
+1775226859.495985 DEBUG: [kua.worker] FETCH9 50
+1775226859.496028 DEBUG: [kua.worker] FETCH10 50
+1775226859.496072 DEBUG: [kua.worker] FETCH11 50
+1775226859.496115 DEBUG: [kua.worker] FETCH12 50
+1775226859.496159 DEBUG: [kua.worker] FETCH13 50
+1775226859.496202 DEBUG: [kua.worker] FETCH14 50
+1775226859.496245 DEBUG: [kua.worker] FETCH15 50
+1775226859.496287 DEBUG: [kua.worker] FETCH16 50
+1775226859.496330 DEBUG: [kua.worker] FETCH17 50
+1775226859.496384 DEBUG: [kua.worker] FETCH18 50
+1775226859.496428 DEBUG: [kua.worker] FETCH19 50
+1775226859.496458 DEBUG: [kua.worker] FETCH20 50
+1775226859.496502 DEBUG: [kua.worker] FETCH21 50
+1775226859.496543 DEBUG: [kua.worker] FETCH22 50
+1775226859.496592 DEBUG: [kua.worker] FETCH23 50
+1775226859.496635 DEBUG: [kua.worker] FETCH24 50
+1775226859.496676 DEBUG: [kua.worker] FETCH25 50
+1775226859.496700 DEBUG: [kua.worker] FETCH26 50
+1775226859.496726 DEBUG: [kua.worker] FETCH27 50
+1775226859.496770 DEBUG: [kua.worker] FETCH28 50
+1775226859.496812 DEBUG: [kua.worker] FETCH29 50
+1775226859.496854 DEBUG: [kua.worker] FETCH30 50
+1775226859.496909 DEBUG: [kua.worker] FETCH31 50
+1775226859.496950 DEBUG: [kua.worker] FETCH32 50
+1775226859.496991 DEBUG: [kua.worker] FETCH33 50
+1775226859.497032 DEBUG: [kua.worker] FETCH34 50
+1775226859.497087 DEBUG: [kua.worker] FETCH35 50
+1775226859.497128 DEBUG: [kua.worker] FETCH36 50
+1775226859.497171 DEBUG: [kua.worker] FETCH37 50
+1775226859.497211 DEBUG: [kua.worker] FETCH38 50
+1775226859.497252 DEBUG: [kua.worker] FETCH39 50
+1775226859.497278 DEBUG: [kua.worker] FETCH40 50
+1775226859.497315 DEBUG: [kua.worker] FETCH41 50
+1775226859.497351 DEBUG: [kua.worker] FETCH42 50
+1775226859.497387 DEBUG: [kua.worker] FETCH43 50
+1775226859.497620 DEBUG: [kua.worker] FETCH44 50
+1775226859.497662 DEBUG: [kua.worker] FETCH45 50
+1775226859.498378 DEBUG: [kua.worker] #2 : ALL_REPLICAS : /ndn/cli1-site/cli1/b/seg=200/seg=249
+1775226859.498498 DEBUG: [kua.worker] FETCH46 50
+1775226859.498537 DEBUG: [kua.worker] FETCH47 50
+1775226859.498558 DEBUG: [kua.worker] FETCH48 50
+1775226859.498589 DEBUG: [kua.worker] FETCH49 50
+1775226859.498633 DEBUG: [kua.worker] NEW_REQ : #2 : /kua/%02/%07%21%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%02%01%2C2%02%01%5D/%05
+1775226859.498683 DEBUG: [kua.worker] NEW_REQ : #2 : /kua/%02/%07%21%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%02%01%5E2%02%01%8F/%05
+1775226859.498763 DEBUG: [kua.worker] NEW_REQ : #2 : /one/%02/%07%21%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%02%01%2C2%02%01%5D/%07
+1775226859.498909 DEBUG: [kua.worker] NEW_REQ : #2 : /two/%02/%07%21%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%02%01%2C2%02%01%5D/%07
+1775226859.498935 DEBUG: [kua.worker] NEW_REQ : #2 : /five/%02/%07%21%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%02%01%2C2%02%01%5D/%07
+1775226859.498946 DEBUG: [kua.worker] NEW_REQ : #2 : /one/%02/%07%21%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%02%01%5E2%02%01%8F/%07
+1775226859.499072 DEBUG: [kua.worker] NEW_REQ : #2 : /two/%02/%07%21%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%02%01%5E2%02%01%8F/%07
+1775226859.499097 DEBUG: [kua.worker] NEW_REQ : #2 : /five/%02/%07%21%08%03ndn%08%09cli1-site%08%04cli1%08%01b2%02%01%5E2%02%01%8F/%07
+1775226859.499104 DEBUG: [kua.worker] #2 : ALL_REPLICAS : /ndn/cli1-site/cli1/b/seg=250/seg=299
+1775226859.499142 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=300
+1775226859.499164 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=301
+1775226859.499171 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=302
+1775226859.499176 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=303
+1775226859.499182 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=304
+1775226859.499192 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=305
+1775226859.499197 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=306
+1775226859.499207 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=307
+1775226859.499216 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=308
+1775226859.499222 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=309
+1775226859.499230 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=310
+1775226859.499237 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=311
+1775226859.499245 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=312
+1775226859.499252 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=313
+1775226859.499256 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=314
+1775226859.499266 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=315
+1775226859.499271 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=316
+1775226859.499280 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=317
+1775226859.499288 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=318
+1775226859.499296 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=319
+1775226859.499304 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=320
+1775226859.499311 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=321
+1775226859.499321 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=322
+1775226859.499332 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=323
+1775226859.499341 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=324
+1775226859.499347 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=325
+1775226859.499354 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=326
+1775226859.499364 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=327
+1775226859.499376 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=328
+1775226859.499382 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=329
+1775226859.499406 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=330
+1775226859.499415 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=331
+1775226859.499427 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=332
+1775226859.499432 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=333
+1775226859.499442 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=334
+1775226859.499448 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=335
+1775226859.499456 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=336
+1775226859.499464 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=337
+1775226859.499471 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=338
+1775226859.499479 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=339
+1775226859.499488 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=340
+1775226859.499494 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=341
+1775226859.499513 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=342
+1775226859.499523 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=343
+1775226859.499534 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=344
+1775226859.499541 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=345
+1775226859.499551 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=346
+1775226859.499557 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=347
+1775226859.499598 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=348
+1775226859.499606 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=349
+1775226859.499615 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=350
+1775226859.499623 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=351
+1775226859.499630 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=352
+1775226859.499650 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=353
+1775226859.499660 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=354
+1775226859.499670 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=355
+1775226859.499677 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=356
+1775226859.499686 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=357
+1775226859.499691 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=358
+1775226859.499699 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=359
+1775226859.499704 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=360
+1775226859.499714 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=361
+1775226859.499719 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=362
+1775226859.499727 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=363
+1775226859.499732 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=364
+1775226859.499740 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=365
+1775226859.499749 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=366
+1775226859.499762 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=367
+1775226859.499770 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=368
+1775226859.499776 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=369
+1775226859.499785 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=370
+1775226859.499790 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=371
+1775226859.499808 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=372
+1775226859.499820 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=373
+1775226859.499827 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=374
+1775226859.499837 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=375
+1775226859.499856 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=376
+1775226859.499866 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=377
+1775226859.499875 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=378
+1775226859.499882 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=379
+1775226859.499891 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=380
+1775226859.499896 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=381
+1775226859.499904 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=382
+1775226859.499910 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=383
+1775226859.499919 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=384
+1775226859.499927 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=385
+1775226859.499934 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=386
+1775226859.499946 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=387
+1775226859.499953 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=388
+1775226859.499974 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=389
+1775226859.499982 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=390
+1775226859.499993 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=391
+1775226859.500002 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=392
+1775226859.500009 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=393
+1775226859.500016 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=394
+1775226859.500211 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=395
+1775226859.500240 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=396
+1775226859.500246 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=397
+1775226859.500251 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=398
+1775226859.500255 DEBUG: [kua.worker] NEW_REQ : #2 : /ndn/cli1-site/cli1/b/seg=399
+1775226859.506207 DEBUG: [kua.worker] FETCH0 50
+1775226859.506273 DEBUG: [kua.worker] FETCH1 50
+1775226859.506297 DEBUG: [kua.worker] FETCH2 50
+1775226859.506321 DEBUG: [kua.worker] FETCH3 50
+1775226859.506344 DEBUG: [kua.worker] FETCH4 50
+1775226859.506378 DEBUG: [kua.worker] FETCH5 50
+1775226859.506408 DEBUG: [kua.worker] FETCH6 50
+1775226859.506488 DEBUG: [kua.worker] FETCH7 50
+1775226859.506546 DEBUG: [kua.worker] FETCH8 50
+1775226859.506603 DEBUG: [kua.worker] FETCH9 50
+1775226859.506644 DEBUG: [kua.worker] FETCH10 50
+1775226859.506680 DEBUG: [kua.worker] FETCH11 50
+1775226859.506727 DEBUG: [kua.worker] FETCH12 50
+1775226859.506752 DEBUG: [kua.worker] FETCH13 50
+1775226859.506799 DEBUG: [kua.worker] FETCH14 50
+1775226859.506864 DEBUG: [kua.worker] FETCH15 50
+1775226859.506921 DEBUG: [kua.worker] FETCH16 50
+1775226859.506958 DEBUG: [kua.worker] FETCH17 50
+1775226859.507023 DEBUG: [kua.worker] FETCH18 50
+1775226859.507046 DEBUG: [kua.worker] FETCH19 50
+1775226859.507069 DEBUG: [kua.worker] FETCH20 50
+1775226859.507091 DEBUG: [kua.worker] FETCH21 50
+1775226859.507127 DEBUG: [kua.worker] FETCH22 50
+1775226859.507149 DEBUG: [kua.worker] FETCH23 50
+1775226859.507178 DEBUG: [kua.worker] FETCH24 50
+1775226859.507257 DEBUG: [kua.worker] FETCH25 50
+1775226859.507337 DEBUG: [kua.worker] FETCH26 50
+1775226859.507380 DEBUG: [kua.worker] FETCH27 50
+1775226859.507894 DEBUG: [kua.worker] FETCH28 50
+1775226859.508418 DEBUG: [kua.worker] FETCH29 50
+1775226859.508463 DEBUG: [kua.worker] FETCH30 50
+1775226859.508485 DEBUG: [kua.worker] FETCH31 50
+1775226859.508506 DEBUG: [kua.worker] FETCH32 50
+1775226859.508547 DEBUG: [kua.worker] FETCH33 50
+1775226859.508594 DEBUG: [kua.worker] FETCH34 50
+1775226859.508630 DEBUG: [kua.worker] FETCH35 50
+1775226859.508660 DEBUG: [kua.worker] FETCH36 50
+1775226859.508688 DEBUG: [kua.worker] FETCH37 50
+1775226859.508723 DEBUG: [kua.worker] FETCH38 50
+1775226859.508814 DEBUG: [kua.worker] FETCH39 50
+1775226859.508861 DEBUG: [kua.worker] FETCH40 50
+1775226859.509203 DEBUG: [kua.worker] FETCH41 50
+1775226859.509250 DEBUG: [kua.worker] FETCH42 50
+1775226859.509293 DEBUG: [kua.worker] FETCH43 50
+1775226859.509338 DEBUG: [kua.worker] FETCH44 50
+1775226859.509360 DEBUG: [kua.worker] FETCH45 50
+1775226859.509381 DEBUG: [kua.worker] FETCH46 50
+1775226859.509443 DEBUG: [kua.worker] FETCH47 50
+1775226859.509502 DEBUG: [kua.worker] FETCH48 50
+1775226859.509541 DEBUG: [kua.worker] FETCH49 50
+1775226859.509612 DEBUG: [kua.worker] FETCH0 50
+1775226859.509637 DEBUG: [kua.worker] FETCH1 50
+1775226859.509659 DEBUG: [kua.worker] FETCH2 50
+1775226859.509684 DEBUG: [kua.worker] FETCH3 50
+1775226859.509772 DEBUG: [kua.worker] FETCH4 50
+1775226859.509875 DEBUG: [kua.worker] FETCH5 50
+1775226859.509914 DEBUG: [kua.worker] FETCH6 50
+1775226859.509966 DEBUG: [kua.worker] FETCH7 50
+1775226859.510084 DEBUG: [kua.worker] FETCH8 50
+1775226859.510120 DEBUG: [kua.worker] #2 : ALL_REPLICAS : /ndn/cli1-site/cli1/b/seg=300/seg=349
+1775226859.510211 DEBUG: [kua.worker] FETCH9 50
+1775226859.510242 DEBUG: [kua.worker] FETCH10 50
+1775226859.510275 DEBUG: [kua.worker] FETCH11 50
+1775226859.510314 DEBUG: [kua.worker] FETCH12 50
+1775226859.510405 DEBUG: [kua.worker] FETCH13 50
+1775226859.510451 DEBUG: [kua.worker] FETCH14 50
+1775226859.510493 DEBUG: [kua.worker] FETCH15 50
+1775226859.510534 DEBUG: [kua.worker] FETCH16 50
+1775226859.510590 DEBUG: [kua.worker] FETCH17 50
+1775226859.510633 DEBUG: [kua.worker] FETCH18 50
+1775226859.510706 DEBUG: [kua.worker] FETCH19 50
+1775226859.510791 DEBUG: [kua.worker] FETCH20 50
+1775226859.510844 DEBUG: [kua.worker] FETCH21 50
+1775226859.510879 DEBUG: [kua.worker] FETCH22 50
+1775226859.510913 DEBUG: [kua.worker] FETCH23 50
+1775226859.510936 DEBUG: [kua.worker] FETCH24 50
+1775226859.510991 DEBUG: [kua.worker] FETCH25 50
+1775226859.511017 DEBUG: [kua.worker] FETCH26 50
+1775226859.511051 DEBUG: [kua.worker] FETCH27 50
+1775226859.511084 DEBUG: [kua.worker] FETCH28 50
+1775226859.511116 DEBUG: [kua.worker] FETCH29 50
+1775226859.511148 DEBUG: [kua.worker] FETCH30 50
+1775226859.511182 DEBUG: [kua.worker] FETCH31 50
+1775226859.511224 DEBUG: [kua.worker] FETCH32 50
+1775226859.511290 DEBUG: [kua.worker] FETCH33 50
+1775226859.511325 DEBUG: [kua.worker] FETCH34 50
+1775226859.511429 DEBUG: [kua.worker] FETCH35 50
+1775226859.511470 DEBUG: [kua.worker] FETCH36 50
+1775226859.511493 DEBUG: [kua.worker] FETCH37 50
+1775226859.511531 DEBUG: [kua.worker] FETCH38 50
+1775226859.511583 DEBUG: [kua.worker] FETCH39 50
+1775226859.511615 DEBUG: [kua.worker] FETCH40 50
+1775226859.511691 DEBUG: [kua.worker] FETCH41 50
+1775226859.511743 DEBUG: [kua.worker] FETCH42 50
+1775226859.511766 DEBUG: [kua.worker] FETCH43 50
+1775226859.511798 DEBUG: [kua.worker] FETCH44 50
+1775226859.511829 DEBUG: [kua.worker] FETCH45 50
+1775226859.511886 DEBUG: [kua.worker] FETCH46 50
+1775226859.511921 DEBUG: [kua.worker] FETCH47 50
+1775226859.512022 DEBUG: [kua.worker] FETCH48 50
+1775226859.512150 DEBUG: [kua.worker] FETCH49 50
+1775226859.512351 DEBUG: [kua.worker] #2 : ALL_REPLICAS : /ndn/cli1-site/cli1/b/seg=350/seg=399
+1775226934.262875 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%13%08%03ndn%08%06rand1m2%01%002%011/%05
+1775226934.263038 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%13%08%03ndn%08%06rand1m2%0122%01c/%05
+1775226934.263170 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%13%08%03ndn%08%06rand1m2%01d2%01%83/%05
+1775226934.263355 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%13%08%03ndn%08%06rand1m2%01%002%011/%07
+1775226934.263920 DEBUG: [kua.worker] NEW_REQ : #0 : /eight/%00/%07%13%08%03ndn%08%06rand1m2%01%002%011/%07
+1775226934.264000 DEBUG: [kua.worker] NEW_REQ : #0 : /three/%00/%07%13%08%03ndn%08%06rand1m2%01%002%011/%07
+1775226934.264053 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%13%08%03ndn%08%06rand1m2%0122%01c/%07
+1775226934.264480 DEBUG: [kua.worker] NEW_REQ : #0 : /eight/%00/%07%13%08%03ndn%08%06rand1m2%0122%01c/%07
+1775226934.264542 DEBUG: [kua.worker] NEW_REQ : #0 : /three/%00/%07%13%08%03ndn%08%06rand1m2%0122%01c/%07
+1775226934.264639 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%13%08%03ndn%08%06rand1m2%01d2%01%83/%07
+1775226934.264933 DEBUG: [kua.worker] NEW_REQ : #0 : /eight/%00/%07%13%08%03ndn%08%06rand1m2%01d2%01%83/%07
+1775226934.265014 DEBUG: [kua.worker] NEW_REQ : #0 : /three/%00/%07%13%08%03ndn%08%06rand1m2%01d2%01%83/%07
+1775226934.265059 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=0
+1775226934.265101 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=1
+1775226934.265118 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=2
+1775226934.265157 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=3
+1775226934.265174 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=4
+1775226934.265223 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=5
+1775226934.265263 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=6
+1775226934.265279 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=7
+1775226934.265362 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=8
+1775226934.265383 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=9
+1775226934.265401 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=10
+1775226934.265405 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=11
+1775226934.265415 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=12
+1775226934.265422 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=13
+1775226934.265427 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=14
+1775226934.265435 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=15
+1775226934.265439 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=16
+1775226934.265448 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=17
+1775226934.265456 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=18
+1775226934.265461 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=19
+1775226934.265470 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=20
+1775226934.265474 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=21
+1775226934.265485 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=22
+1775226934.265488 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=23
+1775226934.265497 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=24
+1775226934.265504 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=25
+1775226934.265509 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=26
+1775226934.265518 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=27
+1775226934.265522 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=28
+1775226934.265545 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=29
+1775226934.265555 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=30
+1775226934.265561 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=31
+1775226934.265593 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=32
+1775226934.265600 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=33
+1775226934.265611 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=34
+1775226934.265619 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=35
+1775226934.265625 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=36
+1775226934.265633 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=37
+1775226934.265637 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=38
+1775226934.265645 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=39
+1775226934.265652 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=40
+1775226934.265657 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=41
+1775226934.265666 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=42
+1775226934.265670 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=43
+1775226934.265677 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=44
+1775226934.265683 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=45
+1775226934.265688 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=46
+1775226934.265697 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=47
+1775226934.265702 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=48
+1775226934.265709 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=49
+1775226934.265716 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=50
+1775226934.265721 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=51
+1775226934.265729 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=52
+1775226934.265734 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=53
+1775226934.265743 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=54
+1775226934.265750 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=55
+1775226934.265758 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=56
+1775226934.265767 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=57
+1775226934.265772 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=58
+1775226934.265780 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=59
+1775226934.265789 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=60
+1775226934.265796 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=61
+1775226934.265811 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=62
+1775226934.265816 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=63
+1775226934.265824 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=64
+1775226934.265829 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=65
+1775226934.265841 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=66
+1775226934.265849 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=67
+1775226934.265859 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=68
+1775226934.265865 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=69
+1775226934.265875 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=70
+1775226934.265883 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=71
+1775226934.265890 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=72
+1775226934.265895 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=73
+1775226934.265904 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=74
+1775226934.265909 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=75
+1775226934.265916 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=76
+1775226934.265922 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=77
+1775226934.265928 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=78
+1775226934.265938 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=79
+1775226934.265945 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=80
+1775226934.265955 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=81
+1775226934.265960 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=82
+1775226934.265969 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=83
+1775226934.265973 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=84
+1775226934.265981 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=85
+1775226934.265988 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=86
+1775226934.265995 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=87
+1775226934.266005 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=88
+1775226934.266009 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=89
+1775226934.266017 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=90
+1775226934.266024 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=91
+1775226934.266034 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=92
+1775226934.266039 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=93
+1775226934.266045 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=94
+1775226934.266054 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=95
+1775226934.266058 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=96
+1775226934.266065 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=97
+1775226934.266070 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=98
+1775226934.266073 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=99
+1775226934.266082 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=100
+1775226934.266086 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=101
+1775226934.266094 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=102
+1775226934.266099 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=103
+1775226934.266109 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=104
+1775226934.266115 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=105
+1775226934.266121 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=106
+1775226934.266127 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=107
+1775226934.266135 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=108
+1775226934.266139 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=109
+1775226934.266144 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=110
+1775226934.266156 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=111
+1775226934.266161 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=112
+1775226934.266167 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=113
+1775226934.266173 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=114
+1775226934.266179 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=115
+1775226934.266191 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=116
+1775226934.266196 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=117
+1775226934.266205 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=118
+1775226934.266210 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=119
+1775226934.266214 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=120
+1775226934.266221 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=121
+1775226934.266225 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=122
+1775226934.266229 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=123
+1775226934.266237 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=124
+1775226934.266243 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=125
+1775226934.266252 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=126
+1775226934.266259 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=127
+1775226934.266268 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=128
+1775226934.266274 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=129
+1775226934.266282 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=130
+1775226934.266286 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=131
+1775226934.271709 DEBUG: [kua.worker] FETCH0 50
+1775226934.272001 DEBUG: [kua.worker] FETCH1 50
+1775226934.272115 DEBUG: [kua.worker] FETCH2 50
+1775226934.272192 DEBUG: [kua.worker] FETCH3 50
+1775226934.272265 DEBUG: [kua.worker] FETCH4 50
+1775226934.272664 DEBUG: [kua.worker] FETCH5 50
+1775226934.272995 DEBUG: [kua.worker] FETCH6 50
+1775226934.273466 DEBUG: [kua.worker] FETCH7 50
+1775226934.273595 DEBUG: [kua.worker] FETCH8 50
+1775226934.273679 DEBUG: [kua.worker] FETCH9 50
+1775226934.273758 DEBUG: [kua.worker] FETCH10 50
+1775226934.273833 DEBUG: [kua.worker] FETCH11 50
+1775226934.273878 DEBUG: [kua.worker] FETCH12 50
+1775226934.273952 DEBUG: [kua.worker] FETCH13 50
+1775226934.274004 DEBUG: [kua.worker] FETCH14 50
+1775226934.274048 DEBUG: [kua.worker] FETCH15 50
+1775226934.274124 DEBUG: [kua.worker] FETCH16 50
+1775226934.274196 DEBUG: [kua.worker] FETCH17 50
+1775226934.274270 DEBUG: [kua.worker] FETCH18 50
+1775226934.274341 DEBUG: [kua.worker] FETCH19 50
+1775226934.274386 DEBUG: [kua.worker] FETCH20 50
+1775226934.274456 DEBUG: [kua.worker] FETCH21 50
+1775226934.274528 DEBUG: [kua.worker] FETCH22 50
+1775226934.274614 DEBUG: [kua.worker] FETCH23 50
+1775226934.274658 DEBUG: [kua.worker] FETCH24 50
+1775226934.274730 DEBUG: [kua.worker] FETCH25 50
+1775226934.274800 DEBUG: [kua.worker] FETCH26 50
+1775226934.274844 DEBUG: [kua.worker] FETCH27 50
+1775226934.274928 DEBUG: [kua.worker] FETCH28 50
+1775226934.275001 DEBUG: [kua.worker] FETCH29 50
+1775226934.275070 DEBUG: [kua.worker] FETCH30 50
+1775226934.275129 DEBUG: [kua.worker] FETCH31 50
+1775226934.275171 DEBUG: [kua.worker] FETCH32 50
+1775226934.275238 DEBUG: [kua.worker] FETCH33 50
+1775226934.275304 DEBUG: [kua.worker] FETCH34 50
+1775226934.275377 DEBUG: [kua.worker] FETCH35 50
+1775226934.275446 DEBUG: [kua.worker] FETCH36 50
+1775226934.275515 DEBUG: [kua.worker] FETCH37 50
+1775226934.275596 DEBUG: [kua.worker] FETCH38 50
+1775226934.275641 DEBUG: [kua.worker] FETCH39 50
+1775226934.275748 DEBUG: [kua.worker] FETCH40 50
+1775226934.275795 DEBUG: [kua.worker] FETCH41 50
+1775226934.275870 DEBUG: [kua.worker] FETCH42 50
+1775226934.275939 DEBUG: [kua.worker] FETCH43 50
+1775226934.275979 DEBUG: [kua.worker] FETCH44 50
+1775226934.276053 DEBUG: [kua.worker] FETCH45 50
+1775226934.276122 DEBUG: [kua.worker] FETCH46 50
+1775226934.276162 DEBUG: [kua.worker] FETCH47 50
+1775226934.276201 DEBUG: [kua.worker] FETCH48 50
+1775226934.276244 DEBUG: [kua.worker] FETCH49 50
+1775226934.276371 DEBUG: [kua.worker] FETCH0 50
+1775226934.276439 DEBUG: [kua.worker] FETCH1 50
+1775226934.276507 DEBUG: [kua.worker] FETCH2 50
+1775226934.276549 DEBUG: [kua.worker] FETCH3 50
+1775226934.276636 DEBUG: [kua.worker] FETCH4 50
+1775226934.276705 DEBUG: [kua.worker] FETCH5 50
+1775226934.276865 DEBUG: [kua.worker] FETCH6 50
+1775226934.277059 DEBUG: [kua.worker] FETCH7 50
+1775226934.277103 DEBUG: [kua.worker] FETCH8 50
+1775226934.277125 DEBUG: [kua.worker] FETCH9 50
+1775226934.277146 DEBUG: [kua.worker] FETCH10 50
+1775226934.277203 DEBUG: [kua.worker] FETCH11 50
+1775226934.277226 DEBUG: [kua.worker] FETCH12 50
+1775226934.277247 DEBUG: [kua.worker] FETCH13 50
+1775226934.277265 DEBUG: [kua.worker] FETCH14 50
+1775226934.277299 DEBUG: [kua.worker] FETCH15 50
+1775226934.277318 DEBUG: [kua.worker] FETCH16 50
+1775226934.277338 DEBUG: [kua.worker] FETCH17 50
+1775226934.277359 DEBUG: [kua.worker] FETCH18 50
+1775226934.277390 DEBUG: [kua.worker] FETCH19 50
+1775226934.277413 DEBUG: [kua.worker] FETCH20 50
+1775226934.277434 DEBUG: [kua.worker] FETCH21 50
+1775226934.277466 DEBUG: [kua.worker] FETCH22 50
+1775226934.277482 DEBUG: [kua.worker] FETCH23 50
+1775226934.277505 DEBUG: [kua.worker] FETCH24 50
+1775226934.277524 DEBUG: [kua.worker] FETCH25 50
+1775226934.277547 DEBUG: [kua.worker] FETCH26 50
+1775226934.277723 DEBUG: [kua.worker] FETCH27 50
+1775226934.277854 DEBUG: [kua.worker] FETCH28 50
+1775226934.278590 DEBUG: [kua.worker] FETCH29 50
+1775226934.278687 DEBUG: [kua.worker] FETCH30 50
+1775226934.278857 DEBUG: [kua.worker] FETCH31 50
+1775226934.279043 DEBUG: [kua.worker] FETCH32 50
+1775226934.279178 DEBUG: [kua.worker] FETCH33 50
+1775226934.279339 DEBUG: [kua.worker] FETCH34 50
+1775226934.279458 DEBUG: [kua.worker] FETCH35 50
+1775226934.279592 DEBUG: [kua.worker] FETCH36 50
+1775226934.279708 DEBUG: [kua.worker] FETCH37 50
+1775226934.279824 DEBUG: [kua.worker] FETCH38 50
+1775226934.279941 DEBUG: [kua.worker] FETCH39 50
+1775226934.280058 DEBUG: [kua.worker] FETCH40 50
+1775226934.280166 DEBUG: [kua.worker] FETCH41 50
+1775226934.280269 DEBUG: [kua.worker] FETCH42 50
+1775226934.280348 DEBUG: [kua.worker] FETCH43 50
+1775226934.280476 DEBUG: [kua.worker] FETCH44 50
+1775226934.280536 DEBUG: [kua.worker] FETCH45 50
+1775226934.280591 DEBUG: [kua.worker] FETCH46 50
+1775226934.280638 DEBUG: [kua.worker] FETCH47 50
+1775226934.280684 DEBUG: [kua.worker] FETCH48 50
+1775226934.280730 DEBUG: [kua.worker] FETCH49 50
+1775226934.280829 DEBUG: [kua.worker] FETCH0 32
+1775226934.280876 DEBUG: [kua.worker] FETCH1 32
+1775226934.280924 DEBUG: [kua.worker] FETCH2 32
+1775226934.280970 DEBUG: [kua.worker] FETCH3 32
+1775226934.281029 DEBUG: [kua.worker] FETCH4 32
+1775226934.281075 DEBUG: [kua.worker] FETCH5 32
+1775226934.281101 DEBUG: [kua.worker] FETCH6 32
+1775226934.281128 DEBUG: [kua.worker] FETCH7 32
+1775226934.281155 DEBUG: [kua.worker] FETCH8 32
+1775226934.281181 DEBUG: [kua.worker] FETCH9 32
+1775226934.281228 DEBUG: [kua.worker] FETCH10 32
+1775226934.281275 DEBUG: [kua.worker] FETCH11 32
+1775226934.281337 DEBUG: [kua.worker] FETCH12 32
+1775226934.281363 DEBUG: [kua.worker] #0 : ALL_REPLICAS : /ndn/rand1m/seg=0/seg=49
+1775226934.281444 DEBUG: [kua.worker] FETCH13 32
+1775226934.281484 DEBUG: [kua.worker] FETCH14 32
+1775226934.281514 DEBUG: [kua.worker] FETCH15 32
+1775226934.281559 DEBUG: [kua.worker] FETCH16 32
+1775226934.281628 DEBUG: [kua.worker] FETCH17 32
+1775226934.281675 DEBUG: [kua.worker] FETCH18 32
+1775226934.281720 DEBUG: [kua.worker] FETCH19 32
+1775226934.281764 DEBUG: [kua.worker] FETCH20 32
+1775226934.281792 DEBUG: [kua.worker] FETCH21 32
+1775226934.281838 DEBUG: [kua.worker] FETCH22 32
+1775226934.281881 DEBUG: [kua.worker] FETCH23 32
+1775226934.281924 DEBUG: [kua.worker] FETCH24 32
+1775226934.281981 DEBUG: [kua.worker] FETCH25 32
+1775226934.282052 DEBUG: [kua.worker] FETCH26 32
+1775226934.282108 DEBUG: [kua.worker] FETCH27 32
+1775226934.282194 DEBUG: [kua.worker] FETCH28 32
+1775226934.282243 DEBUG: [kua.worker] FETCH29 32
+1775226934.282277 DEBUG: [kua.worker] FETCH30 32
+1775226934.282313 DEBUG: [kua.worker] FETCH31 32
+1775226934.282358 DEBUG: [kua.worker] #0 : ALL_REPLICAS : /ndn/rand1m/seg=50/seg=99
+1775226934.282401 DEBUG: [kua.worker] #0 : ALL_REPLICAS : /ndn/rand1m/seg=100/seg=131
+1775227114.943681 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%13%08%03ndn%08%06rand1m2%01%002%011/%05
+1775227114.943792 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%13%08%03ndn%08%06rand1m2%01%002%011/%07
+1775227114.943961 DEBUG: [kua.worker] NEW_REQ : #0 : /eight/%00/%07%13%08%03ndn%08%06rand1m2%01%002%011/%07
+1775227114.943985 DEBUG: [kua.worker] NEW_REQ : #0 : /three/%00/%07%13%08%03ndn%08%06rand1m2%01%002%011/%07
+1775227114.943993 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%13%08%03ndn%08%06rand1m2%0122%01c/%05
+1775227114.944034 DEBUG: [kua.worker] NEW_REQ : #0 : /kua/%00/%07%13%08%03ndn%08%06rand1m2%01d2%01%83/%05
+1775227114.944100 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=0
+1775227114.944118 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=1
+1775227114.944123 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=2
+1775227114.944126 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=3
+1775227114.944132 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=4
+1775227114.944136 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=5
+1775227114.944143 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=6
+1775227114.944146 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=7
+1775227114.944150 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=8
+1775227114.944153 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=9
+1775227114.944156 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=10
+1775227114.944163 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=11
+1775227114.944167 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=12
+1775227114.944171 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=13
+1775227114.944175 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=14
+1775227114.944178 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=15
+1775227114.944181 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=16
+1775227114.944183 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=17
+1775227114.944187 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=18
+1775227114.944191 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=19
+1775227114.944194 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=20
+1775227114.944197 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=21
+1775227114.944201 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=22
+1775227114.944203 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=23
+1775227114.944207 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=24
+1775227114.944211 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=25
+1775227114.944214 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=26
+1775227114.944218 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=27
+1775227114.944222 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=28
+1775227114.944225 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=29
+1775227114.944228 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=30
+1775227114.944260 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=31
+1775227114.944267 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=32
+1775227114.944278 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=33
+1775227114.944286 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=34
+1775227114.944293 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=35
+1775227114.944300 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=36
+1775227114.944308 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=37
+1775227114.944315 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=38
+1775227114.944319 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=39
+1775227114.944326 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=40
+1775227114.944332 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=41
+1775227114.944335 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=42
+1775227114.944345 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=43
+1775227114.944349 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=44
+1775227114.944355 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=45
+1775227114.944366 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=46
+1775227114.944372 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=47
+1775227114.944375 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=48
+1775227114.944385 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=49
+1775227114.944399 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%13%08%03ndn%08%06rand1m2%0122%01c/%07
+1775227114.944631 DEBUG: [kua.worker] NEW_REQ : #0 : /eight/%00/%07%13%08%03ndn%08%06rand1m2%0122%01c/%07
+1775227114.944655 DEBUG: [kua.worker] NEW_REQ : #0 : /three/%00/%07%13%08%03ndn%08%06rand1m2%0122%01c/%07
+1775227114.944667 DEBUG: [kua.worker] NEW_REQ : #0 : /one/%00/%07%13%08%03ndn%08%06rand1m2%01d2%01%83/%07
+1775227114.944780 DEBUG: [kua.worker] NEW_REQ : #0 : /eight/%00/%07%13%08%03ndn%08%06rand1m2%01d2%01%83/%07
+1775227114.944806 DEBUG: [kua.worker] NEW_REQ : #0 : /three/%00/%07%13%08%03ndn%08%06rand1m2%01d2%01%83/%07
+1775227114.944829 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=50
+1775227114.944837 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=51
+1775227114.944842 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=52
+1775227114.944845 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=53
+1775227114.944855 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=54
+1775227114.944862 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=55
+1775227114.944868 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=56
+1775227114.944876 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=57
+1775227114.944880 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=58
+1775227114.944887 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=59
+1775227114.944892 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=60
+1775227114.944896 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=61
+1775227114.944902 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=62
+1775227114.944912 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=63
+1775227114.944916 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=64
+1775227114.944924 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=65
+1775227114.944929 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=66
+1775227114.944936 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=67
+1775227114.944941 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=68
+1775227114.944948 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=69
+1775227114.944955 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=70
+1775227114.944960 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=71
+1775227114.944981 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=72
+1775227114.944988 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=73
+1775227114.945017 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=74
+1775227114.945023 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=75
+1775227114.945034 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=76
+1775227114.945038 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=77
+1775227114.945048 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=78
+1775227114.945052 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=79
+1775227114.945055 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=80
+1775227114.945064 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=81
+1775227114.945068 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=82
+1775227114.945072 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=83
+1775227114.945080 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=84
+1775227114.945086 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=85
+1775227114.945090 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=86
+1775227114.945100 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=87
+1775227114.945106 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=88
+1775227114.945115 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=89
+1775227114.945119 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=90
+1775227114.945122 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=91
+1775227114.945131 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=92
+1775227114.945137 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=93
+1775227114.945141 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=94
+1775227114.945149 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=95
+1775227114.945156 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=96
+1775227114.945160 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=97
+1775227114.945167 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=98
+1775227114.945172 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=99
+1775227114.945176 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=100
+1775227114.945182 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=101
+1775227114.945188 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=102
+1775227114.945191 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=103
+1775227114.945212 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=104
+1775227114.945219 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=105
+1775227114.945230 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=106
+1775227114.945237 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=107
+1775227114.945244 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=108
+1775227114.945248 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=109
+1775227114.945257 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=110
+1775227114.945263 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=111
+1775227114.945271 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=112
+1775227114.945278 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=113
+1775227114.945286 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=114
+1775227114.945292 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=115
+1775227114.945295 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=116
+1775227114.945299 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=117
+1775227114.945306 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=118
+1775227114.945310 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=119
+1775227114.945314 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=120
+1775227114.945322 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=121
+1775227114.945329 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=122
+1775227114.945335 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=123
+1775227114.945342 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=124
+1775227114.945348 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=125
+1775227114.945351 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=126
+1775227114.945360 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=127
+1775227114.945365 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=128
+1775227114.945368 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=129
+1775227114.945377 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=130
+1775227114.945383 DEBUG: [kua.worker] NEW_REQ : #0 : /ndn/rand1m/seg=131
+1775227114.945557 DEBUG: [kua.worker] FETCH0 50
+1775227114.946133 DEBUG: [kua.worker] FETCH1 50
+1775227114.952351 DEBUG: [kua.worker] FETCH2 50
+1775227114.953085 DEBUG: [kua.worker] FETCH3 50
+1775227114.953212 DEBUG: [kua.worker] FETCH4 50
+1775227114.953261 DEBUG: [kua.worker] FETCH5 50
+1775227114.953314 DEBUG: [kua.worker] FETCH6 50
+1775227114.953365 DEBUG: [kua.worker] FETCH7 50
+1775227114.953445 DEBUG: [kua.worker] FETCH8 50
+1775227114.953523 DEBUG: [kua.worker] FETCH9 50
+1775227114.953616 DEBUG: [kua.worker] FETCH10 50
+1775227114.953696 DEBUG: [kua.worker] FETCH11 50
+1775227114.953775 DEBUG: [kua.worker] FETCH12 50
+1775227114.953853 DEBUG: [kua.worker] FETCH13 50
+1775227114.953935 DEBUG: [kua.worker] FETCH14 50
+1775227114.954015 DEBUG: [kua.worker] FETCH15 50
+1775227114.954094 DEBUG: [kua.worker] FETCH16 50
+1775227114.954199 DEBUG: [kua.worker] FETCH17 50
+1775227114.954277 DEBUG: [kua.worker] FETCH18 50
+1775227114.954354 DEBUG: [kua.worker] FETCH19 50
+1775227114.954430 DEBUG: [kua.worker] FETCH20 50
+1775227114.954507 DEBUG: [kua.worker] FETCH21 50
+1775227114.954600 DEBUG: [kua.worker] FETCH22 50
+1775227114.954680 DEBUG: [kua.worker] FETCH23 50
+1775227114.954758 DEBUG: [kua.worker] FETCH24 50
+1775227114.954837 DEBUG: [kua.worker] FETCH25 50
+1775227114.954914 DEBUG: [kua.worker] FETCH26 50
+1775227114.954960 DEBUG: [kua.worker] FETCH27 50
+1775227114.955005 DEBUG: [kua.worker] FETCH28 50
+1775227114.955049 DEBUG: [kua.worker] FETCH29 50
+1775227114.955130 DEBUG: [kua.worker] FETCH30 50
+1775227114.955205 DEBUG: [kua.worker] FETCH31 50
+1775227114.955283 DEBUG: [kua.worker] FETCH32 50
+1775227114.955383 DEBUG: [kua.worker] FETCH33 50
+1775227114.955461 DEBUG: [kua.worker] FETCH34 50
+1775227114.955538 DEBUG: [kua.worker] FETCH35 50
+1775227114.955645 DEBUG: [kua.worker] FETCH36 50
+1775227114.955726 DEBUG: [kua.worker] FETCH37 50
+1775227114.955804 DEBUG: [kua.worker] FETCH38 50
+1775227114.955880 DEBUG: [kua.worker] FETCH39 50
+1775227114.955957 DEBUG: [kua.worker] FETCH40 50
+1775227114.956036 DEBUG: [kua.worker] FETCH41 50
+1775227114.956113 DEBUG: [kua.worker] FETCH42 50
+1775227114.956211 DEBUG: [kua.worker] FETCH43 50
+1775227114.956288 DEBUG: [kua.worker] FETCH44 50
+1775227114.956389 DEBUG: [kua.worker] FETCH45 50
+1775227114.956484 DEBUG: [kua.worker] FETCH46 50
+1775227114.956583 DEBUG: [kua.worker] FETCH47 50
+1775227114.956661 DEBUG: [kua.worker] FETCH48 50
+1775227114.956743 DEBUG: [kua.worker] FETCH49 50
+1775227114.956917 DEBUG: [kua.worker] FETCH0 50
+1775227114.956996 DEBUG: [kua.worker] FETCH1 50
+1775227114.957074 DEBUG: [kua.worker] FETCH2 50
+1775227114.957152 DEBUG: [kua.worker] FETCH3 50
+1775227114.957229 DEBUG: [kua.worker] FETCH4 50
+1775227114.957304 DEBUG: [kua.worker] FETCH5 50
+1775227114.957379 DEBUG: [kua.worker] FETCH6 50
+1775227114.957455 DEBUG: [kua.worker] FETCH7 50
+1775227114.957529 DEBUG: [kua.worker] FETCH8 50
+1775227114.957614 DEBUG: [kua.worker] FETCH9 50
+1775227114.957692 DEBUG: [kua.worker] FETCH10 50
+1775227114.957767 DEBUG: [kua.worker] FETCH11 50
+1775227114.957843 DEBUG: [kua.worker] FETCH12 50
+1775227114.957916 DEBUG: [kua.worker] FETCH13 50
+1775227114.958010 DEBUG: [kua.worker] FETCH14 50
+1775227114.958087 DEBUG: [kua.worker] FETCH15 50
+1775227114.958160 DEBUG: [kua.worker] FETCH16 50
+1775227114.958259 DEBUG: [kua.worker] FETCH17 50
+1775227114.958334 DEBUG: [kua.worker] FETCH18 50
+1775227114.958411 DEBUG: [kua.worker] FETCH19 50
+1775227114.958485 DEBUG: [kua.worker] FETCH20 50
+1775227114.958557 DEBUG: [kua.worker] FETCH21 50
+1775227114.958611 DEBUG: [kua.worker] FETCH22 50
+1775227114.958645 DEBUG: [kua.worker] FETCH23 50
+1775227114.958719 DEBUG: [kua.worker] FETCH24 50
+1775227114.958789 DEBUG: [kua.worker] FETCH25 50
+1775227114.959049 DEBUG: [kua.worker] FETCH26 50
+1775227114.959136 DEBUG: [kua.worker] FETCH27 50
+1775227114.959211 DEBUG: [kua.worker] FETCH28 50
+1775227114.959282 DEBUG: [kua.worker] FETCH29 50
+1775227114.959350 DEBUG: [kua.worker] FETCH30 50
+1775227114.959394 DEBUG: [kua.worker] FETCH31 50
+1775227114.959465 DEBUG: [kua.worker] FETCH32 50
+1775227114.959536 DEBUG: [kua.worker] FETCH33 50
+1775227114.959624 DEBUG: [kua.worker] FETCH34 50
+1775227114.959696 DEBUG: [kua.worker] FETCH35 50
+1775227114.959764 DEBUG: [kua.worker] FETCH36 50
+1775227114.959850 DEBUG: [kua.worker] FETCH37 50
+1775227114.959920 DEBUG: [kua.worker] FETCH38 50
+1775227114.959994 DEBUG: [kua.worker] FETCH39 50
+1775227114.960061 DEBUG: [kua.worker] FETCH40 50
+1775227114.960130 DEBUG: [kua.worker] FETCH41 50
+1775227114.960215 DEBUG: [kua.worker] FETCH42 50
+1775227114.960284 DEBUG: [kua.worker] FETCH43 50
+1775227114.960352 DEBUG: [kua.worker] FETCH44 50
+1775227114.960418 DEBUG: [kua.worker] FETCH45 50
+1775227114.960454 DEBUG: [kua.worker] FETCH46 50
+1775227114.960513 DEBUG: [kua.worker] FETCH47 50
+1775227114.960550 DEBUG: [kua.worker] FETCH48 50
+1775227114.960600 DEBUG: [kua.worker] FETCH49 50
+1775227114.960732 DEBUG: [kua.worker] FETCH0 32
+1775227114.960800 DEBUG: [kua.worker] FETCH1 32
+1775227114.960886 DEBUG: [kua.worker] FETCH2 32
+1775227114.960951 DEBUG: [kua.worker] FETCH3 32
+1775227114.961016 DEBUG: [kua.worker] FETCH4 32
+1775227114.961081 DEBUG: [kua.worker] FETCH5 32
+1775227114.961147 DEBUG: [kua.worker] FETCH6 32
+1775227114.961210 DEBUG: [kua.worker] FETCH7 32
+1775227114.961277 DEBUG: [kua.worker] FETCH8 32
+1775227114.961316 DEBUG: [kua.worker] FETCH9 32
+1775227114.961380 DEBUG: [kua.worker] FETCH10 32
+1775227114.961442 DEBUG: [kua.worker] FETCH11 32
+1775227114.961506 DEBUG: [kua.worker] FETCH12 32
+1775227114.961603 DEBUG: [kua.worker] FETCH13 32
+1775227114.961674 DEBUG: [kua.worker] FETCH14 32
+1775227114.961740 DEBUG: [kua.worker] FETCH15 32
+1775227114.961803 DEBUG: [kua.worker] FETCH16 32
+1775227114.961861 DEBUG: [kua.worker] FETCH17 32
+1775227114.961923 DEBUG: [kua.worker] FETCH18 32
+1775227114.961976 DEBUG: [kua.worker] FETCH19 32
+1775227114.962030 DEBUG: [kua.worker] FETCH20 32
+1775227114.962082 DEBUG: [kua.worker] FETCH21 32
+1775227114.962145 DEBUG: [kua.worker] FETCH22 32
+1775227114.962215 DEBUG: [kua.worker] FETCH23 32
+1775227114.962279 DEBUG: [kua.worker] FETCH24 32
+1775227114.962339 DEBUG: [kua.worker] FETCH25 32
+1775227114.962381 DEBUG: [kua.worker] FETCH26 32
+1775227114.962404 DEBUG: [kua.worker] FETCH27 32
+1775227114.962471 DEBUG: [kua.worker] FETCH28 32
+1775227114.962535 DEBUG: [kua.worker] FETCH29 32
+1775227114.962600 DEBUG: [kua.worker] FETCH30 32
+1775227114.962645 DEBUG: [kua.worker] FETCH31 32
+1775227114.962733 DEBUG: [kua.worker] #0 : ALL_REPLICAS : /ndn/rand1m/seg=0/seg=49
+1775227114.962793 DEBUG: [kua.worker] #0 : ALL_REPLICAS : /ndn/rand1m/seg=50/seg=99
+1775227114.962845 DEBUG: [kua.worker] #0 : ALL_REPLICAS : /ndn/rand1m/seg=100/seg=131

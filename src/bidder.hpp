@@ -1,11 +1,12 @@
 #pragma once
 
-#include <ndn-svs/svsync.hpp>
+#include <map>
+#include <memory>
+#include <vector>
 
 #include "config-bundle.hpp"
 #include "node-watcher.hpp"
 #include "bucket.hpp"
-#include "auction.hpp"
 
 namespace kua {
 
@@ -16,40 +17,22 @@ public:
   Bidder(ConfigBundle& configBundle, NodeWatcher& nodeWatcher);
 
 private:
-  /**
-   * Initialize the bidder
-   */
-  void
-  initialize();
-
-  /** On SVS update */
-  void
-  updateCallback(const std::vector<ndn::svs::MissingDataInfo>& missingInfo);
-
-  /** Process packet from master */
-  void
-  processMasterMessage(const ndn::Data& data);
-
-  /** Place bid for a bucket */
-  void
-  placeBid(bucket_id_t bucketId, auction_id_t auctionId);
+  void initialize();
+  void recomputeBucketAssignments();
+  std::vector<ndn::Name> computeBucketOwners(const std::vector<ndn::Name>& nodeList,
+                                             bucket_id_t bucketId);
+  bool isLocalOwner(const std::vector<ndn::Name>& owners) const;
 
 private:
   ConfigBundle& m_configBundle;
-  ndn::Name m_syncPrefix;
   ndn::Name m_nodePrefix;
   ndn::Face& m_face;
   ndn::Scheduler m_scheduler;
   ndn::KeyChain& m_keyChain;
   NodeWatcher& m_nodeWatcher;
 
-  /** Buckets won by this node */
   std::map<bucket_id_t, std::shared_ptr<Bucket>> m_buckets;
-
-  std::uniform_int_distribution<> m_rndBid;
-  ndn::random::RandomNumberEngine& m_rng;
-
-  std::unique_ptr<ndn::svs::SVSync> m_svs;
+  ndn::scheduler::ScopedEventId m_recomputeEvent;
 };
 
 } // namespace kua

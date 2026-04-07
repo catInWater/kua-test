@@ -5,7 +5,6 @@
 #include "config-bundle.hpp"
 #include "node-watcher.hpp"
 #include "bidder.hpp"
-#include "master.hpp"
 #include "nlsr.hpp"
 
 NDN_LOG_INIT(kua.main);
@@ -23,20 +22,13 @@ main(int argc, char *argv[])
   const ndn::Name kuaPrefix(argv[1]);
   const ndn::Name nodePrefix(argv[2]);
 
-  const bool isMaster =
-#ifdef KUA_IS_MASTER
-    true;
-#else
-    false;
-#endif
-
   // Start face and keychain
   ndn::Face face;
   ndn::KeyChain keyChain;
   kua::NLSR nlsr(keyChain, face);
 
   // Create common bundle
-  kua::ConfigBundle configBundle { kuaPrefix, nodePrefix, face, keyChain, isMaster };
+  kua::ConfigBundle configBundle { kuaPrefix, nodePrefix, face, keyChain, false };
 
   // Start components
   kua::NodeWatcher nodeWatcher(configBundle);
@@ -44,13 +36,9 @@ main(int argc, char *argv[])
 
   // Advertise basic prefixes
   nlsr.advertise(nodePrefix);
-  nlsr.advertise(ndn::Name(kuaPrefix).append("sync").append("auction"));
   nlsr.advertise(ndn::Name(kuaPrefix).append("sync").append("health"));
 
-  std::unique_ptr<kua::Master> master;
-  if (isMaster) {
-    master = std::make_unique<kua::Master>(configBundle, nodeWatcher);
-  }
+  // No centralized master: consistent hashing assigns buckets to nodes.
 
   // Infinite loop
   face.processEvents();

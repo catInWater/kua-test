@@ -17,6 +17,9 @@ NodeWatcher::NodeWatcher(ConfigBundle& configBundle)
 {
   NDN_LOG_INFO("Constructing NodeWatcher");
 
+  // Add ourselves to the node map
+  m_nodeMap[m_nodePrefix] = std::chrono::system_clock::now();
+
   m_svs = std::make_unique<ndn::svs::SVSync>(
     m_syncPrefix, m_nodePrefix, m_face, std::bind(&NodeWatcher::updateCallback, this, _1));
 
@@ -32,6 +35,9 @@ NodeWatcher::retxHeartbeat()
   ndn::Name dataName(m_nodePrefix);
   dataName.appendTimestamp();
   m_svs->publishData(dataName.wireEncode(), ndn::time::milliseconds(1000));
+
+  // Update our own timestamp
+  m_nodeMap[m_nodePrefix] = std::chrono::system_clock::now();
 
   // Schedule next heartbeat
   unsigned int delay = m_retxDist(m_rng);
