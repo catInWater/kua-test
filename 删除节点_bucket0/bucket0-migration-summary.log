@@ -1,0 +1,17 @@
+删除节点_bucket0/five.log:1776001080.495536 DEBUG: [kua.worker] 发送迁移请求 #1: /bucket0-test-2/seg=0 -> /one
+删除节点_bucket0/five.log:1776001080.495722 DEBUG: [kua.worker] 发送迁移请求 #2: /bucket0-test-7/seg=0 -> /one
+删除节点_bucket0/five.log:1776001080.496059 DEBUG: [kua.worker] 发送迁移请求 #3: /bucket0-test-9/seg=0 -> /one
+删除节点_bucket0/five.log:1776001080.496084  INFO: [kua.worker] bucket #0 迁移完成，共发送 3 条数据
+删除节点_bucket0/four.log:1776001082.516655 DEBUG: [kua.worker] 发送迁移请求 #1: /bucket0-test-11/seg=0 -> /one
+删除节点_bucket0/four.log:1776001082.516691 DEBUG: [kua.worker] 发送迁移请求 #2: /bucket0-test-13/seg=0 -> /one
+删除节点_bucket0/four.log:1776001082.516712 DEBUG: [kua.worker] 发送迁移请求 #3: /bucket0-test-18/seg=0 -> /one
+删除节点_bucket0/four.log:1776001082.518685 DEBUG: [kua.worker] 发送迁移请求 #1: /bucket0-test-2/seg=0 -> /one
+删除节点_bucket0/four.log:1776001082.518725 DEBUG: [kua.worker] 发送迁移请求 #2: /bucket0-test-7/seg=0 -> /one
+删除节点_bucket0/four.log:1776001082.518752 DEBUG: [kua.worker] 发送迁移请求 #3: /bucket0-test-9/seg=0 -> /one
+删除节点_bucket0/four.log:1776001082.518761  INFO: [kua.worker] bucket #0 迁移完成，共发送 3 条数据
+删除节点_bucket0/one.log:1776001080.498299  INFO: [kua.worker] 接收数据并存储成功: /bucket0-test-2/seg=0 到 bucket #0
+删除节点_bucket0/one.log:1776001080.498417  INFO: [kua.worker] 接收数据并存储成功: /bucket0-test-7/seg=0 到 bucket #0
+删除节点_bucket0/one.log:1776001080.498466  INFO: [kua.worker] 接收数据并存储成功: /bucket0-test-9/seg=0 到 bucket #0
+删除节点_bucket0/three.log:1776001081.497725 DEBUG: [kua.worker] 发送迁移请求 #1: /bucket0-test-11/seg=0 -> /one
+删除节点_bucket0/three.log:1776001081.497786 DEBUG: [kua.worker] 发送迁移请求 #2: /bucket0-test-13/seg=0 -> /one
+删除节点_bucket0/three.log:1776001081.497872 DEBUG: [kua.worker] 发送迁移请求 #3: /bucket0-test-18/seg=0 -> /one

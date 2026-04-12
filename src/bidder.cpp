@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <set>
 #include <string>
+#include <vector>
 
 namespace kua {
 
@@ -54,7 +55,7 @@ Bidder::recomputeBucketAssignments()
   NDN_LOG_DEBUG("重新计算 bucket 分配，当前节点数: " << nodeList.size());
   for (bucket_id_t bucketId = 0; bucketId < NUM_BUCKETS; ++bucketId)
   {
-    auto owners = computeBucketOwners(nodeList, bucketId);
+    auto owners = computeBucketOwnersMaglev(nodeList, bucketId);
     std::set<ndn::Name> prevOwners(m_bucketOwners[bucketId].begin(), m_bucketOwners[bucketId].end());
     std::set<ndn::Name> newOwners(owners.begin(), owners.end());
     const bool wasLocalOwner = prevOwners.count(m_nodePrefix) > 0;
@@ -125,8 +126,73 @@ Bidder::recomputeBucketAssignments()
 }
 
 std::vector<ndn::Name>
-Bidder::computeBucketOwners(const std::vector<ndn::Name>& nodeList,
-                            bucket_id_t bucketId)
+Bidder::computeBucketOwnersMaglev(const std::vector<ndn::Name>& nodeList,
+                                  bucket_id_t bucketId)
+{
+  std::vector<ndn::Name> owners;
+  if (nodeList.empty())
+    return owners;
+
+  // Ensure every node derives the same table when the membership is identical.
+  std::vector<ndn::Name> sortedNodes = nodeList;
+  std::sort(sortedNodes.begin(), sortedNodes.end(), [] (const ndn::Name& a, const ndn::Name& b) {
+    return a.toUri() < b.toUri();
+  });
+
+  // Maglev lookup table size. Prime helps reduce cycles in the permutation.
+  static const size_t MAGLEV_TABLE_SIZE = 251;
+  const size_t n = sortedNodes.size();
+
+  std::vector<size_t> offset(n);
+  std::vector<size_t> skip(n);
+  std::vector<size_t> next(n, 0);
+  std::vector<int> table(MAGLEV_TABLE_SIZE, -1);
+
+  for (size_t i = 0; i < n; ++i)
+  {
+    const std::string key = sortedNodes[i].toUri();
+    offset[i] = computeHash("maglev-offset:" + key) % MAGLEV_TABLE_SIZE;
+    // skip in [1, M-1] so each backend permutation can cover full table.
+    skip[i] = (computeHash("maglev-skip:" + key) % (MAGLEV_TABLE_SIZE - 1)) + 1;
+  }
+
+  // Fill Maglev table with backend indexes.
+  size_t filled = 0;
+  while (filled < MAGLEV_TABLE_SIZE)
+  {
+    for (size_t i = 0; i < n && filled < MAGLEV_TABLE_SIZE; ++i)
+    {
+      size_t c = (offset[i] + next[i] * skip[i]) % MAGLEV_TABLE_SIZE;
+      while (table[c] >= 0)
+      {
+        ++next[i];
+        c = (offset[i] + next[i] * skip[i]) % MAGLEV_TABLE_SIZE;
+      }
+      table[c] = static_cast<int>(i);
+      ++next[i];
+      ++filled;
+    }
+  }
+
+  const size_t replicaCount = std::min<size_t>(NUM_REPLICA, n);
+  const size_t start = computeHash("bucket:" + std::to_string(bucketId)) % MAGLEV_TABLE_SIZE;
+
+  std::set<ndn::Name> selected;
+  for (size_t step = 0; step < MAGLEV_TABLE_SIZE && selected.size() < replicaCount; ++step)
+  {
+    const size_t pos = (start + step) % MAGLEV_TABLE_SIZE;
+    const int backendIdx = table[pos];
+    if (backendIdx >= 0)
+      selected.insert(sortedNodes[static_cast<size_t>(backendIdx)]);
+  }
+
+  owners.assign(selected.begin(), selected.end());
+  return owners;
+}
+
+std::vector<ndn::Name>
+Bidder::computeBucketOwnersClassic(const std::vector<ndn::Name>& nodeList,
+                                   bucket_id_t bucketId)
 {
   std::vector<ndn::Name> owners;
   if (nodeList.empty())

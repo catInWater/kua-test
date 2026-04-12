@@ -1,0 +1,18 @@
+删除节点/one.log:1775978624.134182  INFO: [kua.worker] 等待 5 秒后开始迁移 bucket #3 的 4 条数据到 1 个新所有者
+删除节点/one.log:1775978629.135957  INFO: [kua.worker] 开始迁移 bucket #3 的 4 条数据到 1 个新所有者
+删除节点/one.log:1775978629.136060  INFO: [kua.worker] 迁移 bucket #3 到所有者: /two (4 条数据)
+删除节点/one.log:1775978629.136133 DEBUG: [kua.worker] 发送迁移请求 #1: /beta2/seg=0 -> /two
+删除节点/one.log:1775978629.136159 DEBUG: [kua.worker] 发送迁移请求 #2: /alpha2/seg=0 -> /two
+删除节点/one.log:1775978629.136179 DEBUG: [kua.worker] 发送迁移请求 #3: /alpha7/seg=0 -> /two
+删除节点/one.log:1775978629.136197 DEBUG: [kua.worker] 发送迁移请求 #4: /gamma8/seg=0 -> /two
+删除节点/two.log:1775978629.131690  INFO: [kua.worker] 接收数据并存储成功: /beta2/seg=0 到 bucket #3
+删除节点/two.log:1775978629.131811  INFO: [kua.worker] 接收数据并存储成功: /alpha2/seg=0 到 bucket #3
+删除节点/two.log:1775978629.131955  INFO: [kua.worker] 接收数据并存储成功: /alpha7/seg=0 到 bucket #3
+删除节点/two.log:1775978629.132033  INFO: [kua.worker] 接收数据并存储成功: /gamma8/seg=0 到 bucket #3
+删除节点/four.log:1775978624.129917  INFO: [kua.worker] 等待 5 秒后开始迁移 bucket #3 的 4 条数据到 1 个新所有者
+删除节点/four.log:1775978629.130272  INFO: [kua.worker] 开始迁移 bucket #3 的 4 条数据到 1 个新所有者
+删除节点/four.log:1775978629.130343  INFO: [kua.worker] 迁移 bucket #3 到所有者: /two (4 条数据)
+删除节点/four.log:1775978629.130428 DEBUG: [kua.worker] 发送迁移请求 #1: /beta2/seg=0 -> /two
+删除节点/four.log:1775978629.130461 DEBUG: [kua.worker] 发送迁移请求 #2: /alpha2/seg=0 -> /two
+删除节点/four.log:1775978629.130479 DEBUG: [kua.worker] 发送迁移请求 #3: /alpha7/seg=0 -> /two
+删除节点/four.log:1775978629.130500 DEBUG: [kua.worker] 发送迁移请求 #4: /gamma8/seg=0 -> /two

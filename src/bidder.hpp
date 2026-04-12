@@ -19,8 +19,12 @@ public:
 private:
   void initialize();
   void recomputeBucketAssignments();
-  std::vector<ndn::Name> computeBucketOwners(const std::vector<ndn::Name>& nodeList,
-                                             bucket_id_t bucketId);
+  // New default owner-selection method based on Maglev hashing.
+  std::vector<ndn::Name> computeBucketOwnersMaglev(const std::vector<ndn::Name>& nodeList,
+                                                   bucket_id_t bucketId);
+  // Legacy ring-based consistent hashing kept for comparison/debugging.
+  std::vector<ndn::Name> computeBucketOwnersClassic(const std::vector<ndn::Name>& nodeList,
+                                                    bucket_id_t bucketId);
   bool isLocalOwner(const std::vector<ndn::Name>& owners) const;
 
 private:

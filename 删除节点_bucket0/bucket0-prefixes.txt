@@ -1,0 +1,6 @@
+/bucket0-test-2
+/bucket0-test-7
+/bucket0-test-9
+/bucket0-test-11
+/bucket0-test-13
+/bucket0-test-18

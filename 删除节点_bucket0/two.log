@@ -1,0 +1,57 @@
+1776001037.463242  INFO: [kua.nodewatcher] 构造 NodeWatcher
+1776001037.480744  INFO: [kua.bidder] 构造 Bidder
+1776001042.481018 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1776001042.481178  INFO: [kua.bidder] 本地节点成为 bucket 0 的所有者
+1776001042.483432  INFO: [kua.worker] 构造 worker #0 /two
+1776001042.489236  INFO: [kua.bidder] 本地节点成为 bucket 2 的所有者
+1776001042.490131  INFO: [kua.worker] 构造 worker #2 /two
+1776001045.494694 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1776001048.495481 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1776001051.495821 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1776001054.496264 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1776001055.351512 DEBUG: [kua.worker] 收到请求 : #0 : /kua/%00/%07%16%08%0Ebucket0-test-22%01%002%01%00/%05
+1776001055.351776 DEBUG: [kua.worker] 收到请求 : #0 : /two/%00/%07%16%08%0Ebucket0-test-22%01%002%01%00/%07
+1776001055.351865 DEBUG: [kua.worker] 收到请求 : #0 : /five/%00/%07%16%08%0Ebucket0-test-22%01%002%01%00/%07
+1776001055.351987 DEBUG: [kua.worker] 收到请求 : #0 : /four/%00/%07%16%08%0Ebucket0-test-22%01%002%01%00/%07
+1776001055.352075 DEBUG: [kua.worker] 收到请求 : #0 : /bucket0-test-2/seg=0
+1776001055.352748 DEBUG: [kua.worker] FETCH 0 / 1
+1776001055.353179 DEBUG: [kua.worker] #0 : 所有副本已完成 : /bucket0-test-2/seg=0/seg=0
+1776001056.399443 DEBUG: [kua.worker] 收到请求 : #0 : /kua/%00/%07%16%08%0Ebucket0-test-72%01%002%01%00/%05
+1776001056.399550 DEBUG: [kua.worker] 收到请求 : #0 : /two/%00/%07%16%08%0Ebucket0-test-72%01%002%01%00/%07
+1776001056.399576 DEBUG: [kua.worker] 收到请求 : #0 : /five/%00/%07%16%08%0Ebucket0-test-72%01%002%01%00/%07
+1776001056.399583 DEBUG: [kua.worker] 收到请求 : #0 : /four/%00/%07%16%08%0Ebucket0-test-72%01%002%01%00/%07
+1776001056.399592 DEBUG: [kua.worker] 收到请求 : #0 : /bucket0-test-7/seg=0
+1776001056.399868 DEBUG: [kua.worker] FETCH 0 / 1
+1776001056.400169 DEBUG: [kua.worker] #0 : 所有副本已完成 : /bucket0-test-7/seg=0/seg=0
+1776001057.455905 DEBUG: [kua.worker] 收到请求 : #0 : /kua/%00/%07%16%08%0Ebucket0-test-92%01%002%01%00/%05
+1776001057.456222 DEBUG: [kua.worker] 收到请求 : #0 : /two/%00/%07%16%08%0Ebucket0-test-92%01%002%01%00/%07
+1776001057.456290 DEBUG: [kua.worker] 收到请求 : #0 : /five/%00/%07%16%08%0Ebucket0-test-92%01%002%01%00/%07
+1776001057.456312 DEBUG: [kua.worker] 收到请求 : #0 : /four/%00/%07%16%08%0Ebucket0-test-92%01%002%01%00/%07
+1776001057.456337 DEBUG: [kua.worker] 收到请求 : #0 : /bucket0-test-9/seg=0
+1776001057.457527 DEBUG: [kua.worker] FETCH 0 / 1
+1776001057.458336 DEBUG: [kua.worker] #0 : 所有副本已完成 : /bucket0-test-9/seg=0/seg=0
+1776001057.496540 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1776001058.496635 DEBUG: [kua.worker] 收到请求 : #2 : /kua/%02/%07%17%08%0Fbucket0-test-112%01%002%01%00/%05
+1776001058.496867 DEBUG: [kua.worker] 收到请求 : #2 : /two/%02/%07%17%08%0Fbucket0-test-112%01%002%01%00/%07
+1776001058.497021 DEBUG: [kua.worker] 收到请求 : #2 : /four/%02/%07%17%08%0Fbucket0-test-112%01%002%01%00/%07
+1776001058.497085 DEBUG: [kua.worker] 收到请求 : #2 : /three/%02/%07%17%08%0Fbucket0-test-112%01%002%01%00/%07
+1776001058.497116 DEBUG: [kua.worker] 收到请求 : #2 : /bucket0-test-11/seg=0
+1776001058.498271 DEBUG: [kua.worker] FETCH 0 / 1
+1776001058.498729 DEBUG: [kua.worker] #2 : 所有副本已完成 : /bucket0-test-11/seg=0/seg=0
+1776001059.538498 DEBUG: [kua.worker] 收到请求 : #2 : /kua/%02/%07%17%08%0Fbucket0-test-132%01%002%01%00/%05
+1776001059.538756 DEBUG: [kua.worker] 收到请求 : #2 : /two/%02/%07%17%08%0Fbucket0-test-132%01%002%01%00/%07
+1776001059.538806 DEBUG: [kua.worker] 收到请求 : #2 : /four/%02/%07%17%08%0Fbucket0-test-132%01%002%01%00/%07
+1776001059.538829 DEBUG: [kua.worker] 收到请求 : #2 : /three/%02/%07%17%08%0Fbucket0-test-132%01%002%01%00/%07
+1776001059.538857 DEBUG: [kua.worker] 收到请求 : #2 : /bucket0-test-13/seg=0
+1776001059.540643 DEBUG: [kua.worker] FETCH 0 / 1
+1776001059.542714 DEBUG: [kua.worker] #2 : 所有副本已完成 : /bucket0-test-13/seg=0/seg=0
+1776001060.496862 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1776001060.602730 DEBUG: [kua.worker] 收到请求 : #2 : /kua/%02/%07%17%08%0Fbucket0-test-182%01%002%01%00/%05
+1776001060.603017 DEBUG: [kua.worker] 收到请求 : #2 : /two/%02/%07%17%08%0Fbucket0-test-182%01%002%01%00/%07
+1776001060.603073 DEBUG: [kua.worker] 收到请求 : #2 : /four/%02/%07%17%08%0Fbucket0-test-182%01%002%01%00/%07
+1776001060.603117 DEBUG: [kua.worker] 收到请求 : #2 : /three/%02/%07%17%08%0Fbucket0-test-182%01%002%01%00/%07
+1776001060.603158 DEBUG: [kua.worker] 收到请求 : #2 : /bucket0-test-18/seg=0
+1776001060.603443 DEBUG: [kua.worker] FETCH 0 / 1
+1776001060.603998 DEBUG: [kua.worker] #2 : 所有副本已完成 : /bucket0-test-18/seg=0/seg=0
+1776001063.497308 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1776001066.497772 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
