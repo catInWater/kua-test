@@ -46,10 +46,10 @@ private:
         const ndn::Interest& request, const uint64_t& commandCode);
 
     void
-    kvGet(const std::string& key, const ndn::Interest& request);
+      kvGet(const std::string& key, const ndn::Interest& request, const uint64_t& commandCode);
 
     void
-    kvList(const ndn::Interest& request);
+      kvList(const ndn::Interest& request, const uint64_t& commandCode);
 
     static std::string
     decodeHex(const std::string& hex);

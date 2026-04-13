@@ -1,0 +1,253 @@
+1776091894.835731  INFO: [kua.nodewatcher] 构造 NodeWatcher
+1776091894.840407  INFO: [kua.bidder] 构造 Bidder
+1776091899.840565 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091899.840708  INFO: [kua.bidder] 本地节点成为 bucket 1 的所有者
+1776091899.841878  INFO: [kua.worker] 构造 worker #1 /three
+1776091899.843625  INFO: [kua.bidder] 本地节点成为 bucket 2 的所有者
+1776091899.844028  INFO: [kua.worker] 构造 worker #2 /three
+1776091902.845816 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091905.846504 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091908.846793 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091910.008126 DEBUG: [kua.worker] 收到请求 : #2 : /three/%02/7573657251/7631/%00%00%01%9D%87S%CFs/%00%01%00%02
+1776091910.008144  INFO: [kua.worker] KV 写入成功: key=userQ, version=1776091910003, bucket=#2
+1776091911.028554 DEBUG: [kua.worker] 收到请求 : #2 : /three/%02/7573657251/%00%02%00%02
+1776091911.858329 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091914.858644 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091916.092746 DEBUG: [kua.worker] 收到请求 : #2 : /kua/%02/7573657251/7632/%00%00%01%9D%87S%E7%2C/%00%01%00%00
+1776091916.092875 DEBUG: [kua.worker] 收到请求 : #2 : /two/%02/7573657251/7632/%00%00%01%9D%87S%E7%2C/%00%01%00%02
+1776091916.092886 DEBUG: [kua.worker] 收到请求 : #2 : /four/%02/7573657251/7632/%00%00%01%9D%87S%E7%2C/%00%01%00%02
+1776091916.092893 DEBUG: [kua.worker] 收到请求 : #2 : /three/%02/7573657251/7632/%00%00%01%9D%87S%E7%2C/%00%01%00%02
+1776091916.092897  INFO: [kua.worker] KV 写入成功: key=userQ, version=1776091916076, bucket=#2
+1776091917.859041 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091920.859323 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091923.859579 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091926.861143 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091928.129669 DEBUG: [kua.worker] 收到请求 : #2 : /kua/%02/7573657251/%00%02%00%00
+1776091928.129895 DEBUG: [kua.worker] 收到请求 : #2 : /two/%02/7573657251/%00%02%00%02
+1776091928.129988 DEBUG: [kua.worker] 收到请求 : #2 : /four/%02/7573657251/%00%02%00%02
+1776091928.130011 DEBUG: [kua.worker] 收到请求 : #2 : /three/%02/7573657251/%00%02%00%02
+1776091928.138875 DEBUG: [kua.worker] 收到请求 : #2 : /two/%02/7573657251/7632/%00%00%01%9D%87S%E7%2C/%00%01%00%02
+1776091929.861497 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091931.169605 DEBUG: [kua.worker] 收到请求 : #2 : /kua/%02/%00%04%00%00
+1776091931.169854 DEBUG: [kua.worker] 收到请求 : #2 : /two/%02/%00%04%00%02
+1776091931.169881 DEBUG: [kua.worker] 收到请求 : #2 : /four/%02/%00%04%00%02
+1776091931.169899 DEBUG: [kua.worker] 收到请求 : #2 : /three/%02/%00%04%00%02
+1776091932.861808 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091935.862180 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091938.862608 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091941.867708 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091944.867998 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091947.868247 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091950.868566 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091953.868870 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091956.870392 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091959.872945 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091962.873377 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091965.873757 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091968.874129 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091971.874430 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091974.874843 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091977.875345 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091980.875936 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091983.876210 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091986.876568 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091989.884523 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091992.884813 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091995.885181 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776091998.888475 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092001.888840 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092004.889229 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092007.889636 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092010.889959 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092013.890361 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092016.890723 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092019.891355 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092022.891610 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092025.891879 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092028.892191 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092031.892484 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092034.892816 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092037.893192 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092040.893507 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092043.893867 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092046.915375 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092049.919323 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092052.919565 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092055.919922 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092058.920326 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092061.920905 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092064.932215 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092067.932496 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092070.932815 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092073.933038 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092076.933310 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092079.933589 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092082.935695 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092085.939221 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092088.941282 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092091.941554 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092094.959682 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092097.959895 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092100.960205 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092103.960476 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092106.960785 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092109.961228 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092112.961530 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092115.961791 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092118.962180 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092121.962420 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092124.962776 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092127.963310 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092130.963766 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092133.964042 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092136.964316 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092139.964613 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092142.964933 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092145.965282 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092148.965543 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092151.965840 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092154.966281 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092157.966760 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092160.967195 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092163.968695 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092166.969094 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092169.969429 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092172.969794 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092175.970618 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092178.970946 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092181.971288 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092184.971565 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092187.971821 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092190.972181 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092193.972662 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092196.972931 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092199.973321 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092202.973617 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092205.973907 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092208.974254 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092211.974549 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092214.974788 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092217.975161 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092220.975532 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092223.975762 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092226.976069 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092229.976383 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092232.976641 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092235.976936 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092238.977254 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092241.977566 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092244.977865 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092247.978204 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092250.978441 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092253.978702 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092256.978979 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092259.979359 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092262.979721 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092265.980066 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092268.981326 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092271.981649 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092275.026747 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092278.027025 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092281.027324 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092284.027637 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092287.027935 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092290.028311 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092293.028686 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092296.029060 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092299.029439 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092302.029728 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092305.029994 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092308.030345 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092311.030790 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092314.031170 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092317.031471 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092320.032074 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092323.032981 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092326.033625 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092329.033961 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092332.034595 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092335.034891 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092338.035278 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092341.035604 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092344.035873 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092347.036207 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092350.036518 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092353.037396 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092356.037781 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092359.038305 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092362.038609 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092365.038874 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092368.039602 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092371.039903 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092374.040413 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092377.040743 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092380.041020 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092383.041301 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092386.041604 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092389.042167 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092392.042525 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092395.042827 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092398.043180 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092401.043487 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092404.043837 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092407.044220 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092410.044530 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092413.044932 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092416.045331 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092419.045711 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092422.046072 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092425.046365 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092428.046754 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092431.047188 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092434.047495 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092437.047829 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092440.048203 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092443.049169 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092446.052386 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092449.052655 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092452.053061 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092455.053366 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092458.053615 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092458.813593 DEBUG: [kua.worker] 收到请求 : #1 : /three/%01/%00%04%00%02
+1776092458.814601 DEBUG: [kua.worker] 收到请求 : #2 : /kua/%02/%00%04%00%00
+1776092458.814838 DEBUG: [kua.worker] 收到请求 : #2 : /two/%02/%00%04%00%02
+1776092458.814895 DEBUG: [kua.worker] 收到请求 : #2 : /four/%02/%00%04%00%02
+1776092458.814919 DEBUG: [kua.worker] 收到请求 : #2 : /three/%02/%00%04%00%02
+1776092461.053935 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092464.054301 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092467.054585 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092470.054863 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092473.055288 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092476.055694 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092479.056160 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092482.056563 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092485.056865 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092488.057264 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092491.057589 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092494.057907 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092497.058257 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092500.058708 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092503.059012 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092506.059392 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092509.059660 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092512.059987 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092515.060371 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092518.060678 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092521.060971 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092524.061284 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092527.061659 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092530.062123 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092533.062440 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092536.063092 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092539.063374 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092542.063646 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092545.063916 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092548.064262 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092551.064665 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092554.065077 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092557.065574 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092560.065884 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092563.066274 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092566.066564 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092569.066838 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1776092572.067181 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4

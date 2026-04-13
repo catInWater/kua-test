@@ -6,13 +6,22 @@
 
 #include <algorithm>
 #include <iomanip>
+#include <optional>
 #include <sstream>
 #include <thread>
+#include <unordered_map>
 #include <vector>
 
 namespace kua {
 
 NDN_LOG_INIT(kua.worker);
+
+namespace {
+
+constexpr size_t KV_READ_QUORUM = 2;
+constexpr size_t KV_WRITE_QUORUM = 2;
+
+}
 
 Worker::Worker(ConfigBundle& configBundle, const Bucket& bucket)
   : m_configBundle(configBundle)
@@ -125,13 +134,13 @@ Worker::onInterest(const ndn::InterestFilter&, const ndn::Interest& interest)
       if (reqName.size() < 4)
         return;
       const auto key = decodeHex(reqName[-2].toUri());
-      kvGet(key, interest);
+      kvGet(key, interest, ccode);
       return;
     }
 
     if (ccode & CommandCodes::KV_LIST)
     {
-      kvList(interest);
+      kvList(interest, ccode);
       return;
     }
   }
@@ -294,8 +303,10 @@ Worker::kvPut(const std::string& key, const std::string& value, uint64_t version
   if ((commandCode & CommandCodes::NO_REPLICATE) == 0)
   {
     auto ackCount = std::make_shared<size_t>(0);
+    auto doneCount = std::make_shared<size_t>(0);
     auto replied = std::make_shared<bool>(false);
-    const size_t expected = std::max<size_t>(1, std::min<size_t>(NUM_REPLICA, m_bucket.confirmedHosts.size()));
+    const size_t totalTargets = std::max<size_t>(1, m_bucket.confirmedHosts.size());
+    const size_t expected = std::max<size_t>(1, std::min<size_t>(KV_WRITE_QUORUM, totalTargets));
 
     for (const auto& host : m_bucket.confirmedHosts)
     {
@@ -316,22 +327,31 @@ Worker::kvPut(const std::string& key, const std::string& value, uint64_t version
       m_keyChain.sign(interest, interestSigningInfo);
 
       m_face.expressInterest(interest,
-        [this, request, ackCount, replied, expected] (const auto&, const auto&) {
+        [this, request, ackCount, doneCount, replied, expected] (const auto&, const auto&) {
           ++(*ackCount);
+          ++(*doneCount);
           if (!(*replied) && *ackCount >= expected)
           {
             *replied = true;
             replyText(request, "OK");
           }
         },
-        [this, request, replied] (const auto&, const auto&) {
-          if (!(*replied))
+        [this, request, ackCount, doneCount, replied, expected, totalTargets] (const auto&, const auto&) {
+          ++(*doneCount);
+          if (!(*replied) && (*doneCount) >= totalTargets && *ackCount < expected)
           {
             *replied = true;
             replyText(request, "FAILED");
           }
         },
-        nullptr);
+        [this, request, ackCount, doneCount, replied, expected, totalTargets] (const auto&) {
+          ++(*doneCount);
+          if (!(*replied) && (*doneCount) >= totalTargets && *ackCount < expected)
+          {
+            *replied = true;
+            replyText(request, "FAILED");
+          }
+        });
     }
     return;
   }
@@ -346,28 +366,209 @@ Worker::kvPut(const std::string& key, const std::string& value, uint64_t version
 }
 
 void
-Worker::kvGet(const std::string& key, const ndn::Interest& request)
+Worker::kvGet(const std::string& key, const ndn::Interest& request, const uint64_t& commandCode)
 {
-  auto item = store->getKv(key);
-  if (!item.has_value())
+  if (commandCode & CommandCodes::NO_REPLICATE)
   {
-    replyText(request, "NOT_FOUND");
+    auto item = store->getKv(key);
+    if (!item.has_value())
+    {
+      replyText(request, "NOT_FOUND");
+      return;
+    }
+
+    std::ostringstream oss;
+    oss << item->version << "\n" << item->value;
+    replyText(request, oss.str());
     return;
   }
 
-  std::ostringstream oss;
-  oss << item->version << "\n" << item->value;
-  replyText(request, oss.str());
+  const size_t totalTargets = std::max<size_t>(1, m_bucket.confirmedHosts.size());
+  const size_t required = std::max<size_t>(1, std::min<size_t>(KV_READ_QUORUM, totalTargets));
+
+  auto responseCount = std::make_shared<size_t>(0);
+  auto replied = std::make_shared<bool>(false);
+  auto best = std::make_shared<std::optional<KvItem>>(std::nullopt);
+  auto hostVersions = std::make_shared<std::unordered_map<std::string, std::optional<uint64_t>>>();
+
+  for (const auto& host : m_bucket.confirmedHosts)
+  {
+    ndn::Name interestName(host.first);
+    interestName.appendNumber(m_bucket.id);
+    interestName.append(encodeHex(key));
+    interestName.appendNumber(CommandCodes::KV_GET | CommandCodes::NO_REPLICATE);
+
+    ndn::Interest i(interestName);
+    i.setCanBePrefix(false);
+    i.setMustBeFresh(true);
+
+    ndn::security::SigningInfo si;
+    si.setSha256Signing();
+    si.setSignedInterestFormat(ndn::security::SignedInterestFormat::V03);
+    m_keyChain.sign(i, si);
+
+    const std::string hostUri = host.first.toUri();
+    m_face.expressInterest(i,
+      [this, request, key, best, replied, responseCount, required, hostVersions, hostUri] (const auto&, const auto& data) {
+        ++(*responseCount);
+        std::string text(reinterpret_cast<const char*>(data.getContent().value()), data.getContent().value_size());
+
+        if (text == "NOT_FOUND") {
+          (*hostVersions)[hostUri] = std::nullopt;
+        }
+        else {
+          auto pos = text.find('\n');
+          if (pos != std::string::npos) {
+            uint64_t version = std::stoull(text.substr(0, pos));
+            std::string value = text.substr(pos + 1);
+            (*hostVersions)[hostUri] = version;
+            if (!best->has_value() || version > (*best)->version) {
+              *best = KvItem{key, value, version};
+            }
+          }
+        }
+
+        if (!(*replied) && *responseCount >= required) {
+          *replied = true;
+
+          if (!best->has_value()) {
+            replyText(request, "NOT_FOUND");
+            return;
+          }
+
+          for (const auto& item : *hostVersions)
+          {
+            if (!item.second.has_value() || item.second.value() < (*best)->version)
+            {
+              ndn::Name repairName(item.first);
+              repairName.appendNumber(m_bucket.id);
+              repairName.append(encodeHex(best->value().key));
+              repairName.append(encodeHex(best->value().value));
+              repairName.appendNumber(best->value().version);
+              repairName.appendNumber(CommandCodes::KV_PUT | CommandCodes::NO_REPLICATE);
+
+              ndn::Interest repairInterest(repairName);
+              repairInterest.setCanBePrefix(false);
+              repairInterest.setMustBeFresh(true);
+
+              ndn::security::SigningInfo repairSi;
+              repairSi.setSha256Signing();
+              repairSi.setSignedInterestFormat(ndn::security::SignedInterestFormat::V03);
+              m_keyChain.sign(repairInterest, repairSi);
+
+              m_face.expressInterest(repairInterest, nullptr, nullptr, nullptr);
+            }
+          }
+
+          std::ostringstream oss;
+          oss << (*best)->version << "\n" << (*best)->value;
+          replyText(request, oss.str());
+        }
+      },
+      [this, request, replied, responseCount, required, totalTargets] (const auto&, const auto&) {
+        ++(*responseCount);
+        if (!(*replied) && *responseCount >= totalTargets && *responseCount >= required) {
+          *replied = true;
+          replyText(request, "NOT_FOUND");
+        }
+      },
+      [this, request, replied, responseCount, required, totalTargets] (const auto&) {
+        ++(*responseCount);
+        if (!(*replied) && *responseCount >= totalTargets && *responseCount >= required) {
+          *replied = true;
+          replyText(request, "NOT_FOUND");
+        }
+      });
+  }
 }
 
 void
-Worker::kvList(const ndn::Interest& request)
+Worker::kvList(const ndn::Interest& request, const uint64_t& commandCode)
 {
-  auto items = store->listKv();
-  std::ostringstream oss;
-  for (const auto& item : items)
-    oss << item.key << "\t" << item.version << "\n";
-  replyText(request, oss.str());
+  if (commandCode & CommandCodes::NO_REPLICATE)
+  {
+    auto items = store->listKv();
+    std::ostringstream oss;
+    for (const auto& item : items)
+      oss << item.key << "\t" << item.version << "\n";
+    replyText(request, oss.str());
+    return;
+  }
+
+  const size_t totalTargets = std::max<size_t>(1, m_bucket.confirmedHosts.size());
+  const size_t required = std::max<size_t>(1, std::min<size_t>(KV_READ_QUORUM, totalTargets));
+
+  auto responseCount = std::make_shared<size_t>(0);
+  auto replied = std::make_shared<bool>(false);
+  auto merged = std::make_shared<std::unordered_map<std::string, uint64_t>>();
+
+  for (const auto& host : m_bucket.confirmedHosts)
+  {
+    ndn::Name interestName(host.first);
+    interestName.appendNumber(m_bucket.id);
+    interestName.appendNumber(CommandCodes::KV_LIST | CommandCodes::NO_REPLICATE);
+
+    ndn::Interest i(interestName);
+    i.setCanBePrefix(false);
+    i.setMustBeFresh(true);
+
+    ndn::security::SigningInfo si;
+    si.setSha256Signing();
+    si.setSignedInterestFormat(ndn::security::SignedInterestFormat::V03);
+    m_keyChain.sign(i, si);
+
+    m_face.expressInterest(i,
+      [this, request, merged, responseCount, replied, required] (const auto&, const auto& data) {
+        ++(*responseCount);
+        std::string text(reinterpret_cast<const char*>(data.getContent().value()), data.getContent().value_size());
+        std::istringstream iss(text);
+        std::string line;
+        while (std::getline(iss, line))
+        {
+          if (line.empty())
+            continue;
+          auto sep = line.find('\t');
+          if (sep == std::string::npos)
+            continue;
+          const std::string key = line.substr(0, sep);
+          const uint64_t version = std::stoull(line.substr(sep + 1));
+          auto it = merged->find(key);
+          if (it == merged->end() || version > it->second)
+            (*merged)[key] = version;
+        }
+
+        if (!(*replied) && *responseCount >= required)
+        {
+          *replied = true;
+          std::ostringstream out;
+          for (const auto& item : *merged)
+            out << item.first << "\t" << item.second << "\n";
+          replyText(request, out.str());
+        }
+      },
+      [this, request, responseCount, replied, required, totalTargets, merged] (const auto&, const auto&) {
+        ++(*responseCount);
+        if (!(*replied) && *responseCount >= totalTargets && *responseCount >= required)
+        {
+          *replied = true;
+          std::ostringstream out;
+          for (const auto& item : *merged)
+            out << item.first << "\t" << item.second << "\n";
+          replyText(request, out.str());
+        }
+      },
+      [this, request, responseCount, replied, required, totalTargets, merged] (const auto&) {
+        ++(*responseCount);
+        if (!(*replied) && *responseCount >= totalTargets && *responseCount >= required)
+        {
+          *replied = true;
+          std::ostringstream out;
+          for (const auto& item : *merged)
+            out << item.first << "\t" << item.second << "\n";
+          replyText(request, out.str());
+        }
+      });
+  }
 }
 
 std::string
