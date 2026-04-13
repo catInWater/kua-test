@@ -4,6 +4,8 @@
 
 #include <iostream>
 #include <chrono>
+#include <iomanip>
+#include <sstream>
 
 #include "config-bundle.hpp"
 #include "bucket.hpp"
@@ -18,6 +20,129 @@ namespace kua {
 class Client
 {
 public:
+  void
+  kvPut(const std::string& key, const std::string& value)
+  {
+    const auto keyHex = encodeHex(key);
+    const auto valueHex = encodeHex(value);
+    const auto bucketId = kvBucketFromKey(key);
+    const auto version = static_cast<uint64_t>(std::chrono::duration_cast<std::chrono::milliseconds>(
+      std::chrono::system_clock::now().time_since_epoch()).count());
+
+    ndn::Name interestName("/kua");
+    interestName.appendNumber(bucketId);
+    interestName.append(keyHex);
+    interestName.append(valueHex);
+    interestName.appendNumber(version);
+    interestName.appendNumber(CommandCodes::KV_PUT);
+
+    ndn::Interest interest(interestName);
+    interest.setCanBePrefix(false);
+    interest.setMustBeFresh(true);
+    interest.setInterestLifetime(ndn::time::milliseconds(3000));
+
+    ndn::security::SigningInfo interestSigningInfo;
+    interestSigningInfo.setSignedInterestFormat(ndn::security::SignedInterestFormat::V03);
+    m_keyChain.sign(interest, interestSigningInfo);
+
+    m_face.expressInterest(interest,
+      [key, version] (const ndn::Interest&, const ndn::Data& data) {
+        std::string text(reinterpret_cast<const char*>(data.getContent().value()), data.getContent().value_size());
+        std::cerr << "KV_PUT key=" << key << ", version=" << version << ": " << text << std::endl;
+      },
+      [] (const ndn::Interest&, const ndn::lp::Nack& nack) {
+        std::cerr << "KV_PUT Nack: " << nack.getReason() << std::endl;
+      },
+      [] (const ndn::Interest& i) {
+        std::cerr << "KV_PUT 超时: " << i.getName() << std::endl;
+      });
+
+    m_face.processEvents(ndn::time::milliseconds(1500));
+  }
+
+  void
+  kvGet(const std::string& key)
+  {
+    const auto keyHex = encodeHex(key);
+    const auto bucketId = kvBucketFromKey(key);
+
+    ndn::Name interestName("/kua");
+    interestName.appendNumber(bucketId);
+    interestName.append(keyHex);
+    interestName.appendNumber(CommandCodes::KV_GET);
+
+    ndn::Interest interest(interestName);
+    interest.setCanBePrefix(false);
+    interest.setMustBeFresh(true);
+    interest.setInterestLifetime(ndn::time::milliseconds(3000));
+
+    m_face.expressInterest(interest,
+      [key] (const ndn::Interest&, const ndn::Data& data) {
+        std::string text(reinterpret_cast<const char*>(data.getContent().value()), data.getContent().value_size());
+        if (text == "NOT_FOUND") {
+          std::cout << "NOT_FOUND" << std::endl;
+          return;
+        }
+
+        auto pos = text.find('\n');
+        if (pos == std::string::npos) {
+          std::cout << text << std::endl;
+          return;
+        }
+
+        const auto version = text.substr(0, pos);
+        const auto value = text.substr(pos + 1);
+        std::cout << value << std::endl;
+        std::cerr << "KV_GET key=" << key << ", version=" << version << std::endl;
+      },
+      [] (const ndn::Interest&, const ndn::lp::Nack& nack) {
+        std::cerr << "KV_GET Nack: " << nack.getReason() << std::endl;
+      },
+      [] (const ndn::Interest& i) {
+        std::cerr << "KV_GET 超时: " << i.getName() << std::endl;
+      });
+
+    m_face.processEvents(ndn::time::milliseconds(1500));
+  }
+
+  void
+  kvListAll()
+  {
+    for (bucket_id_t bucketId = 0; bucketId < NUM_BUCKETS; ++bucketId)
+      kvListBucket(bucketId);
+  }
+
+  void
+  kvListBucket(bucket_id_t bucketId)
+  {
+    ndn::Name interestName("/kua");
+    interestName.appendNumber(bucketId);
+    interestName.appendNumber(CommandCodes::KV_LIST);
+
+    ndn::Interest interest(interestName);
+    interest.setCanBePrefix(false);
+    interest.setMustBeFresh(true);
+    interest.setInterestLifetime(ndn::time::milliseconds(3000));
+
+    m_face.expressInterest(interest,
+      [bucketId] (const ndn::Interest&, const ndn::Data& data) {
+        std::string text(reinterpret_cast<const char*>(data.getContent().value()), data.getContent().value_size());
+        std::cout << "# bucket " << bucketId << std::endl;
+        if (text.empty())
+          std::cout << "(empty)" << std::endl;
+        else
+          std::cout << text;
+      },
+      [] (const ndn::Interest&, const ndn::lp::Nack& nack) {
+        std::cerr << "KV_LIST Nack: " << nack.getReason() << std::endl;
+      },
+      [] (const ndn::Interest& i) {
+        std::cerr << "KV_LIST 超时: " << i.getName() << std::endl;
+      });
+
+    m_face.processEvents(ndn::time::milliseconds(1500));
+  }
+
   void
   put(std::string nameStr)
   {
@@ -83,6 +208,24 @@ public:
   }
 
 private:
+  static std::string
+  encodeHex(const std::string& value)
+  {
+    std::ostringstream oss;
+    oss << std::hex << std::setfill('0');
+    for (unsigned char c : value)
+      oss << std::setw(2) << static_cast<int>(c);
+    return oss.str();
+  }
+
+  static bucket_id_t
+  kvBucketFromKey(const std::string& key)
+  {
+    ndn::Name keyName("/kv");
+    keyName.append(encodeHex(key));
+    return Bucket::idFromName(keyName);
+  }
+
   void
   sendFETCH(ndn::Name interestName)
   {
@@ -318,6 +461,17 @@ main(int argc, char** argv)
       client.get(argv[2]);
     } else if (argc == 3 && std::string(argv[1]) == "put") {
       client.put(argv[2]);
+    } else if (argc == 4 && std::string(argv[1]) == "kv-put") {
+      client.kvPut(argv[2], argv[3]);
+    } else if (argc == 3 && std::string(argv[1]) == "kv-get") {
+      client.kvGet(argv[2]);
+    } else if (argc == 2 && std::string(argv[1]) == "kv-list") {
+      client.kvListAll();
+    } else if (argc == 3 && std::string(argv[1]) == "kv-list") {
+      client.kvListBucket(static_cast<kua::bucket_id_t>(std::stoul(argv[2])));
+    } else {
+      std::cerr << "用法: kua-client put <name> | get <name> | kv-put <key> <value> | kv-get <key> | kv-list [bucket-id]" << std::endl;
+      return 1;
     }
     return 0;
   }

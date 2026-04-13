@@ -3,6 +3,10 @@
 #include "command-codes.hpp"
 
 #include <ndn-cxx/util/logger.hpp>
+
+#include <algorithm>
+#include <iomanip>
+#include <sstream>
 #include <thread>
 #include <vector>
 
@@ -101,6 +105,33 @@ Worker::onInterest(const ndn::InterestFilter&, const ndn::Interest& interest)
     {
       ndn::Name insertName(reqName.get(-2).blockFromValue());
       insert(insertName, interest, ccode);
+      return;
+    }
+
+    if (ccode & CommandCodes::KV_PUT)
+    {
+      if (reqName.size() < 5 || !reqName[-2].isNumber())
+        return;
+
+      const auto version = reqName[-2].toNumber();
+      const auto key = decodeHex(reqName[-4].toUri());
+      const auto value = decodeHex(reqName[-3].toUri());
+      kvPut(key, value, version, interest, ccode);
+      return;
+    }
+
+    if (ccode & CommandCodes::KV_GET)
+    {
+      if (reqName.size() < 4)
+        return;
+      const auto key = decodeHex(reqName[-2].toUri());
+      kvGet(key, interest);
+      return;
+    }
+
+    if (ccode & CommandCodes::KV_LIST)
+    {
+      kvList(interest);
       return;
     }
   }
@@ -241,6 +272,128 @@ Worker::replyInsert(const ndn::Interest& request)
   info.setSha256Signing();
   m_keyChain.sign(response, info);
   m_face.put(response);
+}
+
+void
+Worker::replyText(const ndn::Interest& request, const std::string& text)
+{
+  ndn::Data response(request.getName());
+  // KV metadata/value replies should not be cached for long, otherwise reads may return stale versions.
+  response.setFreshnessPeriod(ndn::time::milliseconds(1));
+  response.setContent(std::string_view(text));
+  ndn::security::SigningInfo info;
+  info.setSha256Signing();
+  m_keyChain.sign(response, info);
+  m_face.put(response);
+}
+
+void
+Worker::kvPut(const std::string& key, const std::string& value, uint64_t version,
+              const ndn::Interest& request, const uint64_t& commandCode)
+{
+  if ((commandCode & CommandCodes::NO_REPLICATE) == 0)
+  {
+    auto ackCount = std::make_shared<size_t>(0);
+    auto replied = std::make_shared<bool>(false);
+    const size_t expected = std::max<size_t>(1, std::min<size_t>(NUM_REPLICA, m_bucket.confirmedHosts.size()));
+
+    for (const auto& host : m_bucket.confirmedHosts)
+    {
+      ndn::Name interestName(host.first);
+      interestName.appendNumber(m_bucket.id);
+      interestName.append(encodeHex(key));
+      interestName.append(encodeHex(value));
+      interestName.appendNumber(version);
+      interestName.appendNumber(CommandCodes::KV_PUT | CommandCodes::NO_REPLICATE);
+
+      ndn::Interest interest(interestName);
+      interest.setCanBePrefix(false);
+      interest.setMustBeFresh(true);
+
+      ndn::security::SigningInfo interestSigningInfo;
+      interestSigningInfo.setSha256Signing();
+      interestSigningInfo.setSignedInterestFormat(ndn::security::SignedInterestFormat::V03);
+      m_keyChain.sign(interest, interestSigningInfo);
+
+      m_face.expressInterest(interest,
+        [this, request, ackCount, replied, expected] (const auto&, const auto&) {
+          ++(*ackCount);
+          if (!(*replied) && *ackCount >= expected)
+          {
+            *replied = true;
+            replyText(request, "OK");
+          }
+        },
+        [this, request, replied] (const auto&, const auto&) {
+          if (!(*replied))
+          {
+            *replied = true;
+            replyText(request, "FAILED");
+          }
+        },
+        nullptr);
+    }
+    return;
+  }
+
+  const bool updated = store->putKv(key, value, version);
+  if (updated)
+    NDN_LOG_INFO("KV 写入成功: key=" << key << ", version=" << version << ", bucket=#" << m_bucket.id);
+  else
+    NDN_LOG_INFO("KV 写入忽略旧版本: key=" << key << ", version=" << version << ", bucket=#" << m_bucket.id);
+
+  replyText(request, updated ? "OK" : "IGNORED_OLD_VERSION");
+}
+
+void
+Worker::kvGet(const std::string& key, const ndn::Interest& request)
+{
+  auto item = store->getKv(key);
+  if (!item.has_value())
+  {
+    replyText(request, "NOT_FOUND");
+    return;
+  }
+
+  std::ostringstream oss;
+  oss << item->version << "\n" << item->value;
+  replyText(request, oss.str());
+}
+
+void
+Worker::kvList(const ndn::Interest& request)
+{
+  auto items = store->listKv();
+  std::ostringstream oss;
+  for (const auto& item : items)
+    oss << item.key << "\t" << item.version << "\n";
+  replyText(request, oss.str());
+}
+
+std::string
+Worker::decodeHex(const std::string& hex)
+{
+  if (hex.size() % 2 != 0)
+    return "";
+
+  std::string out;
+  out.reserve(hex.size() / 2);
+  for (size_t i = 0; i < hex.size(); i += 2)
+  {
+    const auto byte = static_cast<char>(std::stoi(hex.substr(i, 2), nullptr, 16));
+    out.push_back(byte);
+  }
+  return out;
+}
+
+std::string
+Worker::encodeHex(const std::string& value)
+{
+  std::ostringstream oss;
+  oss << std::hex << std::setfill('0');
+  for (unsigned char c : value)
+    oss << std::setw(2) << static_cast<int>(c);
+  return oss.str();
 }
 
 void

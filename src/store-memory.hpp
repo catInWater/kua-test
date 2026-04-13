@@ -2,6 +2,7 @@
 
 #include "store.hpp"
 #include <map>
+#include <string>
 #include <vector>
 
 namespace kua {
@@ -42,8 +43,40 @@ public:
     return names;
   }
 
+  inline bool
+  putKv(const std::string& key, const std::string& value, uint64_t version)
+  {
+    auto it = m_kvMap.find(key);
+    if (it == m_kvMap.end() || version >= it->second.version)
+    {
+      m_kvMap[key] = KvItem{key, value, version};
+      return true;
+    }
+    return false;
+  }
+
+  inline std::optional<KvItem>
+  getKv(const std::string& key)
+  {
+    auto it = m_kvMap.find(key);
+    if (it != m_kvMap.end())
+      return it->second;
+    return std::nullopt;
+  }
+
+  inline std::vector<KvItem>
+  listKv()
+  {
+    std::vector<KvItem> items;
+    items.reserve(m_kvMap.size());
+    for (const auto& item : m_kvMap)
+      items.push_back(item.second);
+    return items;
+  }
+
 private:
   std::map<ndn::Name, std::shared_ptr<const ndn::Data>> m_map;
+  std::map<std::string, KvItem> m_kvMap;
 };
 
 } // namespace kua
