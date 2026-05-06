@@ -20,6 +20,19 @@ computeHash(const std::string& value)
   return std::hash<std::string>{}(value);
 }
 
+std::string
+formatOwners(const std::vector<ndn::Name>& owners)
+{
+  std::string result;
+  for (size_t i = 0; i < owners.size(); ++i)
+  {
+    if (i != 0)
+      result += ",";
+    result += owners[i].toUri();
+  }
+  return result;
+}
+
 } // namespace
 
 Bidder::Bidder(ConfigBundle& configBundle, NodeWatcher& nodeWatcher)
@@ -63,6 +76,7 @@ Bidder::recomputeBucketAssignments()
 
     if (wasLocalOwner && !isLocalOwnerNow)
     {
+      NDN_LOG_INFO("本地节点失去 bucket " << bucketId << " 的所有者身份，新所有者: [" << formatOwners(owners) << "]");
       auto bucketPtr = m_buckets[bucketId];
       if (bucketPtr && bucketPtr->worker)
       {
@@ -79,7 +93,7 @@ Bidder::recomputeBucketAssignments()
 
     if (!wasLocalOwner && isLocalOwnerNow)
     {
-      NDN_LOG_INFO("本地节点成为 bucket " << bucketId << " 的所有者");
+      NDN_LOG_INFO("本地节点成为 bucket " << bucketId << " 的所有者，当前所有者: [" << formatOwners(owners) << "]");
       m_buckets[bucketId] = std::make_shared<Bucket>(bucketId);
       auto& bucket = *m_buckets[bucketId];
       bucket.confirmedHosts.clear();
@@ -120,6 +134,13 @@ Bidder::recomputeBucketAssignments()
 
     m_bucketOwners[bucketId] = owners;
   }
+
+  std::string snapshot = "BUCKET_SNAPSHOT node=" + m_nodePrefix.toUri();
+  for (bucket_id_t bucketId = 0; bucketId < NUM_BUCKETS; ++bucketId)
+  {
+    snapshot += " bucket" + std::to_string(bucketId) + "=[" + formatOwners(m_bucketOwners[bucketId]) + "]";
+  }
+  NDN_LOG_INFO(snapshot);
 
   m_recomputeEvent = m_scheduler.schedule(ndn::time::seconds(3),
                                           [this] { recomputeBucketAssignments(); });

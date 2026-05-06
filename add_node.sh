@@ -6,6 +6,12 @@ LOG_DIR="添加节点"
 INITIAL_NODES=(one two three four)
 NEW_NODE="five"
 NFD_STRATEGY="/localhost/nfd/strategy/multicast"
+TIMES_FILE="$LOG_DIR/figure-times.tsv"
+
+record_marker() {
+  local label="$1"
+  printf '%s\t%s\n' "$label" "$(date +%s.%N)" >> "$TIMES_FILE"
+}
 
 if [ -d "$LOG_DIR" ]; then
   echo "Cleaning old log files in $LOG_DIR"
@@ -13,6 +19,8 @@ if [ -d "$LOG_DIR" ]; then
 else
   mkdir -p "$LOG_DIR"
 fi
+
+: > "$TIMES_FILE"
 
 echo "Cleaning old kua processes..."
 sudo pkill -f './build/bin/kua' || true
@@ -52,6 +60,7 @@ for name in "${INITIAL_NODES[@]}"; do
 done
 
 sleep 10
+record_marker "扩容前"
 
 echo "Initial nodes started. Inserting pre-join data into bucket 1 and bucket 3..."
 PRE_JOIN_DATA=(
@@ -76,7 +85,10 @@ echo "Starting new node $NEW_NODE..."
 start_node "$NEW_NODE"
 
 echo "Waiting for node $NEW_NODE to stabilize before migration..."
-sleep 40
+sleep 12
+record_marker "扩容检测后"
+sleep 28
+record_marker "迁移完成后"
 
 echo "Inserting post-join data into bucket 1 and bucket 3..."
 POST_JOIN_DATA=(
@@ -139,5 +151,12 @@ else
   echo "--- $NEW_NODE insert log ---"
   grep -E "收到请求 : #1|收到请求 : #3" "$LOG_DIR/$NEW_NODE.log" || true
 fi
+
+python3 draw_bucket_assignment_snapshots.py \
+  --log-dir "$LOG_DIR" \
+  --times-file "$TIMES_FILE" \
+  --output "$LOG_DIR/hot-expand-bucket-snapshots.svg" \
+  --summary-output "$LOG_DIR/hot-expand-bucket-snapshots.txt" \
+  --title "热扩容实验中的桶分配变化"
 
 echo "Test complete. Logs written to $LOG_DIR"

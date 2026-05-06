@@ -7,6 +7,12 @@ NODES=(one two three four five)
 REMOVE_NODE="five"
 REMAINING_NODES=(one two three four)
 NFD_STRATEGY="/localhost/nfd/strategy/multicast"
+TIMES_FILE="$LOG_DIR/figure-times.tsv"
+
+record_marker() {
+  local label="$1"
+  printf '%s\t%s\n' "$label" "$(date +%s.%N)" >> "$TIMES_FILE"
+}
 
 if [ -d "$LOG_DIR" ]; then
   echo "Cleaning old log files in $LOG_DIR"
@@ -14,6 +20,8 @@ if [ -d "$LOG_DIR" ]; then
 else
   mkdir -p "$LOG_DIR"
 fi
+
+: > "$TIMES_FILE"
 
 echo "Cleaning old kua processes..."
 sudo pkill -f './build/bin/kua' || true
@@ -53,6 +61,7 @@ for name in "${NODES[@]}"; do
 done
 
 sleep 12
+record_marker "故障前"
 
 echo "Inserting pre-failure data (covering bucket 1 and bucket 3)..."
 TEST_DATA=(
@@ -81,7 +90,10 @@ sleep 1
 
 # Give membership change + reassignment + migration enough time.
 echo "Waiting for reassignment and migration after node removal..."
-sleep 25
+sleep 10
+record_marker "故障检测后"
+sleep 15
+record_marker "恢复完成后"
 
 echo "Verifying all data remain accessible after node removal..."
 SUCCESS_COUNT=0
@@ -117,5 +129,12 @@ if grep -qE "开始迁移 bucket|迁移 bucket|发送迁移请求|接收数据�
 else
   echo "WARN: no explicit migration log found; data still remained readable"
 fi
+
+python3 draw_bucket_assignment_snapshots.py \
+  --log-dir "$LOG_DIR" \
+  --times-file "$TIMES_FILE" \
+  --output "$LOG_DIR/fault-tolerance-bucket-snapshots.svg" \
+  --summary-output "$LOG_DIR/fault-tolerance-bucket-snapshots.txt" \
+  --title "容灾实验中的桶分配变化"
 
 echo "Test complete. Logs written to $LOG_DIR"

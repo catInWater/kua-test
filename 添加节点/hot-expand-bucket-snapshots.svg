@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1060" viewBox="0 0 1720 1060">
+<rect width="100%" height="100%" fill="#faf8f2" />
+<text x="860.0" y="60" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="42" font-weight="bold" text-anchor="middle" fill="#111">热扩容实验中的桶分配变化</text>
+<text x="70" y="108" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="start" fill="#111">数据标记</text>
+<text x="70" y="136" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#333">d1 = beta2</text>
+<text x="280" y="136" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#333">d2 = alpha2</text>
+<text x="490" y="136" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#333">d3 = alpha7</text>
+<rect x="40" y="150" width="1640" height="388" fill="#fffdf8" stroke="#c7bda8" stroke-width="2" rx="18" />
+<text x="90" y="194" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">扩容前</text>
+<text x="1630" y="194" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="end" fill="#666">t=0.0s</text>
+<text x="78" y="222" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="#6b3f00">实验全部数据</text>
+<text x="240" y="222" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#333">b0: 无数据</text>
+<text x="940" y="222" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#333">b1: gamma2, delta4, gamma7, delta6, alpha8</text>
+<text x="240" y="252" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#333">b2: 无数据</text>
+<text x="940" y="252" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#333">b3: alpha2, beta2, alpha7, beta7, gamma8</text>
+<rect x="78" y="302" width="300" height="230" fill="#f28482" stroke="#666" stroke-width="2" rx="20" />
+<text x="102" y="342" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">one</text>
+<rect x="98" y="362" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="134.0" y="391.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b0</text>
+<rect x="180" y="362" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="216.0" y="391.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b1</text>
+<rect x="262" y="362" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="298.0" y="391.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b3</text>
+<rect x="396" y="302" width="300" height="230" fill="#84a59d" stroke="#666" stroke-width="2" rx="20" />
+<text x="420" y="342" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">two</text>
+<rect x="416" y="362" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="452.0" y="391.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b0</text>
+<rect x="498" y="362" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="534.0" y="391.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b2</text>
+<rect x="580" y="362" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="616.0" y="391.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b3</text>
+<rect x="714" y="302" width="300" height="230" fill="#8ecae6" stroke="#666" stroke-width="2" rx="20" />
+<text x="738" y="342" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">three</text>
+<rect x="734" y="362" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="770.0" y="391.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b1</text>
+<rect x="816" y="362" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="852.0" y="391.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b2</text>
+<rect x="1032" y="302" width="300" height="230" fill="#f6bd60" stroke="#666" stroke-width="2" rx="20" />
+<text x="1056" y="342" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">four</text>
+<rect x="1052" y="362" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="1088.0" y="391.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b0</text>
+<rect x="1134" y="362" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="1170.0" y="391.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b1</text>
+<rect x="1216" y="362" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="1252.0" y="391.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b2</text>
+<rect x="1052" y="412" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="1088.0" y="441.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b3</text>
+<rect x="1350" y="302" width="300" height="230" fill="#efefef" stroke="#666" stroke-width="2" rx="20" />
+<text x="1374" y="342" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">five</text>
+<text x="1374" y="406" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="#4f4f4f">无相关 bucket</text>
+<rect x="40" y="590" width="1640" height="350" fill="#fffdf8" stroke="#c7bda8" stroke-width="2" rx="18" />
+<text x="90" y="634" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">迁移完成后</text>
+<text x="1630" y="634" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="end" fill="#666">t=51.2s</text>
+<rect x="78" y="686" width="300" height="230" fill="#f28482" stroke="#666" stroke-width="2" rx="20" />
+<text x="102" y="726" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">one</text>
+<rect x="98" y="746" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="134.0" y="775.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b1</text>
+<rect x="180" y="746" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="216.0" y="775.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b3</text>
+<text x="102" y="884" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="#4f4f4f">本阶段无迁入数据</text>
+<rect x="396" y="686" width="300" height="230" fill="#84a59d" stroke="#666" stroke-width="2" rx="20" />
+<text x="420" y="726" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">two</text>
+<rect x="416" y="746" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="452.0" y="775.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b0</text>
+<rect x="498" y="746" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="534.0" y="775.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b2</text>
+<text x="420" y="884" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="#4f4f4f">本阶段无迁入数据</text>
+<rect x="714" y="686" width="300" height="230" fill="#8ecae6" stroke="#666" stroke-width="2" rx="20" />
+<text x="738" y="726" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">three</text>
+<rect x="734" y="746" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="770.0" y="775.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b1</text>
+<rect x="816" y="746" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="852.0" y="775.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b2</text>
+<text x="738" y="884" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="#4f4f4f">本阶段无迁入数据</text>
+<rect x="1032" y="686" width="300" height="230" fill="#f6bd60" stroke="#666" stroke-width="2" rx="20" />
+<text x="1056" y="726" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">four</text>
+<rect x="1052" y="746" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="1088.0" y="775.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b0</text>
+<rect x="1134" y="746" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="1170.0" y="775.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b1</text>
+<rect x="1216" y="746" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="1252.0" y="775.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b2</text>
+<rect x="1052" y="796" width="72" height="42" fill="#ffffff" stroke="#5a5a5a" stroke-width="2" rx="18" />
+<text x="1088.0" y="825.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b3</text>
+<text x="1056" y="884" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="#4f4f4f">本阶段无迁入数据</text>
+<rect x="1350" y="686" width="300" height="230" fill="#b8c0ff" stroke="#666" stroke-width="2" rx="20" />
+<text x="1374" y="726" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">five</text>
+<rect x="1370" y="746" width="72" height="42" fill="#fff1c7" stroke="#d17b00" stroke-width="4" rx="18" />
+<text x="1406.0" y="775.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b0</text>
+<rect x="1452" y="746" width="72" height="42" fill="#fff1c7" stroke="#d17b00" stroke-width="4" rx="18" />
+<text x="1488.0" y="775.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111">b3</text>
+<text x="1374" y="868" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#6b3f00">已迁入</text>
+<text x="1374" y="888" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#2c2c2c">b3: d1, d2, d3</text>
+</svg>

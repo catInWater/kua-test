@@ -1,26 +1,35 @@
-1775978587.098715  INFO: [kua.nodewatcher] 构造 NodeWatcher
-1775978587.106347  INFO: [kua.bidder] 构造 Bidder
-1775978592.106410 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
-1775978592.106518  INFO: [kua.bidder] 本地节点成为 bucket 0 的所有者
-1775978592.107795  INFO: [kua.worker] 构造 worker #0 /five
-1775978592.111874  INFO: [kua.bidder] 本地节点成为 bucket 3 的所有者
-1775978592.112826  INFO: [kua.worker] 构造 worker #3 /five
-1775978595.116606 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
-1775978598.118942 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
-1775978601.123577 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
-1775978603.237645 DEBUG: [kua.worker] 收到请求 : #3 : /five/%03/%07%0E%08%06alpha22%01%002%01%00/%07
-1775978603.237705 DEBUG: [kua.worker] 收到请求 : #3 : /alpha2/seg=0
-1775978603.238048 DEBUG: [kua.worker] FETCH 0 / 1
-1775978604.123803 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
-1775978604.278073 DEBUG: [kua.worker] 收到请求 : #3 : /five/%03/%07%0D%08%05beta22%01%002%01%00/%07
-1775978604.278136 DEBUG: [kua.worker] 收到请求 : #3 : /beta2/seg=0
-1775978604.278461 DEBUG: [kua.worker] FETCH 0 / 1
-1775978605.315282 DEBUG: [kua.worker] 收到请求 : #3 : /five/%03/%07%0E%08%06alpha72%01%002%01%00/%07
-1775978605.315326 DEBUG: [kua.worker] 收到请求 : #3 : /alpha7/seg=0
-1775978605.316110 DEBUG: [kua.worker] FETCH 0 / 1
-1775978607.124132 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
-1775978607.393224 DEBUG: [kua.worker] 收到请求 : #3 : /five/%03/%07%0E%08%06gamma82%01%002%01%00/%07
-1775978607.393282 DEBUG: [kua.worker] 收到请求 : #3 : /gamma8/seg=0
-1775978607.394421 DEBUG: [kua.worker] FETCH 0 / 1
-1775978610.124366 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
-1775978613.124650 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1778086200.408657  INFO: [kua.nodewatcher] 构造 NodeWatcher
+1778086200.414781  INFO: [kua.bidder] 构造 Bidder
+1778086205.414939 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1778086205.415018  INFO: [kua.bidder] 本地节点成为 bucket 0 的所有者，当前所有者: [/two,/five,/four]
+1778086205.415515  INFO: [kua.worker] 构造 worker #0 /five
+1778086205.417360  INFO: [kua.bidder] 本地节点成为 bucket 3 的所有者，当前所有者: [/one,/five,/four]
+1778086205.417819  INFO: [kua.worker] 构造 worker #3 /five
+1778086205.420480  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/five bucket0=[/two,/five,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/five,/four]
+1778086205.421810 ERROR: [kua.worker] 错误：注册前缀 '/five/%03' 到本地转发器失败（authorization rejected）
+1778086208.420567 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1778086208.420678  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/five bucket0=[/two,/five,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/five,/four]
+1778086211.420887 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1778086211.421208  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/five bucket0=[/two,/five,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/five,/four]
+1778086214.421461 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1778086214.422109  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/five bucket0=[/two,/five,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/five,/four]
+1778086216.538967 DEBUG: [kua.worker] 收到请求 : #3 : /five/%03/%07%0E%08%06alpha22%01%002%01%00/%07
+1778086216.539008 DEBUG: [kua.worker] 收到请求 : #3 : /alpha2/seg=0
+1778086216.539125 DEBUG: [kua.worker] FETCH 0 / 1
+1778086217.422270 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1778086217.422435  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/five bucket0=[/two,/five,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/five,/four]
+1778086217.559699 DEBUG: [kua.worker] 收到请求 : #3 : /five/%03/%07%0D%08%05beta22%01%002%01%00/%07
+1778086217.559762 DEBUG: [kua.worker] 收到请求 : #3 : /beta2/seg=0
+1778086217.559989 DEBUG: [kua.worker] FETCH 0 / 1
+1778086218.581476 DEBUG: [kua.worker] 收到请求 : #3 : /five/%03/%07%0E%08%06alpha72%01%002%01%00/%07
+1778086218.581518 DEBUG: [kua.worker] 收到请求 : #3 : /alpha7/seg=0
+1778086218.581982 DEBUG: [kua.worker] FETCH 0 / 1
+1778086220.422545 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1778086220.422730  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/five bucket0=[/two,/five,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/five,/four]
+1778086220.654483 DEBUG: [kua.worker] 收到请求 : #3 : /five/%03/%07%0E%08%06gamma82%01%002%01%00/%07
+1778086220.654541 DEBUG: [kua.worker] 收到请求 : #3 : /gamma8/seg=0
+1778086220.654820 DEBUG: [kua.worker] FETCH 0 / 1
+1778086223.422871 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1778086223.423028  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/five bucket0=[/two,/five,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/five,/four]
+1778086226.423237 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 5
+1778086226.423890  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/five bucket0=[/two,/five,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/five,/four]

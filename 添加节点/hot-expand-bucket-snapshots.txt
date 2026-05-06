@@ -1,0 +1,20 @@
+[数据别名]
+  d1: beta2
+  d2: alpha2
+  d3: alpha7
+
+[扩容前] t=0.0s active-nodes=/four,/one,/three,/two
+  bucket 0: one, two, four
+  bucket 1: one, four, three
+  bucket 2: two, four, three
+  bucket 3: one, two, four
+  send one bucket 3: d1, d2, d3
+  send two bucket 3: d1, d2, d3
+  send four bucket 3: d1, d2, d3
+
+[迁移完成后] t=51.2s active-nodes=/five,/four,/one,/three,/two
+  bucket 0: two, five, four
+  bucket 1: one, four, three
+  bucket 2: two, four, three
+  bucket 3: one, five, four
+  receive five bucket 3: d1, d2, d3
