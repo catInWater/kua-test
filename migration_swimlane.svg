@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1240" viewBox="0 0 1700 1240">
+<rect width="100%" height="100%" fill="#faf8f2" />
+<text x="850.0" y="52" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="38" font-weight="bold" text-anchor="middle" fill="#111">数据迁移泳道图</text>
+<rect x="90" y="80" width="240" height="52" fill="#f6d365" stroke="#333" stroke-width="2" rx="10" />
+<text x="210" y="116" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">SVS / 成员视图</text>
+<line x1="210" y1="155" x2="210" y2="1240" stroke="#777" stroke-width="2" stroke-dasharray="10,8" />
+<rect x="570" y="80" width="240" height="52" fill="#f28482" stroke="#333" stroke-width="2" rx="10" />
+<text x="690" y="116" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">旧 owner</text>
+<line x1="690" y1="155" x2="690" y2="1240" stroke="#777" stroke-width="2" stroke-dasharray="10,8" />
+<rect x="1040" y="80" width="240" height="52" fill="#84a59d" stroke="#333" stroke-width="2" rx="10" />
+<text x="1160" y="116" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">新 owner</text>
+<line x1="1160" y1="155" x2="1160" y2="1240" stroke="#777" stroke-width="2" stroke-dasharray="10,8" />
+<rect x="1440" y="80" width="240" height="52" fill="#8ecae6" stroke="#333" stroke-width="2" rx="10" />
+<text x="1560" y="116" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">NDN 路由</text>
+<line x1="1560" y1="155" x2="1560" y2="1240" stroke="#777" stroke-width="2" stroke-dasharray="10,8" />
+<rect x="55" y="175" width="310" height="56" fill="#fff4cf" stroke="#c29b1f" stroke-width="2" rx="8" />
+<text x="210.0" y="210.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#111">SVS 心跳更新成员视图</text>
+<line x1="210" y1="321" x2="690" y2="321" stroke="#b8860b" stroke-width="2.5" />
+<polygon points="690,321 680,316 680,326" fill="#b8860b" />
+<text x="450.0" y="307" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="21" font-weight="normal" text-anchor="middle" fill="#b8860b">触发归属重算</text>
+<line x1="210" y1="363" x2="1160" y2="363" stroke="#b8860b" stroke-width="2.5" />
+<polygon points="1160,363 1150,358 1150,368" fill="#b8860b" />
+<text x="685.0" y="349" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="21" font-weight="normal" text-anchor="middle" fill="#b8860b">触发归属重算</text>
+<rect x="510" y="407" width="360" height="56" fill="#ffe3e3" stroke="#c95d63" stroke-width="2" rx="8" />
+<text x="690.0" y="442.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#111">依据 Maglev 结果识别 owner 变化</text>
+<rect x="980" y="407" width="360" height="56" fill="#e0f0eb" stroke="#4f7f76" stroke-width="2" rx="8" />
+<text x="1160.0" y="442.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#111">依据 Maglev 结果识别 owner 变化</text>
+<rect x="970" y="513" width="380" height="72" fill="#e0f0eb" stroke="#4f7f76" stroke-width="2" rx="8" />
+<text x="1160.0" y="556.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#111">创建 bucket 与本地服务
+并注册名称前缀</text>
+<rect x="510" y="633" width="360" height="70" fill="#ffe3e3" stroke="#c95d63" stroke-width="2" rx="8" />
+<text x="690.0" y="675.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#111">迁移前等待 5 秒
+确保新 owner 已就绪</text>
+<line x1="690" y1="785" x2="1160" y2="785" stroke="#d1495b" stroke-width="2.5" />
+<polygon points="1160,785 1150,780 1150,790" fill="#d1495b" />
+<text x="925.0" y="771" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="21" font-weight="normal" text-anchor="middle" fill="#d1495b">INSERT | NO_REPLICATE | MIGRATE</text>
+<rect x="970" y="865" width="380" height="70" fill="#e0f0eb" stroke="#4f7f76" stroke-width="2" rx="8" />
+<text x="1160.0" y="907.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#111">接收迁移命令
+准备主动抓取原始数据</text>
+<line x1="1160" y1="1017" x2="1560" y2="1017" stroke="#2f5bea" stroke-width="2.5" />
+<polygon points="1560,1017 1550,1012 1550,1022" fill="#2f5bea" />
+<text x="1360.0" y="1003" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="21" font-weight="normal" text-anchor="middle" fill="#2f5bea">按数据名称发送 Interest</text>
+<line x1="1560" y1="1133" x2="690" y2="1133" stroke="#4c78a8" stroke-width="2.5" stroke-dasharray="8,6" />
+<polygon points="690,1133 700,1128 700,1138" fill="#4c78a8" />
+<text x="1125.0" y="1119" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="21" font-weight="normal" text-anchor="middle" fill="#4c78a8">按名称路由命中可用数据源</text>
+<line x1="690" y1="1207" x2="1160" y2="1207" stroke="#2a9d8f" stroke-width="2.5" />
+<polygon points="1160,1207 1150,1202 1150,1212" fill="#2a9d8f" />
+<text x="925.0" y="1193" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="21" font-weight="normal" text-anchor="middle" fill="#2a9d8f">返回对应 Data</text>
+<rect x="970" y="1283" width="380" height="72" fill="#e0f0eb" stroke="#4f7f76" stroke-width="2" rx="8" />
+<text x="1160.0" y="1326.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#111">写入本地存储
+并记录迁移结果日志</text>
+<rect x="500" y="1409" width="380" height="56" fill="#ffe3e3" stroke="#c95d63" stroke-width="2" rx="8" />
+<text x="690.0" y="1444.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#111">延迟 10 秒后退出旧服务</text>
+</svg>
