@@ -1,33 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="760" viewBox="0 0 1120 760">
 <rect width="100%" height="100%" fill="#faf7f0" />
-<text x="560" y="42" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#111">对一个 bucket 的一轮拍卖</text>
-<text x="560" y="70" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#666">SVS-PS / Heartbeat</text>
+<text x="560" y="42" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#111">对一个 bucket 的一轮拍卖</text>
+<text x="560" y="74" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#666">SVS-PS / Heartbeat</text>
 <rect x="210" y="72" width="180" height="48" fill="#f6c85f" stroke="#333" stroke-width="2" rx="8" />
-<text x="300" y="102" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#111">主节点</text>
+<text x="300" y="104" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#111">主节点</text>
 <line x1="300" y1="120" x2="300" y2="650" stroke="#666" stroke-width="2" stroke-dasharray="10,8" />
 <rect x="730" y="72" width="180" height="48" fill="#6fb1fc" stroke="#333" stroke-width="2" rx="8" />
-<text x="820" y="102" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#111">存储节点</text>
+<text x="820" y="104" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#111">存储节点</text>
 <line x1="820" y1="120" x2="820" y2="650" stroke="#666" stroke-width="2" stroke-dasharray="10,8" />
 <line x1="300" y1="170" x2="820" y2="170" stroke="#2f5bea" stroke-width="2.5" />
 <polygon points="820,170 810,165 810,175" fill="#2f5bea" />
-<text x="560.0" y="160" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#2f5bea">AUCTION(bucket)</text>
+<text x="560.0" y="158" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#2f5bea">AUCTION(bucket)</text>
 <line x1="820" y1="262" x2="300" y2="262" stroke="#d1495b" stroke-width="2.5" />
 <polygon points="300,262 310,257 310,267" fill="#d1495b" />
-<text x="560.0" y="252" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#d1495b">BID(price)</text>
+<text x="560.0" y="250" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#d1495b">BID(price)</text>
 <line x1="300" y1="354" x2="820" y2="354" stroke="#2a9d8f" stroke-width="2.5" />
 <polygon points="820,354 810,349 810,359" fill="#2a9d8f" />
-<text x="560.0" y="344" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#2a9d8f">WIN(top-n)</text>
+<text x="560.0" y="342" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#2a9d8f">WIN(top-n)</text>
 <line x1="820" y1="446" x2="300" y2="446" stroke="#8a5cf6" stroke-width="2.5" />
 <polygon points="300,446 310,441 310,451" fill="#8a5cf6" />
-<text x="560.0" y="436" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#8a5cf6">WIN_ACK</text>
+<text x="560.0" y="434" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#8a5cf6">WIN_ACK</text>
 <line x1="300" y1="538" x2="820" y2="538" stroke="#f08c00" stroke-width="2.5" />
 <polygon points="820,538 810,533 810,543" fill="#f08c00" />
-<text x="560.0" y="528" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#f08c00">AUCTION_END(winnerList)</text>
+<text x="560.0" y="526" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#f08c00">AUCTION_END(winnerList)</text>
 <line x1="300" y1="630" x2="820" y2="630" stroke="#888" stroke-width="2.5" stroke-dasharray="8,6" />
 <polygon points="820,630 810,625 810,635" fill="#888" />
-<text x="560.0" y="620" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#888">Heartbeat</text>
+<text x="560.0" y="618" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#888">Heartbeat</text>
 <line x1="820" y1="658" x2="300" y2="658" stroke="#888" stroke-width="2.5" stroke-dasharray="8,6" />
 <polygon points="300,658 310,653 310,663" fill="#888" />
-<text x="560.0" y="648" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#888">Heartbeat</text>
-<text x="560.0" y="732" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">AUCTION -&gt; BID -&gt; WIN -&gt; WIN_ACK -&gt; AUCTION_END</text>
+<text x="560.0" y="646" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#888">Heartbeat</text>
+<text x="560.0" y="732" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">AUCTION -&gt; BID -&gt; WIN -&gt; WIN_ACK -&gt; AUCTION_END</text>
 </svg>
