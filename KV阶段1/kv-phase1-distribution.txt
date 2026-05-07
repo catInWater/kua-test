@@ -1,0 +1,19 @@
+[KV阶段1：基本读写与列表的数据分布]
+
+[首次写入后] t=0.0s
+  one: (empty)
+  two: userA=v1@b2/v1778142111887[latest]
+  three: userA=v1@b2/v1778142111887[latest]
+  four: userA=v1@b2/v1778142111887[latest]
+
+[更新写入后] t=1.0s
+  one: (empty)
+  two: userA=v2@b2/v1778142112925[latest]
+  three: userA=v2@b2/v1778142112925[latest]
+  four: userA=v2@b2/v1778142112925[latest]
+
+[列表验证后] t=2.1s
+  one: userB=b1@b0/v1778142113966[latest]
+  two: userA=v2@b2/v1778142112925[latest], userB=b1@b0/v1778142113966[latest]
+  three: userA=v2@b2/v1778142112925[latest]
+  four: userA=v2@b2/v1778142112925[latest], userB=b1@b0/v1778142113966[latest]

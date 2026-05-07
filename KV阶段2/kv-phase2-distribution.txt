@@ -1,0 +1,19 @@
+[KV阶段2：法定人数写入与读修复的数据分布]
+
+[初始写入后] t=0.0s
+  one: (empty)
+  two: userQ=v1@b2/v1778142509326[latest]
+  three: userQ=v1@b2/v1778142509326[latest]
+  four: userQ=v1@b2/v1778142509326[latest]
+
+[单副本故障写入后] t=5.1s
+  one: (empty)
+  two: userQ=v1@b2/v1778142509326[stale]
+  three: userQ=v2@b2/v1778142515418[latest]
+  four: userQ=v2@b2/v1778142515418[latest]
+
+[读修复后] t=19.2s
+  one: (empty)
+  two: userQ=v2@b2/v1778142515418[latest]
+  three: userQ=v2@b2/v1778142515418[latest]
+  four: userQ=v2@b2/v1778142515418[latest]

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="1300" viewBox="0 0 1760 1300">
+<rect width="100%" height="100%" fill="#faf8f2" />
+<text x="880.0" y="64" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="46" font-weight="bold" text-anchor="middle" fill="#111">KV_GET 读流程泳道图</text>
+<text x="880.0" y="106" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#666">接入副本并行读取多个副本；达到 R=2 后选择最高版本，并对滞后副本发起读修复</text>
+<rect x="95" y="84" width="250" height="58" fill="#f6d365" stroke="#777" stroke-width="2" rx="14" />
+<text x="220" y="128" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#111">Client</text>
+<line x1="220" y1="170" x2="220" y2="1230" stroke="#777" stroke-width="2" stroke-dasharray="10,8" />
+<rect x="505" y="84" width="250" height="58" fill="#8ecae6" stroke="#777" stroke-width="2" rx="14" />
+<text x="630" y="128" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#111">接入副本</text>
+<line x1="630" y1="170" x2="630" y2="1230" stroke="#777" stroke-width="2" stroke-dasharray="10,8" />
+<rect x="915" y="84" width="250" height="58" fill="#84a59d" stroke="#777" stroke-width="2" rx="14" />
+<text x="1040" y="128" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#111">副本 owner</text>
+<line x1="1040" y1="170" x2="1040" y2="1230" stroke="#777" stroke-width="2" stroke-dasharray="10,8" />
+<rect x="1355" y="84" width="250" height="58" fill="#cdb4db" stroke="#777" stroke-width="2" rx="14" />
+<text x="1480" y="128" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#111">一致性决策</text>
+<line x1="1480" y1="170" x2="1480" y2="1230" stroke="#777" stroke-width="2" stroke-dasharray="10,8" />
+<rect x="20" y="196" width="400" height="104" fill="#fff4cf" stroke="#c29b1f" stroke-width="2" rx="10" />
+<text x="220.0" y="230" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">生成 GET Interest</text>
+<text x="220.0" y="266" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">/kua/bucket/keyHex/KV_GET</text>
+<text x="220.0" y="294" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">MustBeFresh = true</text>
+<line x1="220" y1="352" x2="630" y2="352" stroke="#d1495b" stroke-width="2.5" />
+<polygon points="630,352 620,347 620,357" fill="#d1495b" />
+<text x="425.0" y="334.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#d1495b">发送读请求</text>
+<rect x="415" y="426" width="430" height="126" fill="#e6f4fb" stroke="#4c7ea6" stroke-width="2" rx="10" />
+<text x="630.0" y="460" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">并行查询副本</text>
+<text x="630.0" y="496" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">发送 KV_GET | NO_REPLICATE</text>
+<text x="630.0" y="524" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">记录 responseCount</text>
+<text x="630.0" y="552" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">维护 hostVersions 与 best</text>
+<line x1="630" y1="596" x2="1040" y2="596" stroke="#2a9d8f" stroke-width="2.5" />
+<polygon points="1040,596 1030,591 1030,601" fill="#2a9d8f" />
+<text x="835.0" y="578.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#2a9d8f">并行读取</text>
+<rect x="820" y="670" width="440" height="126" fill="#e0f0eb" stroke="#4f7f76" stroke-width="2" rx="10" />
+<text x="1040.0" y="704" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">单副本本地返回</text>
+<text x="1040.0" y="740" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">命中 -&gt; version\nvalue</text>
+<text x="1040.0" y="768" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">不存在 -&gt; NOT_FOUND</text>
+<text x="1040.0" y="796" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">不参与副本间协调</text>
+<line x1="1040" y1="840" x2="1480" y2="840" stroke="#8a5cf6" stroke-width="2.5" />
+<polygon points="1480,840 1470,835 1470,845" fill="#8a5cf6" />
+<text x="1260.0" y="816.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#8a5cf6">返回 version/value 或 NOT_FOUND</text>
+<rect x="1265" y="914" width="430" height="126" fill="#f2e9fb" stroke="#8a5cf6" stroke-width="2" rx="10" />
+<text x="1480.0" y="948" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">选择最新版本</text>
+<text x="1480.0" y="984" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">responseCount &gt;= 2</text>
+<text x="1480.0" y="1012" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">best.version 最大者胜出</text>
+<text x="1480.0" y="1040" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">无有效值则返回 NOT_FOUND</text>
+<line x1="1480" y1="1084" x2="1040" y2="1084" stroke="#e76f51" stroke-width="2.5" stroke-dasharray="8,6" />
+<polygon points="1040,1084 1050,1079 1050,1089" fill="#e76f51" />
+<text x="1260.0" y="1060.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#e76f51">读修复: KV_PUT | NO_REPLICATE</text>
+<line x1="1480" y1="1238" x2="220" y2="1238" stroke="#2f5bea" stroke-width="2.5" />
+<polygon points="220,1238 230,1233 230,1243" fill="#2f5bea" />
+<text x="850.0" y="1214.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#2f5bea">返回最高版本结果</text>
+</svg>

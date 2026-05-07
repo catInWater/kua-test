@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1245" viewBox="0 0 1720 1245">
+<rect width="100%" height="100%" fill="#faf8f2" />
+<text x="860.0" y="60" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="42" font-weight="bold" text-anchor="middle" fill="#111">KV阶段1：基本读写与列表的数据分布</text>
+<rect x="40" y="150" width="1640" height="308" fill="#fffdf8" stroke="#c7bda8" stroke-width="2" rx="18" />
+<text x="90" y="194" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">首次写入后</text>
+<text x="1630" y="194" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="end" fill="#666">t=0.0s</text>
+<text x="78" y="232" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="#6b3f00">全局最新值</text>
+<rect x="220" y="208" width="250" height="40" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="345.0" y="235.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">userA=v1 (b2, v1887)</text>
+<rect x="78" y="266" width="300" height="160" fill="#f28482" stroke="#666" stroke-width="2" rx="20" />
+<text x="102" y="304" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">one</text>
+<text x="102" y="358" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#4f4f4f">无本地键值副本</text>
+<rect x="396" y="266" width="300" height="160" fill="#84a59d" stroke="#666" stroke-width="2" rx="20" />
+<text x="420" y="304" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">two</text>
+<rect x="414" y="318" width="264" height="34" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="546.0" y="342.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">latest userA=v1  b2  v1887</text>
+<rect x="714" y="266" width="300" height="160" fill="#8ecae6" stroke="#666" stroke-width="2" rx="20" />
+<text x="738" y="304" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">three</text>
+<rect x="732" y="318" width="264" height="34" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="864.0" y="342.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">latest userA=v1  b2  v1887</text>
+<rect x="1032" y="266" width="300" height="160" fill="#f6bd60" stroke="#666" stroke-width="2" rx="20" />
+<text x="1056" y="304" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">four</text>
+<rect x="1050" y="318" width="264" height="34" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="1182.0" y="342.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">latest userA=v1  b2  v1887</text>
+<rect x="40" y="505" width="1640" height="308" fill="#fffdf8" stroke="#c7bda8" stroke-width="2" rx="18" />
+<text x="90" y="549" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">更新写入后</text>
+<text x="1630" y="549" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="end" fill="#666">t=1.0s</text>
+<text x="78" y="587" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="#6b3f00">全局最新值</text>
+<rect x="220" y="563" width="250" height="40" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="345.0" y="590.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">userA=v2 (b2, v2925)</text>
+<rect x="78" y="621" width="300" height="160" fill="#f28482" stroke="#666" stroke-width="2" rx="20" />
+<text x="102" y="659" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">one</text>
+<text x="102" y="713" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#4f4f4f">无本地键值副本</text>
+<rect x="396" y="621" width="300" height="160" fill="#84a59d" stroke="#666" stroke-width="2" rx="20" />
+<text x="420" y="659" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">two</text>
+<rect x="414" y="673" width="264" height="34" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="546.0" y="697.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">latest userA=v2  b2  v2925</text>
+<rect x="714" y="621" width="300" height="160" fill="#8ecae6" stroke="#666" stroke-width="2" rx="20" />
+<text x="738" y="659" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">three</text>
+<rect x="732" y="673" width="264" height="34" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="864.0" y="697.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">latest userA=v2  b2  v2925</text>
+<rect x="1032" y="621" width="300" height="160" fill="#f6bd60" stroke="#666" stroke-width="2" rx="20" />
+<text x="1056" y="659" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">four</text>
+<rect x="1050" y="673" width="264" height="34" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="1182.0" y="697.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">latest userA=v2  b2  v2925</text>
+<rect x="40" y="860" width="1640" height="308" fill="#fffdf8" stroke="#c7bda8" stroke-width="2" rx="18" />
+<text x="90" y="904" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">列表验证后</text>
+<text x="1630" y="904" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="end" fill="#666">t=2.1s</text>
+<text x="78" y="942" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="#6b3f00">全局最新值</text>
+<rect x="220" y="918" width="250" height="40" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="345.0" y="945.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">userA=v2 (b2, v2925)</text>
+<rect x="490" y="918" width="250" height="40" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="615.0" y="945.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">userB=b1 (b0, v3966)</text>
+<rect x="78" y="976" width="300" height="160" fill="#f28482" stroke="#666" stroke-width="2" rx="20" />
+<text x="102" y="1014" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">one</text>
+<rect x="96" y="1028" width="264" height="34" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="228.0" y="1052.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">latest userB=b1  b0  v3966</text>
+<rect x="396" y="976" width="300" height="160" fill="#84a59d" stroke="#666" stroke-width="2" rx="20" />
+<text x="420" y="1014" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">two</text>
+<rect x="414" y="1028" width="264" height="34" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="546.0" y="1052.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">latest userA=v2  b2  v2925</text>
+<rect x="414" y="1058" width="264" height="34" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="546.0" y="1082.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">latest userB=b1  b0  v3966</text>
+<rect x="714" y="976" width="300" height="160" fill="#8ecae6" stroke="#666" stroke-width="2" rx="20" />
+<text x="738" y="1014" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">three</text>
+<rect x="732" y="1028" width="264" height="34" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="864.0" y="1052.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">latest userA=v2  b2  v2925</text>
+<rect x="1032" y="976" width="300" height="160" fill="#f6bd60" stroke="#666" stroke-width="2" rx="20" />
+<text x="1056" y="1014" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">four</text>
+<rect x="1050" y="1028" width="264" height="34" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="1182.0" y="1052.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">latest userA=v2  b2  v2925</text>
+<rect x="1050" y="1058" width="264" height="34" fill="#fff1c7" stroke="#666" stroke-width="2" rx="18" />
+<text x="1182.0" y="1082.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">latest userB=b1  b0  v3966</text>
+</svg>

@@ -3747,3 +3747,493 @@
 1778091786.310229  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
 1778091789.310357 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
 1778091789.310515  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091792.317385 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091792.317626  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091795.318095 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091795.318214  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091798.319022 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091798.319117  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091801.319269 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091801.319374  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091804.320069 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091804.320210  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091807.320559 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091807.320678  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091810.320822 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091810.320942  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091813.321606 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091813.321854  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091816.321993 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091816.322101  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091819.322285 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091819.322472  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091822.322574 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091822.322784  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091825.323440 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091825.323547  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091828.323688 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091828.323831  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091831.323942 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091831.324069  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091834.324832 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091834.325045  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091837.325219 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091837.325389  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091840.325543 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091840.325840  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091843.325992 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091843.326154  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091846.326320 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091846.326534  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091849.326882 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091849.326993  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091852.327183 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091852.327371  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091855.327503 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091855.327641  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091858.327780 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091858.327932  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091861.328106 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091861.328309  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091864.328456 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091864.328552  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091867.328701 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091867.328930  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091870.329097 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091870.329280  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091873.330069 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091873.330248  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091876.330432 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091876.330618  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091879.330748 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091879.330929  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091882.331066 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091882.331220  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091885.331372 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091885.331577  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091888.367303 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091888.367405  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091891.369623 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091891.369761  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091894.397179 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091894.397343  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091897.410275 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091897.410368  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091900.410451 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091900.410550  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091903.410778 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091903.410990  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091906.411122 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091906.411271  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091909.411420 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091909.411568  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091912.411826 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091912.412050  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091915.412246 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091915.412444  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091918.413537 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091918.413645  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091921.413853 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091921.413961  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091924.414497 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091924.414608  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091927.414812 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091927.414954  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091930.415077 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091930.415170  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091933.415282 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091933.415447  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091936.415563 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091936.415741  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091939.416483 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091939.416639  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091942.431902 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091942.432141  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091945.437616 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091945.437754  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091948.487719 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091948.487894  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091951.492222 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091951.492326  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091954.492476 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091954.492568  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091957.492693 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091957.492892  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091960.492970 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091960.493062  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091963.493223 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091963.493334  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091966.517785 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091966.517945  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091969.519920 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091969.520082  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091972.520246 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091972.521193  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091975.521527 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091975.522521  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091978.522775 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091978.522990  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091981.525193 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091981.525307  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091984.525430 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091984.525585  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091987.525838 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091987.526059  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091990.578768 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091990.578869  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091993.582324 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091993.582411  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091996.582632 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091996.582865  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778091999.582974 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778091999.583132  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092002.583326 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092002.583608  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092005.583962 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092005.584085  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092008.584284 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092008.584438  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092011.584582 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092011.584751  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092014.584858 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092014.584971  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092017.585286 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092017.585431  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092020.585750 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092020.585856  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092023.585947 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092023.586076  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092026.592398 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092026.592811  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092029.593080 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092029.593288  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092032.593400 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092032.593493  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092035.637630 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092035.637897  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092038.638015 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092038.638107  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092041.638230 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092041.638331  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092044.639836 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092044.639918  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092047.640113 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092047.640340  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092050.640553 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092050.640786  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092053.640988 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092053.641208  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092056.641356 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092056.641490  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092059.641730 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092059.641920  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092062.642055 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092062.642154  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092065.642289 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092065.642384  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092068.669582 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092068.670698  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092071.670903 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092071.671125  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092074.671362 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092074.671531  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092077.671677 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092077.671888  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092080.672368 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092080.672607  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092083.672735 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092083.672843  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092086.673031 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092086.673232  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092089.673476 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092089.673642  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092092.673812 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092092.673975  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092095.674184 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092095.674349  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092098.679216 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092098.679314  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092101.728016 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092101.728160  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092104.728531 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092104.728727  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092107.728870 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092107.729026  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092110.729311 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092110.729526  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092113.729745 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092113.729917  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092116.730089 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092116.730299  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092119.730518 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092119.730715  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092122.730998 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092122.731145  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092125.731347 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092125.731542  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092128.732983 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092128.733081  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092131.734045 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092131.734236  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092134.758305 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092134.758475  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092137.758622 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092137.758815  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092140.759089 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092140.759281  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092143.759875 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092143.760000  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092146.760217 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092146.760435  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092149.790347 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092149.790507  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092152.790655 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092152.790849  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092155.792601 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092155.792736  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092158.820583 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092158.821713  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092161.821897 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092161.822061  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092164.822178 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092164.822336  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092167.822499 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092167.822715  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092170.822827 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092170.822934  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092173.823107 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092173.823287  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092176.883905 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092176.884046  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092179.884178 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092179.884285  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092182.888311 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092182.888439  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092185.888574 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092185.888754  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092188.894325 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092188.894434  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092191.894564 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092191.894775  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092194.894930 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092194.895124  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092197.895265 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092197.895387  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092200.895508 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092200.895716  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092203.896033 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092203.896209  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092206.896349 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092206.896572  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092209.896940 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092209.897037  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092212.897236 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092212.897359  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092215.897711 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092215.898707  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092218.898962 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092218.899224  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092221.899480 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092221.899775  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092224.901766 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092224.901866  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092227.902023 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092227.902180  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092230.902344 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092230.902448  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092233.903017 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092233.903132  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092236.903264 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092236.903407  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092239.903632 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092239.903824  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092242.904060 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092242.904227  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092245.904441 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092245.904618  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092248.904712 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092248.904793  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092251.904957 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092251.905062  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092254.905215 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092254.905352  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092257.905560 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092257.905858  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092260.905997 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092260.906098  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092263.911905 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092263.912105  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092266.912250 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092266.912402  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092269.912512 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092269.912789  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092272.912985 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092272.913146  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092275.913473 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092275.913753  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092278.913961 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092278.914129  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092281.914328 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092281.914432  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092284.914585 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092284.914821  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092287.914960 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092287.915147  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092290.915346 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092290.915517  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092293.915620 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092293.915738  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092296.915873 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092296.916038  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092299.916186 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092299.916344  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092302.916552 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092302.916766  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092305.916903 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092305.917058  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092308.917177 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092308.917368  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092311.917518 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092311.918076  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092314.918188 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092314.918328  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092317.918510 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092317.918755  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092320.918886 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092320.919070  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092323.919224 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092323.919383  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092326.919515 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092326.919730  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092329.919817 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092329.919960  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092332.939599 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092332.939832  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092335.939940 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092335.940082  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092338.940186 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092338.940295  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092341.940557 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092341.940841  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092344.940987 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092344.941151  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092347.945376 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092347.945540  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092350.945691 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092350.945900  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092353.946048 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092353.946141  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092356.946330 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092356.946451  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092359.946799 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092359.947007  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092362.952571 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092362.952694  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092365.952959 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092365.953142  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092368.953276 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092368.953386  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092371.953592 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092371.953943  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092374.954025 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092374.954128  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092377.954293 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092377.954456  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092380.954835 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092380.955047  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092383.955209 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092383.955352  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092386.958307 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092386.958481  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092389.958630 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092389.958836  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092392.959040 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092392.959189  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092395.969793 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092395.969943  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092399.014352 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092399.014438  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092402.069845 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092402.070048  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092405.070207 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092405.070409  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092408.070530 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092408.070743  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092411.071185 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092411.071349  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092414.072224 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092414.072348  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092417.074247 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092417.074350  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092420.074441 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092420.074601  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092423.074822 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092423.074967  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092426.077470 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092426.077564  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092429.080389 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092429.080600  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092432.080833 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092432.080945  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092435.081228 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092435.081573  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092438.081745 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092438.081877  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092441.085545 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092441.085801  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092444.085965 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092444.086070  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092447.092050 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092447.092259  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092450.093064 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092450.093177  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092453.093299 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092453.093457  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092456.093585 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092456.093893  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092459.094019 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092459.094179  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092462.094313 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092462.094468  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092465.094599 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092465.094822  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092468.094951 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092468.095114  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092471.095302 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092471.095465  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092474.101241 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092474.101364  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092477.101520 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092477.101625  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092480.101775 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092480.101938  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092483.102106 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092483.102215  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092486.102375 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092486.102494  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092489.102610 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092489.102790  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092492.102948 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092492.103067  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092495.103294 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092495.103506  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092498.120633 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092498.120812  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092501.121448 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092501.121585  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092504.122372 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092504.122523  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092507.124364 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092507.124468  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092510.124728 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092510.124848  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092513.128358 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092513.128472  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092516.128637 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092516.128819  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092519.128939 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092519.129088  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092522.129785 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092522.129936  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]
+1778092525.130059 DEBUG: [kua.bidder] 重新计算 bucket 分配，当前节点数: 4
+1778092525.130182  INFO: [kua.bidder] BUCKET_SNAPSHOT node=/two bucket0=[/one,/two,/four] bucket1=[/one,/four,/three] bucket2=[/two,/four,/three] bucket3=[/one,/two,/four]

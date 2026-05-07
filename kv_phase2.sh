@@ -6,6 +6,20 @@ LOG_DIR="KV阶段2"
 NODES=(one two three four)
 NFD_STRATEGY="/localhost/nfd/strategy/multicast"
 KEY="userQ"
+TIMES_FILE="$LOG_DIR/figure-times.tsv"
+EVENTS_FILE="$LOG_DIR/kv-events.tsv"
+
+record_marker() {
+  local label="$1"
+  printf '%s\t%s\n' "$label" "$(date +%s.%N)" >> "$TIMES_FILE"
+}
+
+record_kv_event() {
+  local label="$1"
+  local key="$2"
+  local value="$3"
+  printf '%s\t%s\t%s\t%s\n' "$(date +%s.%N)" "$label" "$key" "$value" >> "$EVENTS_FILE"
+}
 
 if [ -d "$LOG_DIR" ]; then
   echo "Cleaning old log files in $LOG_DIR"
@@ -13,6 +27,9 @@ if [ -d "$LOG_DIR" ]; then
 else
   mkdir -p "$LOG_DIR"
 fi
+
+: > "$TIMES_FILE"
+: > "$EVENTS_FILE"
 
 echo "Cleaning old kua processes..."
 sudo pkill -f './build/bin/kua' || true
@@ -95,6 +112,7 @@ DOWN_NODE="${OWNERS[0]}"
 
 echo "Step1: initial write"
 ./build/bin/kua-client kv-put "$KEY" v1 > "$LOG_DIR/kv-put-v1.out" 2> "$LOG_DIR/kv-put-v1.err"
+record_kv_event "initial-v1" "$KEY" "v1"
 sleep 1
 
 ./build/bin/kua-client kv-get "$KEY" > "$LOG_DIR/kv-get-v1.out" 2> "$LOG_DIR/kv-get-v1.err"
@@ -103,6 +121,7 @@ if ! grep -qx "v1" "$LOG_DIR/kv-get-v1.out"; then
   cat "$LOG_DIR/kv-get-v1.out"
   exit 1
 fi
+record_marker "初始写入后"
 
 echo "Step2: take down one owner $DOWN_NODE"
 sudo pkill -f "./build/bin/kua /kua /$DOWN_NODE" || true
@@ -110,11 +129,14 @@ sleep 5
 
 echo "Step3: write new value with one owner down (W=2)"
 ./build/bin/kua-client kv-put "$KEY" v2 > "$LOG_DIR/kv-put-v2.out" 2> "$LOG_DIR/kv-put-v2.err"
+record_kv_event "quorum-v2" "$KEY" "v2"
 if ! grep -q "OK" "$LOG_DIR/kv-put-v2.err"; then
   echo "FAIL: kv-put v2 did not satisfy write quorum"
   cat "$LOG_DIR/kv-put-v2.err"
   exit 1
 fi
+record_marker "单副本故障写入后"
+LATEST_VERSION=$(grep -h "KV 写入成功: key=$KEY" "$LOG_DIR"/*.log | sed -E 's/.*version=([0-9]+).*/\1/' | sort -n | tail -n1)
 
 echo "Step4: restart downed owner"
 start_node "$DOWN_NODE"
@@ -128,7 +150,21 @@ if ! grep -qx "v2" "$LOG_DIR/kv-get-v2.out"; then
   exit 1
 fi
 
-sleep 3
+echo "Step5b: repeat read until repaired owner catches latest version"
+for attempt in 1 2 3 4 5; do
+  if grep -q "KV 写入成功: key=$KEY, version=$LATEST_VERSION" "$LOG_DIR/$DOWN_NODE.log"; then
+    break
+  fi
+  ./build/bin/kua-client kv-get "$KEY" > "$LOG_DIR/kv-get-repair-$attempt.out" 2> "$LOG_DIR/kv-get-repair-$attempt.err"
+  sleep 2
+done
+
+if ! grep -q "KV 写入成功: key=$KEY, version=$LATEST_VERSION" "$LOG_DIR/$DOWN_NODE.log"; then
+  echo "FAIL: repaired owner $DOWN_NODE did not receive latest version $LATEST_VERSION"
+  exit 1
+fi
+
+record_marker "读修复后"
 
 echo "Step6: list keys should show key with latest version"
 ./build/bin/kua-client kv-list "$BUCKET_ID" > "$LOG_DIR/kv-list-bucket.out" 2> "$LOG_DIR/kv-list-bucket.err"
@@ -139,11 +175,19 @@ if ! grep -q "^$KEY[[:space:]]" "$LOG_DIR/kv-list-bucket.out"; then
 fi
 
 echo "Step7: verify repaired owner received v2"
-if grep -q "KV 写入成功: key=$KEY" "$LOG_DIR/$DOWN_NODE.log"; then
+if grep -q "KV 写入成功: key=$KEY, version=$LATEST_VERSION" "$LOG_DIR/$DOWN_NODE.log"; then
   echo "INFO: repaired owner has KV write logs"
 else
   echo "WARN: no explicit repair log found on $DOWN_NODE"
 fi
+
+python3 draw_kv_distribution_snapshots.py \
+  --log-dir "$LOG_DIR" \
+  --times-file "$TIMES_FILE" \
+  --events-file "$EVENTS_FILE" \
+  --output "$LOG_DIR/kv-phase2-distribution.svg" \
+  --summary-output "$LOG_DIR/kv-phase2-distribution.txt" \
+  --title "KV阶段2：法定人数写入与读修复的数据分布"
 
 echo "SUCCESS: phase-2 quorum/read-repair test passed"
 echo "Logs in $LOG_DIR"

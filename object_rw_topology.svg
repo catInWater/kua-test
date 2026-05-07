@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="980" viewBox="0 0 1320 980">
+<rect width="100%" height="100%" fill="#faf8f2" />
+<text x="660.0" y="52" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="#111">原始 kua 对象读写拓扑图</text>
+<rect x="40" y="96" width="1240" height="360" fill="#fffdf8" stroke="#c7bda8" stroke-width="2" rx="24" />
+<text x="110" y="136" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">对象写入拓扑</text>
+<rect x="80" y="210" width="190" height="120" fill="#f6d365" stroke="#c29b1f" stroke-width="2" rx="20" />
+<text x="175" y="276" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#111">Client</text>
+<rect x="980" y="182" width="210" height="84" fill="#efe3ff" stroke="#8a5cf6" stroke-width="2" rx="18" />
+<text x="1085" y="214" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#6b44c7">NDN</text>
+<text x="1085" y="246" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#6b44c7">原始 Data</text>
+<circle cx="470" cy="270" r="52" fill="#8ecae6" stroke="#4f4f4f" stroke-width="2" />
+<text x="470" y="278" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#111">接入副本</text>
+<circle cx="720" cy="190" r="52" fill="#84a59d" stroke="#4f4f4f" stroke-width="2" />
+<text x="720" y="198" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#111">副本 A</text>
+<circle cx="835" cy="340" r="52" fill="#84a59d" stroke="#4f4f4f" stroke-width="2" />
+<text x="835" y="348" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#111">副本 B</text>
+<circle cx="635" cy="360" r="52" fill="#84a59d" stroke="#4f4f4f" stroke-width="2" />
+<text x="635" y="368" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#111">副本 C</text>
+<line x1="518" y1="250" x2="674" y2="208" stroke="#999" stroke-width="2" stroke-dasharray="8,8" />
+<line x1="512" y1="292" x2="786" y2="332" stroke="#999" stroke-width="2" stroke-dasharray="8,8" />
+<line x1="486" y1="312" x2="604" y2="330" stroke="#999" stroke-width="2" stroke-dasharray="8,8" />
+<line x1="270" y1="270" x2="418" y2="270" stroke="#d1495b" stroke-width="2.5" />
+<polygon points="418,270 408,265 408,275" fill="#d1495b" />
+<text x="344.0" y="256.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#d1495b">写请求</text>
+<line x1="520" y1="248" x2="980" y2="220" stroke="#2a9d8f" stroke-width="2.5" />
+<polygon points="980,220 970,215 970,225" fill="#2a9d8f" />
+<text x="790.0" y="220.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#2a9d8f">抓取原始 Data</text>
+<line x1="768" y1="186" x2="980" y2="202" stroke="#2a9d8f" stroke-width="2.5" />
+<polygon points="980,202 970,197 970,207" fill="#2a9d8f" />
+<text x="888.0" y="180.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#2a9d8f">抓取</text>
+<line x1="883" y1="334" x2="980" y2="234" stroke="#2a9d8f" stroke-width="2.5" />
+<polygon points="980,234 970,229 970,239" fill="#2a9d8f" />
+<text x="949.5" y="292.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#2a9d8f">抓取</text>
+<line x1="683" y1="358" x2="980" y2="248" stroke="#2a9d8f" stroke-width="2.5" />
+<polygon points="980,248 970,243 970,253" fill="#2a9d8f" />
+<text x="861.5" y="311.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#2a9d8f">抓取</text>
+<line x1="720" y1="142" x2="470" y2="220" stroke="#8a5cf6" stroke-width="2.5" />
+<polygon points="470,220 480,215 480,225" fill="#8a5cf6" />
+<text x="575.0" y="163.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#8a5cf6">确认</text>
+<line x1="835" y1="288" x2="496" y2="286" stroke="#8a5cf6" stroke-width="2.5" />
+<polygon points="496,286 506,281 506,291" fill="#8a5cf6" />
+<text x="653.5" y="269.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#8a5cf6">确认</text>
+<line x1="635" y1="308" x2="452" y2="302" stroke="#8a5cf6" stroke-width="2.5" />
+<polygon points="452,302 462,297 462,307" fill="#8a5cf6" />
+<text x="531.5" y="287.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#8a5cf6">确认</text>
+<line x1="418" y1="316" x2="270" y2="316" stroke="#2f5bea" stroke-width="2.5" />
+<polygon points="270,316 280,311 280,321" fill="#2f5bea" />
+<text x="344.0" y="302.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#2f5bea">写入成功</text>
+<rect x="40" y="500" width="1240" height="360" fill="#fffdf8" stroke="#c7bda8" stroke-width="2" rx="24" />
+<text x="110" y="540" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#111">对象读取拓扑</text>
+<rect x="80" y="612" width="190" height="120" fill="#f6d365" stroke="#c29b1f" stroke-width="2" rx="20" />
+<text x="175" y="678" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#111">Client</text>
+<circle cx="560" cy="670" r="58" fill="#8ecae6" stroke="#4f4f4f" stroke-width="2" />
+<text x="560" y="678" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#111">接入副本</text>
+<circle cx="940" cy="620" r="58" fill="#cdb4db" stroke="#4f4f4f" stroke-width="2" />
+<text x="940" y="628" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#111">网络缓存</text>
+<line x1="270" y1="650" x2="500" y2="650" stroke="#2f5bea" stroke-width="2.5" />
+<polygon points="500,650 490,645 490,655" fill="#2f5bea" />
+<text x="385.0" y="636.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#2f5bea">读请求</text>
+<line x1="618" y1="638" x2="882" y2="620" stroke="#8a5cf6" stroke-width="2.5" stroke-dasharray="8,6" />
+<polygon points="882,620 872,615 872,625" fill="#8a5cf6" />
+<text x="768.0" y="615.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#8a5cf6">同名请求可命中缓存</text>
+<line x1="500" y1="696" x2="270" y2="696" stroke="#2a9d8f" stroke-width="2.5" />
+<polygon points="270,696 280,691 280,701" fill="#2a9d8f" />
+<text x="385.0" y="682.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#2a9d8f">返回 Data / NACK</text>
+<text x="640" y="412" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#666">副本节点收到写请求后，从 NDN 抓取原始 Data 并本地写入</text>
+<text x="640" y="812" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#666">读取时，请求被引导到对应副本；命中后直接返回 Data</text>
+</svg>

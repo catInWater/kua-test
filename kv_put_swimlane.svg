@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="1180" viewBox="0 0 1760 1180">
+<rect width="100%" height="100%" fill="#faf8f2" />
+<text x="880.0" y="64" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="46" font-weight="bold" text-anchor="middle" fill="#111">KV_PUT 写流程泳道图</text>
+<text x="880.0" y="106" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#666">客户端生成版本号；接入副本并行转发到多个 owner，本地写入后以 W=2 判定成功</text>
+<rect x="95" y="84" width="250" height="58" fill="#f6d365" stroke="#777" stroke-width="2" rx="14" />
+<text x="220" y="128" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#111">Client</text>
+<line x1="220" y1="170" x2="220" y2="1110" stroke="#777" stroke-width="2" stroke-dasharray="10,8" />
+<rect x="505" y="84" width="250" height="58" fill="#8ecae6" stroke="#777" stroke-width="2" rx="14" />
+<text x="630" y="128" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#111">接入副本</text>
+<line x1="630" y1="170" x2="630" y2="1110" stroke="#777" stroke-width="2" stroke-dasharray="10,8" />
+<rect x="915" y="84" width="250" height="58" fill="#84a59d" stroke="#777" stroke-width="2" rx="14" />
+<text x="1040" y="128" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#111">副本 owner</text>
+<line x1="1040" y1="170" x2="1040" y2="1110" stroke="#777" stroke-width="2" stroke-dasharray="10,8" />
+<rect x="1355" y="84" width="250" height="58" fill="#cdb4db" stroke="#777" stroke-width="2" rx="14" />
+<text x="1480" y="128" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#111">协调结果</text>
+<line x1="1480" y1="170" x2="1480" y2="1110" stroke="#777" stroke-width="2" stroke-dasharray="10,8" />
+<rect x="20" y="196" width="400" height="104" fill="#fff4cf" stroke="#c29b1f" stroke-width="2" rx="10" />
+<text x="220.0" y="230" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">生成 PUT Interest</text>
+<text x="220.0" y="266" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">/kua/bucket/keyHex/valueHex</text>
+<text x="220.0" y="294" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">version/KV_PUT</text>
+<line x1="220" y1="362" x2="630" y2="362" stroke="#d1495b" stroke-width="2.5" />
+<polygon points="630,362 620,357 620,367" fill="#d1495b" />
+<text x="425.0" y="344.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#d1495b">发送写请求</text>
+<rect x="415" y="446" width="430" height="126" fill="#e6f4fb" stroke="#4c7ea6" stroke-width="2" rx="10" />
+<text x="630.0" y="480" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">解析请求并复制</text>
+<text x="630.0" y="516" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">遍历 confirmedHosts</text>
+<text x="630.0" y="544" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">构造 KV_PUT | NO_REPLICATE</text>
+<text x="630.0" y="572" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">初始化 ackCount / doneCount</text>
+<line x1="630" y1="626" x2="1040" y2="626" stroke="#2a9d8f" stroke-width="2.5" />
+<polygon points="1040,626 1030,621 1030,631" fill="#2a9d8f" />
+<text x="835.0" y="608.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#2a9d8f">并行转发到各副本</text>
+<rect x="820" y="710" width="440" height="126" fill="#e0f0eb" stroke="#4f7f76" stroke-width="2" rx="10" />
+<text x="1040.0" y="744" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">本地 putKv</text>
+<text x="1040.0" y="780" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">version 新于旧值 -&gt; 覆盖</text>
+<text x="1040.0" y="808" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">旧版本写入 -&gt; 忽略</text>
+<text x="1040.0" y="836" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">返回 OK / IGNORED_OLD_VERSION</text>
+<line x1="1040" y1="890" x2="1480" y2="890" stroke="#8a5cf6" stroke-width="2.5" />
+<polygon points="1480,890 1470,885 1470,895" fill="#8a5cf6" />
+<text x="1260.0" y="872.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#8a5cf6">ACK / IGNORED</text>
+<rect x="1265" y="974" width="430" height="126" fill="#f2e9fb" stroke="#8a5cf6" stroke-width="2" rx="10" />
+<text x="1480.0" y="1008" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">法定人数判断</text>
+<text x="1480.0" y="1044" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">ackCount &gt;= 2 -&gt; OK</text>
+<text x="1480.0" y="1072" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">全部结束且不足 2 -&gt; FAILED</text>
+<text x="1480.0" y="1100" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#333">replied 防止重复返回</text>
+<line x1="1480" y1="1154" x2="220" y2="1154" stroke="#2f5bea" stroke-width="2.5" />
+<polygon points="220,1154 230,1149 230,1159" fill="#2f5bea" />
+<text x="850.0" y="1130.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#2f5bea">返回 OK / FAILED</text>
+</svg>
