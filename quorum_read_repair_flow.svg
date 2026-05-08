@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1600" viewBox="0 0 1640 1600">
+<rect width="100%" height="100%" fill="#faf8f2" />
+<text x="820.0" y="64" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="54" font-weight="bold" text-anchor="middle" fill="#111">法定人数读与读修复流程图</text>
+<text x="820.0" y="110" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="normal" text-anchor="middle" fill="#666">R=2</text>
+<rect x="600.0" y="200" width="440" height="108" fill="#fff4cf" stroke="#c29b1f" stroke-width="2" rx="10" />
+<text x="820.0" y="238" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#111">发起读取</text>
+<text x="820.0" y="282" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">KV_GET</text>
+<line x1="820.0" y1="308" x2="820.0" y2="350" stroke="#d1495b" stroke-width="2.5" />
+<polygon points="820.0,350 815.0,340 825.0,340" fill="#d1495b" />
+<rect x="560.0" y="356" width="520" height="126" fill="#e6f4fb" stroke="#4c7ea6" stroke-width="2" rx="10" />
+<text x="820.0" y="394" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#111">并行查询</text>
+<text x="820.0" y="438" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">发送读取请求</text>
+<text x="820.0" y="470" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">记录返回结果</text>
+<line x1="820.0" y1="476" x2="820.0" y2="520" stroke="#2a9d8f" stroke-width="2.5" />
+<polygon points="820.0,520 815.0,510 825.0,510" fill="#2a9d8f" />
+<rect x="440.0" y="520" width="760" height="140" fill="#e8f5e9" stroke="#4f7f76" stroke-width="2" rx="10" />
+<text x="820.0" y="558" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#111">收集结果</text>
+<text x="820.0" y="602" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">获得多个副本响应</text>
+<text x="820.0" y="634" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">存在新旧版本差异</text>
+<line x1="820.0" y1="642" x2="820.0" y2="684" stroke="#8a5cf6" stroke-width="2.5" />
+<polygon points="820.0,684 815.0,674 825.0,674" fill="#8a5cf6" />
+<polygon points="820.0,649.0 980.0,734 820.0,819.0 660.0,734" fill="#f2e9fb" stroke="#8a5cf6" stroke-width="2" />
+<text x="820.0" y="726" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#111">达到 R=2 ?</text>
+<text x="970.0" y="726" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="#8a5cf6">是</text>
+<line x1="820.0" y1="852" x2="820.0" y2="892" stroke="#8a5cf6" stroke-width="2.5" />
+<polygon points="820.0,892 815.0,882 825.0,882" fill="#8a5cf6" />
+<polygon points="820.0,839.0 980.0,924 820.0,1009.0 660.0,924" fill="#f2e9fb" stroke="#8a5cf6" stroke-width="2" />
+<text x="820.0" y="916" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#111">存在有效值 ?</text>
+<text x="970.0" y="916" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="#8a5cf6">是</text>
+<text x="670.0" y="916" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#8a5cf6">否</text>
+<line x1="660.0" y1="924" x2="320" y2="924" stroke="#c95d63" stroke-width="2.5" />
+<polygon points="320,924 330,919 330,929" fill="#c95d63" />
+<text x="490.0" y="900.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#c95d63">否</text>
+<rect x="60" y="874" width="260" height="104" fill="#fde2e4" stroke="#c95d63" stroke-width="2" rx="10" />
+<text x="190.0" y="912" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#111">结束</text>
+<text x="190.0" y="956" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">返回未命中</text>
+<line x1="820.0" y1="1042" x2="820.0" y2="1082" stroke="#8a5cf6" stroke-width="2.5" />
+<polygon points="820.0,1082 815.0,1072 825.0,1072" fill="#8a5cf6" />
+<rect x="580.0" y="1076" width="480" height="126" fill="#f2e9fb" stroke="#8a5cf6" stroke-width="2" rx="10" />
+<text x="820.0" y="1114" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#111">选择最新版本</text>
+<text x="820.0" y="1158" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">比较各副本结果</text>
+<text x="820.0" y="1190" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">确定 best</text>
+<line x1="820.0" y1="1192" x2="820.0" y2="1236" stroke="#8a5cf6" stroke-width="2.5" />
+<polygon points="820.0,1236 815.0,1226 825.0,1226" fill="#8a5cf6" />
+<polygon points="820.0,1191.0 980.0,1276 820.0,1361.0 660.0,1276" fill="#f2e9fb" stroke="#8a5cf6" stroke-width="2" />
+<text x="820.0" y="1268" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#111">存在滞后副本 ?</text>
+<text x="970.0" y="1268" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="#8a5cf6">是</text>
+<text x="670.0" y="1268" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="22" font-weight="normal" text-anchor="end" fill="#8a5cf6">否</text>
+<line x1="980.0" y1="1276" x2="1320" y2="1276" stroke="#2f5bea" stroke-width="2.5" />
+<polygon points="1320,1276 1310,1271 1310,1281" fill="#2f5bea" />
+<text x="1150.0" y="1252.0" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#2f5bea">否</text>
+<rect x="1320" y="1226" width="260" height="104" fill="#e7f6fd" stroke="#2f5bea" stroke-width="2" rx="10" />
+<text x="1450.0" y="1264" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#111">结束</text>
+<text x="1450.0" y="1308" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">返回最新值</text>
+<line x1="820.0" y1="1394" x2="820.0" y2="1434" stroke="#e76f51" stroke-width="2.5" />
+<polygon points="820.0,1434 815.0,1424 825.0,1424" fill="#e76f51" />
+<rect x="560.0" y="1428" width="520" height="126" fill="#fff1c7" stroke="#d17b00" stroke-width="2" rx="10" />
+<text x="820.0" y="1466" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#111">发送修复</text>
+<text x="820.0" y="1510" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">向滞后副本写回</text>
+<text x="820.0" y="1542" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">携带最新版本</text>
+<line x1="820.0" y1="1540" x2="820.0" y2="1584" stroke="#e76f51" stroke-width="2.5" />
+<polygon points="820.0,1584 815.0,1574 825.0,1574" fill="#e76f51" />
+<rect x="580.0" y="1584" width="480" height="126" fill="#fff8e1" stroke="#d17b00" stroke-width="2" rx="10" />
+<text x="820.0" y="1622" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#111">副本更新</text>
+<text x="820.0" y="1666" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">覆盖旧版本</text>
+<text x="820.0" y="1698" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">完成收敛</text>
+<line x1="820.0" y1="1696" x2="820.0" y2="1740" stroke="#2f5bea" stroke-width="2.5" />
+<polygon points="820.0,1740 815.0,1730 825.0,1730" fill="#2f5bea" />
+<rect x="570.0" y="1740" width="500" height="126" fill="#e7f6fd" stroke="#2f5bea" stroke-width="2" rx="10" />
+<text x="820.0" y="1778" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#111">返回结果</text>
+<text x="820.0" y="1822" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">客户端得到最新值</text>
+<text x="820.0" y="1854" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">同时触发修复</text>
+<line x1="820.0" y1="1852" x2="820.0" y2="1894" stroke="#2f5bea" stroke-width="2.5" />
+<polygon points="820.0,1894 815.0,1884 825.0,1884" fill="#2f5bea" />
+<rect x="640.0" y="1896" width="360" height="104" fill="#e0f0eb" stroke="#4f7f76" stroke-width="2" rx="10" />
+<text x="820.0" y="1934" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#111">结束</text>
+<text x="820.0" y="1978" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">读到最新值</text>
+<text x="820.0" y="2010" font-family="DejaVu Sans, Noto Sans SC, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#333">副本收敛</text>
+</svg>
